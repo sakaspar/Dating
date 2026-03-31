@@ -17,6 +17,7 @@ const { getDB } = require('../utils/db');
 const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
 const { ACTIVITY_TYPES, NEIGHBORHOODS, BUDGET_RANGES } = require('../utils/constants');
+const { searchPlaces, searchPlace } = require('../utils/osm');
 
 const router = express.Router();
 const db = getDB();
@@ -406,8 +407,14 @@ router.get('/suggestions/:matchId', authMiddleware, async (req, res) => {
         activityEmoji: activityDef.emoji,
         suggestedNeighborhood: closestNeighborhood.name,
         distanceFromMidpoint: Math.round(minDist * 10) / 10,
-        // OSM place suggestions will be added in task #16
-        places: []
+        // Fetch real places from OSM Overpass API
+        places: await searchPlaces(
+          closestNeighborhood.lat,
+          closestNeighborhood.lon,
+          activityDef.osmTags,
+          3, // 3km radius
+          3  // max 3 places per activity
+        )
       });
     }
 
@@ -418,6 +425,25 @@ router.get('/suggestions/:matchId', authMiddleware, async (req, res) => {
   } catch (err) {
     console.error('GET /proposals/suggestions/:matchId error:', err);
     res.status(500).json({ error: 'Failed to get suggestions' });
+  }
+});
+
+// -------------------------------------------------------
+// GET /api/proposals/search/place — Search places via Nominatim
+// Used by mobile app for place autocomplete
+// -------------------------------------------------------
+router.get('/search/place', authMiddleware, async (req, res) => {
+  try {
+    const { q, lat, lon } = req.query;
+    if (!q || q.trim().length < 2) {
+      return res.status(400).json({ error: 'Query must be at least 2 characters' });
+    }
+
+    const results = await searchPlace(q.trim(), lat ? parseFloat(lat) : null, lon ? parseFloat(lon) : null);
+    res.json({ results });
+  } catch (err) {
+    console.error('GET /proposals/search/place error:', err);
+    res.status(500).json({ error: 'Place search failed' });
   }
 });
 
