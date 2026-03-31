@@ -24,6 +24,7 @@ import ProfileWizardScreen from '../screens/ProfileWizardScreen';
 import DiscoverScreen from '../screens/DiscoverScreen';
 import MatchesScreen from '../screens/MatchesScreen';
 import ChatScreen from '../screens/ChatScreen';
+import ProposalCreateScreen from '../screens/ProposalCreateScreen';
 // import GroupsScreen from '../screens/GroupsScreen';
 // import ProfileScreen from '../screens/ProfileScreen';
 
@@ -85,7 +86,7 @@ function MainStack() {
       <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
       <Stack.Screen name="Chat" component={ChatScreen} />
       <Stack.Screen name="GroupChat" children={() => <PlaceholderScreen name="GroupChat" />} />
-      <Stack.Screen name="ProposalCreate" children={() => <PlaceholderScreen name="ProposalCreate" />} />
+      <Stack.Screen name="ProposalCreate" component={ProposalCreateScreen} />
       <Stack.Screen name="ProposalView" children={() => <PlaceholderScreen name="ProposalView" />} />
       <Stack.Screen name="UserProfile" children={() => <PlaceholderScreen name="UserProfile" />} />
       <Stack.Screen name="SafetyCenter" children={() => <PlaceholderScreen name="SafetyCenter" />} />

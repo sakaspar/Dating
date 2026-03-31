@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T10:47:45.529770",
+  "lastUpdated": "2026-03-31T10:49:57.751313",
   "tasks": [
     {
       "id": 1,
@@ -276,18 +276,18 @@
       "id": 31,
       "title": "Mobile: Real-time chat screen",
       "description": "Socket.io chat UI: message bubbles, typing indicator, read receipts, online/offline status, message history scroll, push notifications for new messages.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T10:47:45.529752",
+      "updated": "2026-03-31T10:49:50.303015",
       "errors": []
     },
     {
       "id": 32,
       "title": "Mobile: Date proposal creation screen",
       "description": "Prominent 'Suggest a Plan' button (bigger than chat). Form: activity type, calendar date picker, time picker, neighborhood dropdown, budget range, place search, notes. Smart suggestions from shared activities.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:49:57.751293",
       "errors": []
     },
     {
