@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T10:49:57.751313",
+  "lastUpdated": "2026-03-31T10:52:20.941271",
   "tasks": [
     {
       "id": 1,
@@ -285,18 +285,18 @@
       "id": 32,
       "title": "Mobile: Date proposal creation screen",
       "description": "Prominent 'Suggest a Plan' button (bigger than chat). Form: activity type, calendar date picker, time picker, neighborhood dropdown, budget range, place search, notes. Smart suggestions from shared activities.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T10:49:57.751293",
+      "updated": "2026-03-31T10:52:13.625826",
       "errors": []
     },
     {
       "id": 33,
       "title": "Mobile: Proposal view & response screen",
       "description": "View proposal details, accept/decline/modify buttons, modification form, status indicators, confirmation animation on accept.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:52:20.941251",
       "errors": []
     },
     {
