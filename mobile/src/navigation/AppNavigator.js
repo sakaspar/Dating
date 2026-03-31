@@ -14,11 +14,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useSelector } from 'react-redux';
 import { ActivityIndicator, View } from 'react-native';
-import { COLORS, ACTIVITY_EMOJIS } from '../constants/theme';
+import { COLORS } from '../constants/theme';
 
 // Auth screens
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen';
+import ProfileWizardScreen from '../screens/ProfileWizardScreen';
 // Other screens (to be built in later tasks)
 // import DiscoverScreen from '../screens/DiscoverScreen';
 // import MatchesScreen from '../screens/MatchesScreen';
@@ -105,7 +106,15 @@ export default function AppNavigator() {
 
   return (
     <NavigationContainer>
-      {user ? <MainStack /> : <AuthStack />}
+      {!user ? (
+        <AuthStack />
+      ) : !user.profileComplete ? (
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="ProfileWizard" component={ProfileWizardScreen} />
+        </Stack.Navigator>
+      ) : (
+        <MainStack />
+      )}
     </NavigationContainer>
   );
 }
