@@ -1,23 +1,23 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T08:09:00.032606",
+  "lastUpdated": "2026-03-31T08:30:04.066886",
   "tasks": [
     {
       "id": 1,
       "title": "Setup project repo & folder structure",
       "description": "Initialize repo with /backend and /mobile directories, package.json, .gitignore, .env.example, README.md",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:09:00.032577",
+      "updated": "2026-03-31T08:14:43.844882",
       "errors": []
     },
     {
       "id": 2,
       "title": "Setup Raspberry Pi infrastructure",
       "description": "Install Node.js 18, PM2, Nginx, configure reverse proxy, Let's Encrypt SSL, dynamic DNS (DuckDNS), enable 2GB swap, configure PM2 auto-start",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:30:04.066869",
       "errors": []
     },
     {
