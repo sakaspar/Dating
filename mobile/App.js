@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Provider, useDispatch } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 import { StatusBar } from 'expo-status-bar';
-import { store } from './src/store';
+import { store, persistor } from './src/store';
 import { loadUser } from './src/store/slices/authSlice';
 import AppNavigator from './src/navigation/AppNavigator';
 
@@ -23,7 +24,9 @@ function AppContent() {
 export default function App() {
   return (
     <Provider store={store}>
-      <AppContent />
+      <PersistGate loading={null} persistor={persistor}>
+        <AppContent />
+      </PersistGate>
     </Provider>
   );
 }

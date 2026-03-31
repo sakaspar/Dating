@@ -9,8 +9,11 @@ export const fetchMessages = createAsyncThunk('chat/messages', async ({ conversa
   try { return { conversationId, ...(await api.getMessages(conversationId, page)) }; } catch (err) { return rejectWithValue(err.message); }
 });
 
-export const sendMessage = createAsyncThunk('chat/send', async ({ conversationId, text }, { rejectWithValue }) => {
-  try { return await api.sendMessage(conversationId, text); } catch (err) { return rejectWithValue(err.message); }
+export const sendMessage = createAsyncThunk('chat/send', async ({ conversationId, text, tempId }, { rejectWithValue }) => {
+  try {
+    const result = await api.sendMessage(conversationId, text);
+    return { ...result, tempId };
+  } catch (err) { return rejectWithValue(err.message); }
 });
 
 const chatSlice = createSlice({
@@ -27,6 +30,31 @@ const chatSlice = createSlice({
       const { conversationId, message } = action.payload;
       if (!state.messages[conversationId]) state.messages[conversationId] = [];
       state.messages[conversationId].push(message);
+    },
+    // Optimistic message — adds immediately before API response
+    addOptimisticMessage: (state, action) => {
+      const { conversationId, message } = action.payload;
+      if (!state.messages[conversationId]) state.messages[conversationId] = [];
+      state.messages[conversationId].push({ ...message, pending: true });
+    },
+    // Replace optimistic message with confirmed one from server
+    replaceOptimisticMessage: (state, action) => {
+      const { conversationId, tempId, message } = action.payload;
+      const msgs = state.messages[conversationId];
+      if (msgs) {
+        const idx = msgs.findIndex(m => m.id === tempId);
+        if (idx >= 0) {
+          msgs[idx] = { ...message, pending: false };
+        }
+      }
+    },
+    // Remove failed optimistic message
+    removeOptimisticMessage: (state, action) => {
+      const { conversationId, tempId } = action.payload;
+      const msgs = state.messages[conversationId];
+      if (msgs) {
+        state.messages[conversationId] = msgs.filter(m => m.id !== tempId);
+      }
     },
     setTyping: (state, action) => {
       const { conversationId, userId, isTyping } = action.payload;
@@ -59,11 +87,34 @@ const chatSlice = createSlice({
       })
       .addCase(sendMessage.fulfilled, (state, action) => {
         const msg = action.payload;
-        if (!state.messages[msg.conversationId]) state.messages[msg.conversationId] = [];
-        state.messages[msg.conversationId].push(msg);
+        const { tempId } = action.meta.arg;
+        const msgs = state.messages[msg.conversationId];
+        if (msgs) {
+          // Replace the optimistic message with the server-confirmed one
+          const idx = msgs.findIndex(m => m.id === tempId);
+          if (idx >= 0) {
+            msgs[idx] = msg;
+          } else {
+            msgs.push(msg);
+          }
+        } else {
+          state.messages[msg.conversationId] = [msg];
+        }
+      })
+      .addCase(sendMessage.rejected, (state, action) => {
+        // Mark the optimistic message as failed
+        const { conversationId, tempId } = action.meta.arg;
+        const msgs = state.messages[conversationId];
+        if (msgs) {
+          const msg = msgs.find(m => m.id === tempId);
+          if (msg) {
+            msg.pending = false;
+            msg.failed = true;
+          }
+        }
       });
   },
 });
 
-export const { addMessage, setTyping, markMessageRead } = chatSlice.actions;
+export const { addMessage, addOptimisticMessage, replaceOptimisticMessage, removeOptimisticMessage, setTyping, markMessageRead } = chatSlice.actions;
 export default chatSlice.reducer;

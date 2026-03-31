@@ -22,7 +22,7 @@ import {
 } from 'react-native';
 import { Text, Avatar, IconButton, TextInput } from 'react-native-paper';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMessages, addMessage, setTyping, markMessageRead } from '../store/slices/chatSlice';
+import { fetchMessages, addMessage, addOptimisticMessage, removeOptimisticMessage, setTyping, markMessageRead, sendMessage } from '../store/slices/chatSlice';
 import socketService from '../services/socket';
 import api from '../services/api';
 import { COLORS, SPACING, RADIUS, SHADOWS } from '../constants/theme';
@@ -136,7 +136,7 @@ export default function ChatScreen({ navigation, route }) {
     }, 2000);
   }, [conversationId]);
 
-  // Send message
+  // Send message with optimistic update
   const handleSend = useCallback(async () => {
     const trimmed = text.trim();
     if (!trimmed || isSending) return;
@@ -150,32 +150,36 @@ export default function ChatScreen({ navigation, route }) {
       socketService.stopTyping(conversationId);
     }
 
-    try {
-      // Try socket first, fallback to HTTP
-      if (socketService.isConnected()) {
-        socketService.sendMessage(conversationId, trimmed);
-      } else {
-        const result = await api.sendMessage(conversationId, trimmed);
-        dispatch(addMessage({ conversationId, message: result.message }));
-      }
+    const tempId = `temp_${Date.now()}`;
 
-      // Optimistic update - the message will also come back via socket
-      const optimisticMsg = {
-        id: `temp_${Date.now()}`,
+    // Optimistic update — show message immediately
+    dispatch(addOptimisticMessage({
+      conversationId,
+      message: {
+        id: tempId,
         senderId: authUser?.id,
         text: trimmed,
         timestamp: new Date().toISOString(),
         read: false,
-      };
-      dispatch(addMessage({ conversationId, message: optimisticMsg }));
+      },
+    }));
 
-      setTimeout(() => flatListRef.current?.scrollToEnd({ animated: true }), 100);
+    setTimeout(() => flatListRef.current?.scrollToEnd({ animated: true }), 100);
+
+    try {
+      // Send via socket if connected + dispatch thunk for HTTP confirmation
+      if (socketService.isConnected()) {
+        socketService.sendMessage(conversationId, trimmed);
+      }
+      // Dispatch thunk — fulfilled handler replaces optimistic message
+      await dispatch(sendMessage({ conversationId, text: trimmed, tempId })).unwrap();
     } catch (err) {
       console.error('Send message error:', err);
+      dispatch(removeOptimisticMessage({ conversationId, tempId }));
     } finally {
       setIsSending(false);
     }
-  }, [text, conversationId, isSending, authUser?.id]);
+  }, [text, conversationId, isSending, authUser?.id, dispatch]);
 
   // Load older messages
   const handleLoadMore = useCallback(async () => {
