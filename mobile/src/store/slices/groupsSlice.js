@@ -2,7 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../../services/api';
 
 export const fetchGroups = createAsyncThunk('groups/fetch', async (filters, { rejectWithValue }) => {
-  try { return await api.getGroups(filters); } catch (err) { return rejectWithValue(err.message); }
+  try {
+    const data = await api.getGroups(filters);
+    return data.groups || data;
+  } catch (err) { return rejectWithValue(err.message); }
 });
 
 export const createGroup = createAsyncThunk('groups/create', async (data, { rejectWithValue }) => {

@@ -26,7 +26,7 @@ import MatchesScreen from '../screens/MatchesScreen';
 import ChatScreen from '../screens/ChatScreen';
 import ProposalCreateScreen from '../screens/ProposalCreateScreen';
 import ProposalViewScreen from '../screens/ProposalViewScreen';
-// import GroupsScreen from '../screens/GroupsScreen';
+import GroupsScreen from '../screens/GroupsScreen';
 // import ProfileScreen from '../screens/ProfileScreen';
 
 const Stack = createStackNavigator();
@@ -69,7 +69,7 @@ function MainTabs() {
       />
       <Tab.Screen
         name="Groups"
-        children={() => <PlaceholderScreen name="Groups" />}
+        component={GroupsScreen}
         options={{ tabBarLabel: 'Groups', tabBarIcon: () => null }}
       />
       <Tab.Screen
@@ -87,6 +87,8 @@ function MainStack() {
       <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
       <Stack.Screen name="Chat" component={ChatScreen} />
       <Stack.Screen name="GroupChat" children={() => <PlaceholderScreen name="GroupChat" />} />
+      <Stack.Screen name="GroupDetail" children={() => <PlaceholderScreen name="GroupDetail" />} />
+      <Stack.Screen name="GroupCreate" children={() => <PlaceholderScreen name="GroupCreate" />} />
       <Stack.Screen name="ProposalCreate" component={ProposalCreateScreen} />
       <Stack.Screen name="ProposalView" component={ProposalViewScreen} />
       <Stack.Screen name="UserProfile" children={() => <PlaceholderScreen name="UserProfile" />} />

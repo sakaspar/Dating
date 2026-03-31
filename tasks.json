@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T10:52:20.941271",
+  "lastUpdated": "2026-03-31T11:01:02.053417",
   "tasks": [
     {
       "id": 1,
@@ -294,18 +294,18 @@
       "id": 33,
       "title": "Mobile: Proposal view & response screen",
       "description": "View proposal details, accept/decline/modify buttons, modification form, status indicators, confirmation animation on accept.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T10:52:20.941251",
+      "updated": "2026-03-31T10:59:53.819203",
       "errors": []
     },
     {
       "id": 34,
       "title": "Mobile: Groups tab & browse",
       "description": "Scrollable group activity cards, filter by type/date/location/distance, show creator info, participant count, join request button.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:01:02.053395",
       "errors": []
     },
     {
