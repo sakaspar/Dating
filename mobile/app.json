@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Doukhou",
+    "slug": "doukhou",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6C5CE7"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.doukhou.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Doukhou uses your location to find nearby matches and suggest date spots."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6C5CE7"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.doukhou.app",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "apiUrl": "http://localhost:3000"
+    }
+  }
+}

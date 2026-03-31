@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T09:38:37.121455",
+  "lastUpdated": "2026-03-31T09:42:06.811554",
   "tasks": [
     {
       "id": 1,
@@ -222,18 +222,18 @@
       "id": 25,
       "title": "Test data generator (50-100 fake profiles)",
       "description": "Script to generate fake user profiles with varied locations across Tunis, ages 18-35, activity preferences, placeholder photos. Test matching algorithm, proposals, groups.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T09:38:37.121435",
+      "updated": "2026-03-31T09:41:58.270678",
       "errors": []
     },
     {
       "id": 26,
       "title": "React Native app setup with Expo",
       "description": "Initialize Expo project, install dependencies: react-native-paper, react-navigation, redux toolkit, react-native-maps, socket.io-client, onesignal-sdk. Configure for iOS + Android.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:42:06.811537",
       "errors": []
     },
     {
