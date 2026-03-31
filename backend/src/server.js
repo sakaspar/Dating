@@ -5,6 +5,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
+const { sanitizeInput } = require('./middleware/sanitize');
 
 const app = express();
 const server = http.createServer(app);
@@ -17,10 +18,15 @@ const io = new Server(server, {
   }
 });
 
+// Initialize real-time chat
+const { initChatSocket } = require('./socket/chat');
+initChatSocket(io);
+
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
 app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true }));
+app.use(sanitizeInput); // XSS protection on all inputs
 
 // Rate limiting
 const limiter = rateLimit({
@@ -35,21 +41,26 @@ app.use('/uploads', express.static(path.join(__dirname, '..', process.env.UPLOAD
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString(), uptime: process.uptime() });
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    memory: process.memoryUsage()
+  });
 });
 
-// API routes (will be added as we build)
-// app.use('/api/auth', require('./routes/auth'));
-// app.use('/api/users', require('./routes/users'));
-// app.use('/api/matches', require('./routes/matches'));
-// app.use('/api/chat', require('./routes/chat'));
-// app.use('/api/proposals', require('./routes/proposals'));
-// app.use('/api/groups', require('./routes/groups'));
-// app.use('/api/safety', require('./routes/safety'));
+// API routes
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/matches', require('./routes/matches'));
+app.use('/api/chat', require('./routes/chat'));
+app.use('/api/proposals', require('./routes/proposals'));
+app.use('/api/groups', require('./routes/groups'));
+app.use('/api/safety', require('./routes/safety'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err.stack);
+  console.error('Unhandled error:', err.stack || err.message || err);
   res.status(err.status || 500).json({
     error: process.env.NODE_ENV === 'production' ? 'Internal server error' : err.message
   });
