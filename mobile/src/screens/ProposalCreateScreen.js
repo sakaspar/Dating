@@ -34,6 +34,7 @@ import {
 } from 'react-native-paper';
 import { useDispatch, useSelector } from 'react-redux';
 import { createProposal, fetchSuggestions } from '../store/slices/proposalsSlice';
+import PlaceSearch from '../components/PlaceSearch';
 import { COLORS, SPACING, RADIUS, SHADOWS, ACTIVITY_EMOJIS } from '../constants/theme';
 
 const NEIGHBORHOODS = [
@@ -70,6 +71,7 @@ export default function ProposalCreateScreen({ navigation, route }) {
   const [neighborhood, setNeighborhood] = useState('');
   const [budgetRange, setBudgetRange] = useState('');
   const [suggestedPlace, setSuggestedPlace] = useState('');
+  const [selectedPlaceCoords, setSelectedPlaceCoords] = useState(null);
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -318,18 +320,16 @@ export default function ProposalCreateScreen({ navigation, route }) {
         ))}
       </View>
 
-      {/* Suggested place */}
+      {/* Suggested place — OSM Nominatim search */}
       <Text style={styles.fieldLabel}>Specific place (optional)</Text>
-      <TextInput
-        value={suggestedPlace}
-        onChangeText={setSuggestedPlace}
-        placeholder="e.g. Café Mokka, Parc du Lac..."
-        placeholderTextColor={COLORS.textLight}
-        style={styles.textInput}
-        mode="outlined"
-        outlineColor={COLORS.border}
-        activeOutlineColor={COLORS.primary}
-        left={<TextInput.Icon icon="map-search" />}
+      <PlaceSearch
+        onSelect={(place) => {
+          setSuggestedPlace(place.name);
+          // Store coordinates for map display
+          setSelectedPlaceCoords({ lat: place.lat, lon: place.lon });
+        }}
+        placeholder="Search for a place..."
+        initialValue={suggestedPlace}
       />
 
       {/* Smart suggestions */}

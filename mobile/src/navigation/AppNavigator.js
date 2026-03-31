@@ -35,6 +35,7 @@ import SafetyCenterScreen from '../screens/SafetyCenterScreen';
 import BlockedUsersScreen from '../screens/BlockedUsersScreen';
 import CommunityGuidelinesScreen from '../screens/CommunityGuidelinesScreen';
 import HelpSupportScreen from '../screens/HelpSupportScreen';
+import MapScreen from '../screens/MapScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -105,6 +106,7 @@ function MainStack() {
       <Stack.Screen name="HelpSupport" component={HelpSupportScreen} options={{ headerShown: false }} />
       <Stack.Screen name="ProfileEdit" children={() => <PlaceholderScreen name="ProfileEdit" />} options={{ headerShown: false }} />
       <Stack.Screen name="Preferences" children={() => <PlaceholderScreen name="Preferences" />} options={{ headerShown: false }} />
+      <Stack.Screen name="Map" component={MapScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
