@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
 const http = require('http');
 const { Server } = require('socket.io');
 const rateLimit = require('express-rate-limit');
@@ -28,6 +29,7 @@ initGroupChatSocket(io);
 
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
+app.use(compression()); // gzip compression for all responses
 app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(sanitizeInput); // XSS protection on all inputs
@@ -40,8 +42,12 @@ const limiter = rateLimit({
 });
 app.use('/api/', limiter);
 
-// Static files
-app.use('/uploads', express.static(path.join(__dirname, '..', process.env.UPLOAD_DIR || './uploads')));
+// Static files with cache headers
+app.use('/uploads', express.static(path.join(__dirname, '..', process.env.UPLOAD_DIR || './uploads'), {
+  maxAge: '7d', // Cache static files for 7 days
+  etag: true,
+  lastModified: true,
+}));
 
 // Health check
 app.get('/health', (req, res) => {
