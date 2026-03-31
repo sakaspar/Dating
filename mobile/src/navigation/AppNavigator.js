@@ -14,7 +14,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useSelector } from 'react-redux';
 import { ActivityIndicator, View } from 'react-native';
-import { COLORS } from '../constants/theme';
+import { COLORS, SPACING, SHADOWS } from '../constants/theme';
 
 // Auth screens
 import LoginScreen from '../screens/LoginScreen';
@@ -40,6 +40,12 @@ import MapScreen from '../screens/MapScreen';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+// Tab icon component using MaterialCommunityIcons (built into react-native-paper)
+function TabIcon({ name, color, size }) {
+  const { Icon } = require('react-native-paper');
+  return <Icon source={name} size={size} color={color} />;
+}
+
 // Placeholder component
 const PlaceholderScreen = ({ name }) => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -63,27 +69,59 @@ function MainTabs() {
         tabBarActiveTintColor: COLORS.primary,
         tabBarInactiveTintColor: COLORS.textLight,
         headerShown: false,
+        tabBarStyle: {
+          backgroundColor: COLORS.surface,
+          borderTopColor: COLORS.border,
+          borderTopWidth: 1,
+          height: 60,
+          paddingBottom: 8,
+          paddingTop: 4,
+        },
+        tabBarLabelStyle: {
+          fontSize: 11,
+          fontWeight: '600',
+        },
       }}
     >
       <Tab.Screen
         name="Discover"
         component={DiscoverScreen}
-        options={{ tabBarLabel: 'Discover', tabBarIcon: () => null }}
+        options={{
+          tabBarLabel: 'Discover',
+          tabBarIcon: ({ color, size }) => (
+            <TabIcon name="cards" color={color} size={size} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Matches"
         component={MatchesScreen}
-        options={{ tabBarLabel: 'Matches', tabBarIcon: () => null }}
+        options={{
+          tabBarLabel: 'Matches',
+          tabBarIcon: ({ color, size }) => (
+            <TabIcon name="heart" color={color} size={size} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Groups"
         component={GroupsScreen}
-        options={{ tabBarLabel: 'Groups', tabBarIcon: () => null }}
+        options={{
+          tabBarLabel: 'Groups',
+          tabBarIcon: ({ color, size }) => (
+            <TabIcon name="account-group" color={color} size={size} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
-        options={{ tabBarLabel: 'Profile', tabBarIcon: () => null }}
+        options={{
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({ color, size }) => (
+            <TabIcon name="account" color={color} size={size} />
+          ),
+        }}
       />
     </Tab.Navigator>
   );

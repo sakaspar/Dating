@@ -1,6 +1,14 @@
 /**
  * Doukhou Theme & Design Constants
+ *
+ * Primary: Blue/Purple (#6C5CE7)
+ * Secondary: Coral/Orange CTAs (#FF6B6B)
+ * Success: Green (#00B894)
+ * Background: Light gray (#F8F9FA)
+ * Text: Dark gray (#2D3436)
  */
+
+import { DefaultTheme } from 'react-native-paper';
 
 export const COLORS = {
   // Primary
@@ -41,6 +49,37 @@ export const COLORS = {
   // Gradient
   gradientStart: '#6C5CE7',
   gradientEnd: '#A29BFE',
+};
+
+// React Native Paper theme
+export const paperTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: COLORS.primary,
+    primaryContainer: COLORS.primaryLight,
+    secondary: COLORS.secondary,
+    secondaryContainer: COLORS.secondaryLight,
+    background: COLORS.background,
+    surface: COLORS.surface,
+    error: COLORS.error,
+    onPrimary: COLORS.textWhite,
+    onSecondary: COLORS.textWhite,
+    onSurface: COLORS.textPrimary,
+    onBackground: COLORS.textPrimary,
+    onError: COLORS.textWhite,
+    outline: COLORS.border,
+    elevation: {
+      ...DefaultTheme.colors.elevation,
+      level0: COLORS.background,
+      level1: COLORS.surface,
+      level2: COLORS.surfaceDark,
+    },
+  },
+  roundness: 12,
+  fonts: {
+    ...DefaultTheme.fonts,
+  },
 };
 
 export const FONTS = {

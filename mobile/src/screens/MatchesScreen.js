@@ -103,6 +103,7 @@ export default function MatchesScreen({ navigation }) {
             onPress={() => navigation.navigate('ProposalCreate', { matchId: match.id, user })}
           >
             <Text style={styles.planButtonText}>📋</Text>
+            <Text style={styles.planButtonLabel}>Plan</Text>
           </TouchableOpacity>
         </View>
       </TouchableOpacity>
@@ -295,15 +296,21 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.primary,
   },
   planButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: COLORS.primaryLight + '20',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: SPACING.xs,
+    backgroundColor: COLORS.secondary + '15',
+    borderRadius: RADIUS.md,
   },
   planButtonText: {
     fontSize: 18,
+  },
+  planButtonLabel: {
+    fontSize: 10,
+    color: COLORS.secondary,
+    fontWeight: '600',
+    marginTop: 1,
   },
   divider: {
     height: 0,
