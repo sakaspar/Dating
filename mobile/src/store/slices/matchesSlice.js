@@ -2,7 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../../services/api';
 
 export const fetchDiscover = createAsyncThunk('matches/discover', async (_, { rejectWithValue }) => {
-  try { return await api.getDiscover(); } catch (err) { return rejectWithValue(err.message); }
+  try {
+    const data = await api.getDiscover();
+    return data.matches || data;
+  } catch (err) { return rejectWithValue(err.message); }
 });
 
 export const swipeUser = createAsyncThunk('matches/swipe', async ({ targetUserId, action }, { rejectWithValue, dispatch }) => {
@@ -15,7 +18,10 @@ export const swipeUser = createAsyncThunk('matches/swipe', async ({ targetUserId
 });
 
 export const fetchMatches = createAsyncThunk('matches/fetch', async (_, { rejectWithValue }) => {
-  try { return await api.getMatches(); } catch (err) { return rejectWithValue(err.message); }
+  try {
+    const data = await api.getMatches();
+    return data.matches || data;
+  } catch (err) { return rejectWithValue(err.message); }
 });
 
 export const unmatch = createAsyncThunk('matches/unmatch', async (matchId, { rejectWithValue }) => {

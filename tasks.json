@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T09:42:06.811554",
+  "lastUpdated": "2026-03-31T10:39:23.310496",
   "tasks": [
     {
       "id": 1,
@@ -231,45 +231,45 @@
       "id": 26,
       "title": "React Native app setup with Expo",
       "description": "Initialize Expo project, install dependencies: react-native-paper, react-navigation, redux toolkit, react-native-maps, socket.io-client, onesignal-sdk. Configure for iOS + Android.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T09:42:06.811537",
+      "updated": "2026-03-31T10:19:27.346923",
       "errors": []
     },
     {
       "id": 27,
       "title": "Mobile: Auth screens (Login, Register, OTP)",
       "description": "Build login screen, register screen, email verification flow. JWT token storage, auto-login on app launch, logout functionality.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:27:59.916494",
       "errors": []
     },
     {
       "id": 28,
       "title": "Mobile: Profile creation wizard (5 steps)",
       "description": "Step 1: basic info (name, age, gender, GPS location). Step 2: photo upload (3-6). Step 3: relationship intention. Step 4: activity preferences (2-4). Step 5: bio & interests.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:33:32.176408",
       "errors": []
     },
     {
       "id": 29,
       "title": "Mobile: Discover swipe cards",
       "description": "Tinder-style card stack, swipe right/left animations, show photos/age/distance/shared activities/bio. 60 FPS, pull-to-refresh. Optimistic UI for swipes.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:38:48.515691",
       "errors": []
     },
     {
       "id": 30,
       "title": "Mobile: Matches list screen",
       "description": "List all matches with profile previews, last message preview, online status, unread count. Tap to open chat or proposal.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:39:23.310479",
       "errors": []
     },
     {

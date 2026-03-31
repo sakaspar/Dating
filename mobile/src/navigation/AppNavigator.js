@@ -22,7 +22,7 @@ import RegisterScreen from '../screens/RegisterScreen';
 import ProfileWizardScreen from '../screens/ProfileWizardScreen';
 // Main screens
 import DiscoverScreen from '../screens/DiscoverScreen';
-// import MatchesScreen from '../screens/MatchesScreen';
+import MatchesScreen from '../screens/MatchesScreen';
 // import GroupsScreen from '../screens/GroupsScreen';
 // import ProfileScreen from '../screens/ProfileScreen';
 // import ChatScreen from '../screens/ChatScreen';
@@ -62,7 +62,7 @@ function MainTabs() {
       />
       <Tab.Screen
         name="Matches"
-        children={() => <PlaceholderScreen name="Matches" />}
+        component={MatchesScreen}
         options={{ tabBarLabel: 'Matches', tabBarIcon: () => null }}
       />
       <Tab.Screen

@@ -5,6 +5,8 @@ const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
 const { notifyNewMatch } = require('../utils/notifications');
 const { track } = require('../utils/analytics');
+let isUserOnline;
+try { ({ isUserOnline } = require('../socket/chat')); } catch (e) { isUserOnline = () => false; }
 
 const router = express.Router();
 const db = getDB();
@@ -122,6 +124,8 @@ router.get('/', authMiddleware, async (req, res) => {
     const activeMatches = await db.readIndex('active_matches');
     const matchIds = activeMatches[userId] || [];
 
+    const currentUser = await db.read('users', userId);
+
     const matches = [];
     for (const matchId of matchIds) {
       const match = await db.read('matches', matchId);
@@ -133,12 +137,42 @@ router.get('/', authMiddleware, async (req, res) => {
       if (!otherUser) continue;
 
       const { password, ...safeUser } = otherUser;
+
+      // Get last message from conversation
+      const conversation = await db.read('messages', `conversation_${matchId}`);
+      let lastMessage = null;
+      let unreadCount = 0;
+      if (conversation?.messages?.length) {
+        const sorted = [...conversation.messages].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        lastMessage = sorted[0];
+        unreadCount = sorted.filter(m => m.senderId !== userId && !m.read).length;
+      }
+
+      // Calculate shared activities
+      const userActivities = currentUser?.preferences?.activities || [];
+      const otherActivities = otherUser?.preferences?.activities || [];
+      const sharedActivities = userActivities.filter(a => otherActivities.includes(a));
+
+      // Online status from socket module
+      const isOnline = isUserOnline ? isUserOnline(otherUserId) : false;
+
       matches.push({
         matchId: match.id,
+        id: match.id,
         matchedAt: match.createdAt,
-        user: safeUser
+        user: safeUser,
+        otherUser: { ...safeUser, online: isOnline, sharedActivities },
+        lastMessage,
+        unreadCount,
       });
     }
+
+    // Sort by most recent activity (last message or match time)
+    matches.sort((a, b) => {
+      const timeA = a.lastMessage?.timestamp || a.matchedAt;
+      const timeB = b.lastMessage?.timestamp || b.matchedAt;
+      return new Date(timeB) - new Date(timeA);
+    });
 
     res.json({ matches });
   } catch (err) {
