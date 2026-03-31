@@ -11,9 +11,7 @@
 import { io } from 'socket.io-client';
 import AsyncStorage from '../utils/storage';
 
-const SOCKET_URL = __DEV__
-  ? 'http://localhost:3000'
-  : 'https://your-rpi-url.com';
+const SOCKET_URL = 'https://0a6b-197-26-43-196.ngrok-free.app';
 
 let socket = null;
 

@@ -9,6 +9,7 @@
  */
 
 import React, { useState, useRef } from 'react';
+import * as ImagePicker from 'expo-image-picker';
 import {
   View,
   StyleSheet,
@@ -268,6 +269,37 @@ export default function ProfileWizardScreen({ navigation }) {
     </View>
   );
 
+  const pickImage = async (index) => {
+    // If slot already has photo, remove it
+    if (photos[index]) {
+      const newPhotos = [...photos];
+      newPhotos.splice(index, 1);
+      setPhotos(newPhotos);
+      return;
+    }
+
+    // Request permissions
+    const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+    if (status !== 'granted') {
+      alert('Permission to access photos is required!');
+      return;
+    }
+
+    // Launch picker
+    const result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [3, 4],
+      quality: 0.8,
+    });
+
+    if (!result.canceled && result.assets?.[0]) {
+      const newPhotos = [...photos];
+      newPhotos.push(result.assets[0].uri);
+      setPhotos(newPhotos);
+    }
+  };
+
   const renderStep2 = () => (
     <View style={styles.stepContent}>
       <Text style={styles.stepTitle}>Add Photos</Text>
@@ -278,19 +310,7 @@ export default function ProfileWizardScreen({ navigation }) {
           <TouchableOpacity
             key={index}
             style={[styles.photoSlot, photos[index] && styles.photoSlotFilled]}
-            onPress={() => {
-              // In production, this opens image picker
-              // For now, add placeholder
-              if (index <= photos.length) {
-                const newPhotos = [...photos];
-                if (newPhotos[index]) {
-                  newPhotos.splice(index, 1);
-                } else {
-                  newPhotos.push(`placeholder_${Date.now()}`);
-                }
-                setPhotos(newPhotos);
-              }
-            }}
+            onPress={() => pickImage(index)}
           >
             <IconButton
               icon={photos[index] ? 'close' : 'camera-plus-outline'}

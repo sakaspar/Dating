@@ -10,10 +10,8 @@
 
 import AsyncStorage from '../utils/storage';
 
-// Change this to your Raspberry Pi URL for production
-const API_URL = __DEV__
-  ? 'http://localhost:3000/api'
-  : 'https://your-rpi-url.com/api';
+// RPi via ngrok tunnel — accessible from any network
+const API_URL = 'https://0a6b-197-26-43-196.ngrok-free.app/api';
 
 const api = {
   async request(endpoint, options = {}) {
