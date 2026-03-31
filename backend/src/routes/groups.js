@@ -9,9 +9,11 @@
  * - GET    /api/groups           — Browse groups with filters
  * - GET    /api/groups/:id       — Get group details
  *
- * Routes (task #19 — join/approve/chat, to be implemented next):
+ * Routes (task #19 — join/approve/chat):
  * - POST   /api/groups/:id/join                — Request to join
  * - PUT    /api/groups/:id/approve/:userId      — Creator approves member
+ * - DELETE /api/groups/:id/leave                — Leave a group
+ * - DELETE /api/groups/:id/kick/:userId         — Creator kicks member
  * - GET    /api/groups/:id/messages             — Group chat history
  */
 
@@ -284,6 +286,327 @@ router.get('/:id', authMiddleware, async (req, res) => {
   } catch (err) {
     console.error('GET /groups/:id error:', err);
     res.status(500).json({ error: 'Failed to load group' });
+  }
+});
+
+// -------------------------------------------------------
+// POST /api/groups/:id/join — Request to join a group
+// -------------------------------------------------------
+router.post('/:id/join', authMiddleware, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const groupId = req.params.id;
+
+    const group = await db.read('groups', groupId);
+    if (!group) return res.status(404).json({ error: 'Group not found' });
+
+    if (group.status !== 'open') {
+      return res.status(400).json({ error: `Group is ${group.status}, not accepting new members` });
+    }
+
+    // Check if already a member
+    const existingMember = group.members?.find(m => m.userId === userId);
+    if (existingMember) {
+      return res.status(400).json({ error: `You are already a ${existingMember.status} member` });
+    }
+
+    // Check if already has pending request
+    if (group.pendingRequests?.includes(userId)) {
+      return res.status(400).json({ error: 'You already have a pending request' });
+    }
+
+    // Check if group is full
+    const approvedCount = group.members?.filter(m => m.status === 'approved').length || 0;
+    const totalSpots = group.currentGroupSize + group.lookingFor;
+    if (approvedCount >= totalSpots) {
+      return res.status(400).json({ error: 'Group is full' });
+    }
+
+    // Check age range
+    const user = await db.read('users', userId);
+    if (!user) return res.status(404).json({ error: 'User not found' });
+
+    if (user.age && group.ageRange) {
+      if (user.age < group.ageRange.min || user.age > group.ageRange.max) {
+        return res.status(400).json({ error: `Group requires ages ${group.ageRange.min}-${group.ageRange.max}` });
+      }
+    }
+
+    // Check gender preference
+    if (group.genderPreference && group.genderPreference !== 'any') {
+      if (user.gender && user.gender !== group.genderPreference) {
+        return res.status(400).json({ error: `Group is looking for ${group.genderPreference} members only` });
+      }
+    }
+
+    // Add pending request
+    const pendingRequests = [...(group.pendingRequests || []), userId];
+    await db.update('groups', groupId, { pendingRequests });
+
+    // Notify group creator via Socket.io
+    try {
+      const { io } = require('../server');
+      if (io) {
+        io.to(`user:${group.creatorId}`).emit('group:joinRequest', {
+          groupId,
+          groupTitle: group.title,
+          userId,
+          userName: user.name || 'Anonymous',
+          userPhoto: (user.photos && user.photos.length > 0) ? user.photos[0] : null
+        });
+      }
+    } catch (_) { /* Socket.io not available */ }
+
+    res.json({ message: 'Join request sent', groupId });
+  } catch (err) {
+    console.error('POST /groups/:id/join error:', err);
+    res.status(500).json({ error: 'Failed to request join' });
+  }
+});
+
+// -------------------------------------------------------
+// PUT /api/groups/:id/approve/:userId — Creator approves a member
+// -------------------------------------------------------
+router.put('/:id/approve/:userId', authMiddleware, async (req, res) => {
+  try {
+    const creatorId = req.user.id;
+    const groupId = req.params.id;
+    const targetUserId = req.params.userId;
+
+    const group = await db.read('groups', groupId);
+    if (!group) return res.status(404).json({ error: 'Group not found' });
+
+    // Only creator can approve
+    if (group.creatorId !== creatorId) {
+      return res.status(403).json({ error: 'Only the group creator can approve members' });
+    }
+
+    // Check target has a pending request
+    if (!group.pendingRequests?.includes(targetUserId)) {
+      return res.status(400).json({ error: 'No pending request from this user' });
+    }
+
+    // Check if group is full
+    const approvedCount = group.members?.filter(m => m.status === 'approved').length || 0;
+    const totalSpots = group.currentGroupSize + group.lookingFor;
+    if (approvedCount >= totalSpots) {
+      return res.status(400).json({ error: 'Group is full' });
+    }
+
+    // Get target user info
+    const targetUser = await db.read('users', targetUserId);
+    if (!targetUser) return res.status(404).json({ error: 'User not found' });
+
+    // Move from pending to members
+    const pendingRequests = group.pendingRequests.filter(id => id !== targetUserId);
+    const newApprovedCount = approvedCount + 1;
+    const members = [
+      ...(group.members || []),
+      {
+        userId: targetUserId,
+        name: targetUser.name || 'Anonymous',
+        role: 'member',
+        status: 'approved',
+        joinedAt: new Date().toISOString()
+      }
+    ];
+
+    // Check if group is now full
+    const updates = { members, pendingRequests };
+    if (newApprovedCount >= totalSpots) {
+      updates.status = 'full';
+    }
+
+    await db.update('groups', groupId, updates);
+
+    // Notify approved user via Socket.io
+    try {
+      const { io } = require('../server');
+      if (io) {
+        io.to(`user:${targetUserId}`).emit('group:approved', {
+          groupId,
+          groupTitle: group.title,
+          approvedBy: creatorId
+        });
+
+        // Notify all group members that a new member joined
+        io.to(`group:${groupId}`).emit('group:memberJoined', {
+          groupId,
+          userId: targetUserId,
+          userName: targetUser.name || 'Anonymous'
+        });
+      }
+    } catch (_) { /* Socket.io not available */ }
+
+    res.json({ message: 'Member approved', groupId, userId: targetUserId, spotsLeft: totalSpots - newApprovedCount });
+  } catch (err) {
+    console.error('PUT /groups/:id/approve/:userId error:', err);
+    res.status(500).json({ error: 'Failed to approve member' });
+  }
+});
+
+// -------------------------------------------------------
+// DELETE /api/groups/:id/leave — Leave a group
+// -------------------------------------------------------
+router.delete('/:id/leave', authMiddleware, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const groupId = req.params.id;
+
+    const group = await db.read('groups', groupId);
+    if (!group) return res.status(404).json({ error: 'Group not found' });
+
+    // Creator cannot leave — must delete/cancel the group
+    if (group.creatorId === userId) {
+      return res.status(400).json({ error: 'Creators cannot leave their own group. Cancel it instead.' });
+    }
+
+    // Check if user is a member
+    const memberIndex = (group.members || []).findIndex(m => m.userId === userId);
+    if (memberIndex === -1) {
+      return res.status(400).json({ error: 'You are not a member of this group' });
+    }
+
+    // Remove from members
+    const members = group.members.filter(m => m.userId !== userId);
+
+    // If group was full, reopen it
+    const updates = { members };
+    if (group.status === 'full') {
+      updates.status = 'open';
+    }
+
+    await db.update('groups', groupId, updates);
+
+    // Notify group via Socket.io
+    try {
+      const { io } = require('../server');
+      if (io) {
+        io.to(`group:${groupId}`).emit('group:memberLeft', {
+          groupId,
+          userId,
+          reason: 'left'
+        });
+      }
+    } catch (_) { /* Socket.io not available */ }
+
+    res.json({ message: 'Left group', groupId });
+  } catch (err) {
+    console.error('DELETE /groups/:id/leave error:', err);
+    res.status(500).json({ error: 'Failed to leave group' });
+  }
+});
+
+// -------------------------------------------------------
+// DELETE /api/groups/:id/kick/:userId — Creator kicks a member
+// -------------------------------------------------------
+router.delete('/:id/kick/:userId', authMiddleware, async (req, res) => {
+  try {
+    const creatorId = req.user.id;
+    const groupId = req.params.id;
+    const targetUserId = req.params.userId;
+
+    const group = await db.read('groups', groupId);
+    if (!group) return res.status(404).json({ error: 'Group not found' });
+
+    // Only creator can kick
+    if (group.creatorId !== creatorId) {
+      return res.status(403).json({ error: 'Only the group creator can kick members' });
+    }
+
+    // Cannot kick yourself
+    if (targetUserId === creatorId) {
+      return res.status(400).json({ error: 'Cannot kick yourself. Cancel the group instead.' });
+    }
+
+    // Check if target is a member
+    const memberIndex = (group.members || []).findIndex(m => m.userId === targetUserId);
+    if (memberIndex === -1) {
+      return res.status(400).json({ error: 'User is not a member of this group' });
+    }
+
+    // Remove from members
+    const members = group.members.filter(m => m.userId !== targetUserId);
+
+    const updates = { members };
+    if (group.status === 'full') {
+      updates.status = 'open';
+    }
+
+    await db.update('groups', groupId, updates);
+
+    // Notify via Socket.io
+    try {
+      const { io } = require('../server');
+      if (io) {
+        io.to(`user:${targetUserId}`).emit('group:kicked', {
+          groupId,
+          groupTitle: group.title,
+          kickedBy: creatorId
+        });
+
+        io.to(`group:${groupId}`).emit('group:memberLeft', {
+          groupId,
+          userId: targetUserId,
+          reason: 'kicked'
+        });
+      }
+    } catch (_) { /* Socket.io not available */ }
+
+    res.json({ message: 'Member kicked', groupId, userId: targetUserId });
+  } catch (err) {
+    console.error('DELETE /groups/:id/kick/:userId error:', err);
+    res.status(500).json({ error: 'Failed to kick member' });
+  }
+});
+
+// -------------------------------------------------------
+// GET /api/groups/:id/messages — Group chat history
+// -------------------------------------------------------
+router.get('/:id/messages', authMiddleware, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const groupId = req.params.id;
+    const page = parseInt(req.query.page) || 1;
+    const limit = Math.min(parseInt(req.query.limit) || 50, 100);
+
+    const group = await db.read('groups', groupId);
+    if (!group) return res.status(404).json({ error: 'Group not found' });
+
+    // Must be an approved member to see messages
+    const isMember = group.members?.some(m => m.userId === userId && m.status === 'approved');
+    if (!isMember && group.creatorId !== userId) {
+      return res.status(403).json({ error: 'Only group members can view messages' });
+    }
+
+    // Load group messages
+    const groupMsgId = `group_${groupId}`;
+    const conversation = await db.read('group_messages', groupMsgId);
+
+    if (!conversation) {
+      return res.json({ messages: [], pagination: { page, limit, total: 0, totalPages: 0 } });
+    }
+
+    const allMessages = conversation.messages || [];
+
+    // Pagination (newest first, then slice)
+    const total = allMessages.length;
+    const startIndex = Math.max(0, total - (page * limit));
+    const endIndex = Math.max(0, total - ((page - 1) * limit));
+    const messages = allMessages.slice(startIndex, endIndex);
+
+    res.json({
+      messages,
+      pagination: {
+        page,
+        limit,
+        total,
+        totalPages: Math.ceil(total / limit)
+      }
+    });
+  } catch (err) {
+    console.error('GET /groups/:id/messages error:', err);
+    res.status(500).json({ error: 'Failed to load messages' });
   }
 });
 

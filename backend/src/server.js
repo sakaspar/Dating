@@ -22,6 +22,10 @@ const io = new Server(server, {
 const { initChatSocket } = require('./socket/chat');
 initChatSocket(io);
 
+// Initialize group chat
+const { initGroupChatSocket } = require('./socket/groupChat');
+initGroupChatSocket(io);
+
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
 app.use(express.json({ limit: '5mb' }));
