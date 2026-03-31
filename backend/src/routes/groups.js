@@ -22,6 +22,7 @@ const { getDB } = require('../utils/db');
 const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
 const { ACTIVITY_TYPES, NEIGHBORHOODS, GENDERS } = require('../utils/constants');
+const { notifyGroupJoinRequest, notifyGroupApproved } = require('../utils/notifications');
 
 const router = express.Router();
 const db = getDB();
@@ -357,6 +358,9 @@ router.post('/:id/join', authMiddleware, async (req, res) => {
       }
     } catch (_) { /* Socket.io not available */ }
 
+    // Push notification to creator
+    notifyGroupJoinRequest(group.creatorId, user.name || 'Someone', groupId, group.title).catch(() => {});
+
     res.json({ message: 'Join request sent', groupId });
   } catch (err) {
     console.error('POST /groups/:id/join error:', err);
@@ -437,6 +441,9 @@ router.put('/:id/approve/:userId', authMiddleware, async (req, res) => {
         });
       }
     } catch (_) { /* Socket.io not available */ }
+
+    // Push notification to approved user
+    notifyGroupApproved(targetUserId, group.title, groupId).catch(() => {});
 
     res.json({ message: 'Member approved', groupId, userId: targetUserId, spotsLeft: totalSpots - newApprovedCount });
   } catch (err) {

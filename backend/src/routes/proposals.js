@@ -18,6 +18,7 @@ const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
 const { ACTIVITY_TYPES, NEIGHBORHOODS, BUDGET_RANGES } = require('../utils/constants');
 const { searchPlaces, searchPlace } = require('../utils/osm');
+const { notifyProposalReceived, notifyProposalAccepted, notifyProposalDeclined, notifyProposalModified } = require('../utils/notifications');
 
 const router = express.Router();
 const db = getDB();
@@ -114,6 +115,12 @@ router.post('/', authMiddleware, validate(createProposalSchema), async (req, res
       }
     } catch (_) { /* Socket.io not available */ }
 
+    // Push notification
+    const proposer = await db.read('users', userId);
+    notifyProposalReceived(
+      recipientId, proposer?.name || 'Someone', matchId, proposal.id, validActivity.label
+    ).catch(() => {});
+
     res.status(201).json({ proposal });
   } catch (err) {
     console.error('POST /proposals error:', err);
@@ -206,6 +213,10 @@ router.put('/:id/accept', authMiddleware, async (req, res) => {
       }
     } catch (_) { /* Socket.io not available */ }
 
+    // Push notification to proposer
+    const accepter = await db.read('users', userId);
+    notifyProposalAccepted(proposal.proposerId, accepter?.name || 'Someone', proposal.matchId, proposal.id).catch(() => {});
+
     res.json({ proposal: updated, confirmedDate });
   } catch (err) {
     console.error('PUT /proposals/:id/accept error:', err);
@@ -250,6 +261,10 @@ router.put('/:id/decline', authMiddleware, async (req, res) => {
         });
       }
     } catch (_) { /* Socket.io not available */ }
+
+    // Push notification to proposer
+    const decliner = await db.read('users', userId);
+    notifyProposalDeclined(proposal.proposerId, decliner?.name || 'Someone', proposal.matchId, proposal.id).catch(() => {});
 
     res.json({ proposal: updated });
   } catch (err) {
@@ -343,6 +358,10 @@ router.put('/:id/modify', authMiddleware, validate(modifyProposalSchema), async 
         });
       }
     } catch (_) { /* Socket.io not available */ }
+
+    // Push notification to proposer
+    const modifier = await db.read('users', userId);
+    notifyProposalModified(proposal.proposerId, modifier?.name || 'Someone', proposal.matchId, proposal.id).catch(() => {});
 
     res.json({ proposal: updated });
   } catch (err) {

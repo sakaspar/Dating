@@ -14,6 +14,7 @@
 
 const jwt = require('jsonwebtoken');
 const { getDB } = require('../utils/db');
+const { notifyNewMessage } = require('../utils/notifications');
 
 // In-memory map: userId -> Set of socketIds (supports multiple devices)
 const onlineUsers = new Map();
@@ -139,6 +140,14 @@ function initChatSocket(io) {
         });
 
         respond(callback, { success: true, message });
+
+        // Send push notification to the other user (if offline)
+        const recipientId = match.users.find(u => u !== userId);
+        if (recipientId && !onlineUsers.has(recipientId)) {
+          const sender = await db.read('users', userId);
+          const senderName = sender?.name || 'Someone';
+          notifyNewMessage(recipientId, senderName, matchId, trimmedText).catch(() => {});
+        }
 
         console.log(`💬 Message in match ${matchId}: ${userId} -> ${trimmedText.substring(0, 50)}`);
       } catch (err) {

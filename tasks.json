@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T08:30:04.066886",
+  "lastUpdated": "2026-03-31T09:10:28.553033",
   "tasks": [
     {
       "id": 1,
@@ -24,180 +24,180 @@
       "id": 3,
       "title": "Build JSON Database Manager module",
       "description": "Reusable module: CRUD on JSON files, unique IDs, in-memory caching (node-cache), index files for fast lookups, Haversine proximity search, daily automated backups via cron, file-based indexing",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:31:04.590515",
       "errors": []
     },
     {
       "id": 4,
       "title": "Create /data folder structure",
       "description": "Create all JSON data lake directories: /users, /matches, /messages, /proposals, /groups, /swipes, /reports, /indexes, /backups, /analytics, /uploads",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:31:14.347654",
       "errors": []
     },
     {
       "id": 5,
       "title": "Express.js server setup with middleware",
       "description": "Create main server file: Express app, CORS, rate limiting (100 req/15min), Joi input validation, XSS protection, JWT middleware, error handling, health check endpoint, static file serving for uploads",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:32:41.557821",
       "errors": []
     },
     {
       "id": 6,
       "title": "Auth routes: register, login, logout, me",
       "description": "POST /api/auth/register (email+password, bcrypt 10 rounds, JWT 7-day), POST /api/auth/login, POST /api/auth/logout, GET /api/auth/me. Store in /users/{id}.json, index in /indexes/user_by_email.json",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:35:27.122622",
       "errors": []
     },
     {
       "id": 7,
       "title": "User profile CRUD routes",
       "description": "GET/PUT /api/users/profile, POST /api/users/photos (multer+sharp, resize+compress, thumbnails), DELETE /api/users/photos/:id, PUT /api/users/preferences. Store photos in /uploads/users/{id}/",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:36:20.489640",
       "errors": []
     },
     {
       "id": 8,
       "title": "Tunisian neighborhoods & constants data",
       "description": "Create constants file with: Tunis neighborhoods list (12 areas with lat/lon coords), budget ranges (Low<30TND, Medium 30-80, High>80), activity types (6 categories), relationship intentions, gender options",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:36:20.498500",
       "errors": []
     },
     {
       "id": 9,
       "title": "Matching algorithm implementation",
       "description": "Smart matching: 50km radius via Haversine, filter by gender pref/age range/existing swipes/active users, score by shared activities (highest weight)/shared interests/intention compat/distance/profile completeness/recent activity. Return top 20 sorted.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:37:24.860873",
       "errors": []
     },
     {
       "id": 10,
       "title": "Swipe routes & match detection",
       "description": "GET /api/matches/discover (potential matches), POST /api/matches/swipe (record like/pass in /swipes/{user_id}_swipes.json), mutual like detection \u2192 create /matches/{match_id}.json, update /indexes/active_matches.json, trigger OneSignal notification",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:37:24.870706",
       "errors": []
     },
     {
       "id": 11,
       "title": "Match list & unmatch routes",
       "description": "GET /api/matches (user's matches with profile previews), DELETE /api/matches/:id (unmatch, remove from index, clean up conversation)",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:37:35.049879",
       "errors": []
     },
     {
       "id": 12,
       "title": "Socket.io real-time chat server",
       "description": "Socket.io setup with JWT auth, events: message:send, message:receive, message:read, typing:start, typing:stop, user:online, user:offline. Store messages in /messages/conversation_{match_id}.json. Only matched users can chat.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:43:38.228245",
       "errors": []
     },
     {
       "id": 13,
       "title": "Chat HTTP fallback routes",
       "description": "GET /api/chat/conversations (list all), GET /api/chat/:conversationId/messages (history with pagination), POST /api/chat/:conversationId/messages (HTTP fallback send)",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:44:48.174589",
       "errors": []
     },
     {
       "id": 14,
       "title": "Date proposal creation & storage",
       "description": "POST /api/proposals \u2014 form: activity type, date (future only), time, neighborhood, budget range, suggested place, notes. Store in /proposals/{proposal_id}.json with status: pending. Send push notification to recipient.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:46:37.651341",
       "errors": []
     },
     {
       "id": 15,
       "title": "Proposal response flow (accept/decline/modify)",
       "description": "PUT /api/proposals/:id/accept (create confirmed date in /confirmed_dates/), PUT /api/proposals/:id/decline, PUT /api/proposals/:id/modify (counter-proposal with modification history). Push notifications for each action.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:46:37.919001",
       "errors": []
     },
     {
       "id": 16,
       "title": "Smart suggestions with OpenStreetMap",
       "description": "GET /api/proposals/suggestions/:matchId \u2014 show shared activities, for each suggest 2-3 places via Overpass API (cafes, restaurants, parks), calculate distance from both users via Haversine, return name/address/distance. Use Nominatim for geocoding.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:49:44.282347",
       "errors": []
     },
     {
       "id": 17,
       "title": "Proposal list route",
       "description": "GET /api/proposals/:matchId \u2014 list all proposals for a match with status and history",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:46:38.421940",
       "errors": []
     },
     {
       "id": 18,
       "title": "Group activities CRUD",
       "description": "POST /api/groups (create: activity type, title, desc, date, location, group size, looking for X more, visibility, age range, gender pref), GET /api/groups (browse with filters), GET /api/groups/:id. Store in /groups/{group_id}.json.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:05:58.263950",
       "errors": []
     },
     {
       "id": 19,
       "title": "Group join/approve flow & group chat",
       "description": "POST /api/groups/:id/join (request), PUT /api/groups/:id/approve/:userId (creator approves), group Socket.io chat events, GET /api/groups/:id/messages. Store group messages in /group_messages/{group_id}.json.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:08:18.952664",
       "errors": []
     },
     {
       "id": 20,
       "title": "Safety: report system",
       "description": "POST /api/safety/report \u2014 reasons: inappropriate behavior, fake profile, harassment, scam. Optional evidence upload. Store in /reports/{report_id}.json. Admin review queue endpoint.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:10:00.601993",
       "errors": []
     },
     {
       "id": 21,
       "title": "Safety: block system",
       "description": "POST /api/safety/block (block user, unmatch, remove from discovery), GET /api/safety/blocked, DELETE /api/safety/block/:userId. Store blocked IDs in user JSON. Filter blocked users from all queries.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:10:02.151524",
       "errors": []
     },
     {
       "id": 22,
       "title": "OneSignal push notification integration",
       "description": "Setup OneSignal free tier, create backend SDK integration, send notifications for: new matches, new messages, date proposals, group invites, proposal responses. Configure for iOS + Android.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:10:28.553009",
       "errors": []
     },
     {

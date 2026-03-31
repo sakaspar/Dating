@@ -16,11 +16,12 @@ Full spec: `SPEC.md` in workspace root.
 1. Read `tasks.json` → pick first task with status "open"
 2. Update status to "in-progress" via API: `curl -X PATCH http://localhost:8787/api/tasks/{id} -H 'Content-Type: application/json' -d '{"status":"in-progress"}'`
 3. Read SPEC.md for full requirements on the feature
-4. Do the work. Commit to git with clear message.
-5. On success: `curl -X PATCH http://localhost:8787/api/tasks/{id} -H 'Content-Type: application/json' -d '{"status":"done"}'`
-6. On failure: `curl -X PATCH http://localhost:8787/api/tasks/{id} -H 'Content-Type: application/json' -d '{"error":"description of what went wrong"}'`
-7. Push to origin/main
-8. Repeat from step 1
+4. Do the work.
+5. **Commit with task number:** `git commit -m "task #{id}: {task title}"` (e.g. `task #12: Socket.io real-time chat server`)
+6. On success: `curl -X PATCH http://localhost:8787/api/tasks/{id} -H 'Content-Type: application/json' -d '{"status":"done"}'`
+7. On failure: `curl -X PATCH http://localhost:8787/api/tasks/{id} -H 'Content-Type: application/json' -d '{"error":"description of what went wrong"}'`
+8. Push to origin/main
+9. Repeat from step 1
 
 **Task statuses:** `open` → `in-progress` → `done`
 **Errors:** appended to task's `errors[]` array — visible on the board

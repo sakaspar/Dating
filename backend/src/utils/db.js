@@ -195,7 +195,8 @@ class JsonDB {
     const backupDir = path.join(this.dataDir, 'backups', date);
     await this._ensureDir(backupDir);
 
-    const collections = ['users', 'matches', 'messages', 'proposals', 'groups', 'swipes', 'reports', 'indexes'];
+    const collections = ['users', 'matches', 'messages', 'proposals', 'groups', 'swipes', 'reports', 'indexes', 'analytics', 'confirmed_dates', 'group_messages'];
+    let fileCount = 0;
     for (const collection of collections) {
       const srcDir = this._getCollectionPath(collection);
       const destDir = path.join(backupDir, collection);
@@ -205,6 +206,7 @@ class JsonDB {
         for (const file of files) {
           if (file.endsWith('.json')) {
             await fs.copyFile(path.join(srcDir, file), path.join(destDir, file));
+            fileCount++;
           }
         }
       } catch (err) {
@@ -212,8 +214,52 @@ class JsonDB {
       }
     }
 
-    console.log(`✅ Backup completed: ${backupDir}`);
+    const logEntry = { date, timestamp: new Date().toISOString(), filesBackedUp: fileCount, status: 'success' };
+    await this._ensureDir(path.join(this.dataDir, 'backups'));
+    const logPath = path.join(this.dataDir, 'backups', 'backup_log.json');
+    let log = [];
+    try {
+      const raw = await fs.readFile(logPath, 'utf8');
+      log = JSON.parse(raw);
+    } catch (e) { /* first backup */ }
+    log.push(logEntry);
+    await fs.writeFile(logPath, JSON.stringify(log, null, 2));
+
+    console.log(`✅ Backup completed: ${backupDir} (${fileCount} files)`);
     return backupDir;
+  }
+
+  // BACKUP CLEANUP - Remove backups older than N days
+  async cleanupOldBackups(daysToKeep = 30) {
+    const backupsDir = path.join(this.dataDir, 'backups');
+    try {
+      const entries = await fs.readdir(backupsDir, { withFileTypes: true });
+      const cutoff = Date.now() - (daysToKeep * 24 * 60 * 60 * 1000);
+      let removed = 0;
+
+      for (const entry of entries) {
+        if (!entry.isDirectory()) continue;
+        const dirPath = path.join(backupsDir, entry.name);
+        // Directory names are dates: YYYY-MM-DD
+        const dirDate = new Date(entry.name);
+        if (isNaN(dirDate.getTime())) continue;
+        if (dirDate.getTime() < cutoff) {
+          await fs.rm(dirPath, { recursive: true, force: true });
+          removed++;
+          console.log(`🗑️ Removed old backup: ${entry.name}`);
+        }
+      }
+      return removed;
+    } catch (err) {
+      if (err.code === 'ENOENT') return 0;
+      throw err;
+    }
+  }
+
+  // STATS - Get collection stats
+  async stats(collection) {
+    const records = await this.list(collection);
+    return { collection, count: records.length };
   }
 
   // Clear cache for a collection
