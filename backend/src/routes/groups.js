@@ -23,6 +23,7 @@ const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
 const { ACTIVITY_TYPES, NEIGHBORHOODS, GENDERS } = require('../utils/constants');
 const { notifyGroupJoinRequest, notifyGroupApproved } = require('../utils/notifications');
+const { track } = require('../utils/analytics');
 
 const router = express.Router();
 const db = getDB();
@@ -147,6 +148,9 @@ router.post('/', authMiddleware, validate(createGroupSchema), async (req, res) =
         });
       }
     } catch (_) { /* Socket.io not available */ }
+
+    // Track analytics
+    track('group').catch(() => {});
 
     res.status(201).json({ group });
   } catch (err) {

@@ -4,6 +4,7 @@ const { getMatches } = require('../utils/matching');
 const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
 const { notifyNewMatch } = require('../utils/notifications');
+const { track } = require('../utils/analytics');
 
 const router = express.Router();
 const db = getDB();
@@ -97,6 +98,9 @@ router.post('/swipe', authMiddleware, validate(swipeSchema), async (req, res) =>
         const userName = currentUser?.name || 'Someone';
         const targetName = targetUser?.name || 'Someone';
         notifyNewMatch([userId, targetUserId], matchId, userId === match.users[0] ? targetName : userName).catch(() => {});
+
+        // Track analytics
+        track('match').catch(() => {});
       }
     }
 

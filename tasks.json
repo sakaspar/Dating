@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T09:10:28.553033",
+  "lastUpdated": "2026-03-31T09:16:08.340358",
   "tasks": [
     {
       "id": 1,
@@ -195,18 +195,18 @@
       "id": 22,
       "title": "OneSignal push notification integration",
       "description": "Setup OneSignal free tier, create backend SDK integration, send notifications for: new matches, new messages, date proposals, group invites, proposal responses. Configure for iOS + Android.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T09:10:28.553009",
+      "updated": "2026-03-31T09:15:58.625142",
       "errors": []
     },
     {
       "id": 23,
       "title": "Analytics tracking module",
       "description": "Track in /analytics/daily_{date}.json: DAU, new registrations, matches created, proposals created/accepted (conversion rate), messages sent, group activities created, avg time match\u2192first proposal",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:16:08.340340",
       "errors": []
     },
     {

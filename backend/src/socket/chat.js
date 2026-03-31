@@ -15,6 +15,7 @@
 const jwt = require('jsonwebtoken');
 const { getDB } = require('../utils/db');
 const { notifyNewMessage } = require('../utils/notifications');
+const { track } = require('../utils/analytics');
 
 // In-memory map: userId -> Set of socketIds (supports multiple devices)
 const onlineUsers = new Map();
@@ -148,6 +149,9 @@ function initChatSocket(io) {
           const senderName = sender?.name || 'Someone';
           notifyNewMessage(recipientId, senderName, matchId, trimmedText).catch(() => {});
         }
+
+        // Track analytics
+        track('message').catch(() => {});
 
         console.log(`💬 Message in match ${matchId}: ${userId} -> ${trimmedText.substring(0, 50)}`);
       } catch (err) {

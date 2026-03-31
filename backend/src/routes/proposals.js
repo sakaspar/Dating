@@ -19,6 +19,7 @@ const { validate, Joi } = require('../middleware/validate');
 const { ACTIVITY_TYPES, NEIGHBORHOODS, BUDGET_RANGES } = require('../utils/constants');
 const { searchPlaces, searchPlace } = require('../utils/osm');
 const { notifyProposalReceived, notifyProposalAccepted, notifyProposalDeclined, notifyProposalModified } = require('../utils/notifications');
+const { track } = require('../utils/analytics');
 
 const router = express.Router();
 const db = getDB();
@@ -121,6 +122,12 @@ router.post('/', authMiddleware, validate(createProposalSchema), async (req, res
       recipientId, proposer?.name || 'Someone', matchId, proposal.id, validActivity.label
     ).catch(() => {});
 
+    // Track analytics (with match-to-proposal time)
+    track('proposal', {
+      matchCreatedAt: match.createdAt,
+      proposalCreatedAt: proposal.createdAt
+    }).catch(() => {});
+
     res.status(201).json({ proposal });
   } catch (err) {
     console.error('POST /proposals error:', err);
@@ -216,6 +223,9 @@ router.put('/:id/accept', authMiddleware, async (req, res) => {
     // Push notification to proposer
     const accepter = await db.read('users', userId);
     notifyProposalAccepted(proposal.proposerId, accepter?.name || 'Someone', proposal.matchId, proposal.id).catch(() => {});
+
+    // Track analytics
+    track('proposal_accepted').catch(() => {});
 
     res.json({ proposal: updated, confirmedDate });
   } catch (err) {

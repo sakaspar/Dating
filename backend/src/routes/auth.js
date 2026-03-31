@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const { getDB } = require('../utils/db');
 const { authMiddleware } = require('../middleware/auth');
 const { validate, Joi } = require('../middleware/validate');
+const { track } = require('../utils/analytics');
 
 const router = express.Router();
 const db = getDB();
@@ -52,6 +53,9 @@ router.post('/register', validate(registerSchema), async (req, res) => {
     // Add to email index
     await db.addToIndex('user_by_email', email.toLowerCase(), user.id);
 
+    // Track analytics
+    track('user').catch(() => {});
+
     // Generate JWT
     const token = jwt.sign(
       { id: user.id, email: user.email },
@@ -93,6 +97,9 @@ router.post('/login', validate(loginSchema), async (req, res) => {
 
     // Update last active
     await db.update('users', user.id, { lastActive: new Date().toISOString() });
+
+    // Track analytics
+    track('login', { userId: user.id }).catch(() => {});
 
     // Generate JWT
     const token = jwt.sign(
