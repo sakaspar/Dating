@@ -30,7 +30,11 @@ import GroupsScreen from '../screens/GroupsScreen';
 import GroupCreateScreen from '../screens/GroupCreateScreen';
 import GroupDetailScreen from '../screens/GroupDetailScreen';
 import GroupChatScreen from '../screens/GroupChatScreen';
-// import ProfileScreen from '../screens/ProfileScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import SafetyCenterScreen from '../screens/SafetyCenterScreen';
+import BlockedUsersScreen from '../screens/BlockedUsersScreen';
+import CommunityGuidelinesScreen from '../screens/CommunityGuidelinesScreen';
+import HelpSupportScreen from '../screens/HelpSupportScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -77,7 +81,7 @@ function MainTabs() {
       />
       <Tab.Screen
         name="Profile"
-        children={() => <PlaceholderScreen name="Profile" />}
+        component={ProfileScreen}
         options={{ tabBarLabel: 'Profile', tabBarIcon: () => null }}
       />
     </Tab.Navigator>
@@ -95,7 +99,12 @@ function MainStack() {
       <Stack.Screen name="ProposalCreate" component={ProposalCreateScreen} />
       <Stack.Screen name="ProposalView" component={ProposalViewScreen} />
       <Stack.Screen name="UserProfile" children={() => <PlaceholderScreen name="UserProfile" />} />
-      <Stack.Screen name="SafetyCenter" children={() => <PlaceholderScreen name="SafetyCenter" />} />
+      <Stack.Screen name="SafetyCenter" component={SafetyCenterScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="BlockedUsers" component={BlockedUsersScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="CommunityGuidelines" component={CommunityGuidelinesScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="HelpSupport" component={HelpSupportScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="ProfileEdit" children={() => <PlaceholderScreen name="ProfileEdit" />} options={{ headerShown: false }} />
+      <Stack.Screen name="Preferences" children={() => <PlaceholderScreen name="Preferences" />} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
