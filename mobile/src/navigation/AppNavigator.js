@@ -20,8 +20,8 @@ import { COLORS } from '../constants/theme';
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen';
 import ProfileWizardScreen from '../screens/ProfileWizardScreen';
-// Other screens (to be built in later tasks)
-// import DiscoverScreen from '../screens/DiscoverScreen';
+// Main screens
+import DiscoverScreen from '../screens/DiscoverScreen';
 // import MatchesScreen from '../screens/MatchesScreen';
 // import GroupsScreen from '../screens/GroupsScreen';
 // import ProfileScreen from '../screens/ProfileScreen';
@@ -57,7 +57,7 @@ function MainTabs() {
     >
       <Tab.Screen
         name="Discover"
-        children={() => <PlaceholderScreen name="Discover" />}
+        component={DiscoverScreen}
         options={{ tabBarLabel: 'Discover', tabBarIcon: () => null }}
       />
       <Tab.Screen
