@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T10:39:23.310496",
+  "lastUpdated": "2026-03-31T10:47:45.529770",
   "tasks": [
     {
       "id": 1,
@@ -267,18 +267,18 @@
       "id": 30,
       "title": "Mobile: Matches list screen",
       "description": "List all matches with profile previews, last message preview, online status, unread count. Tap to open chat or proposal.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T10:39:23.310479",
+      "updated": "2026-03-31T10:47:35.282682",
       "errors": []
     },
     {
       "id": 31,
       "title": "Mobile: Real-time chat screen",
       "description": "Socket.io chat UI: message bubbles, typing indicator, read receipts, online/offline status, message history scroll, push notifications for new messages.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T10:47:45.529752",
       "errors": []
     },
     {

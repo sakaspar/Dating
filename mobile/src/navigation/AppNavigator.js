@@ -23,9 +23,9 @@ import ProfileWizardScreen from '../screens/ProfileWizardScreen';
 // Main screens
 import DiscoverScreen from '../screens/DiscoverScreen';
 import MatchesScreen from '../screens/MatchesScreen';
+import ChatScreen from '../screens/ChatScreen';
 // import GroupsScreen from '../screens/GroupsScreen';
 // import ProfileScreen from '../screens/ProfileScreen';
-// import ChatScreen from '../screens/ChatScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -83,7 +83,7 @@ function MainStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
-      <Stack.Screen name="Chat" children={() => <PlaceholderScreen name="Chat" />} />
+      <Stack.Screen name="Chat" component={ChatScreen} />
       <Stack.Screen name="GroupChat" children={() => <PlaceholderScreen name="GroupChat" />} />
       <Stack.Screen name="ProposalCreate" children={() => <PlaceholderScreen name="ProposalCreate" />} />
       <Stack.Screen name="ProposalView" children={() => <PlaceholderScreen name="ProposalView" />} />
