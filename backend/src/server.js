@@ -62,6 +62,7 @@ app.use('/api/proposals', require('./routes/proposals'));
 app.use('/api/groups', require('./routes/groups'));
 app.use('/api/safety', require('./routes/safety'));
 app.use('/api/analytics', require('./routes/analytics'));
+app.use('/api/backup', require('./routes/backup'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -75,6 +76,10 @@ app.use((err, req, res, next) => {
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
+
+// Start backup scheduler
+const { startBackupScheduler } = require('./utils/backup-scheduler');
+startBackupScheduler();
 
 // Start server
 const PORT = process.env.PORT || 3000;

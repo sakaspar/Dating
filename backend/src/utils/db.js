@@ -10,7 +10,10 @@
  */
 
 const fs = require('fs').promises;
+const fss = require('fs'); // for streams
 const path = require('path');
+const zlib = require('zlib');
+const { pipeline } = require('stream/promises');
 const NodeCache = require('node-cache');
 const { v4: uuidv4 } = require('uuid');
 
@@ -229,29 +232,148 @@ class JsonDB {
     return backupDir;
   }
 
-  // BACKUP CLEANUP - Remove backups older than N days
-  async cleanupOldBackups(daysToKeep = 30) {
+  // COMPRESS - Gzip a backup directory into a .tar.gz archive
+  async compressBackup(dirPath) {
+    const tarPath = `${dirPath}.tar.gz`;
+
+    // Collect all files in the backup directory
+    const allFiles = [];
+    const collectFiles = async (dir, base = '') => {
+      const entries = await fs.readdir(dir, { withFileTypes: true });
+      for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        const relPath = path.join(base, entry.name);
+        if (entry.isDirectory()) {
+          await collectFiles(fullPath, relPath);
+        } else if (entry.isFile()) {
+          allFiles.push({ fullPath, relPath });
+        }
+      }
+    };
+    await collectFiles(dirPath);
+
+    // Create a simple tar-like archive and gzip it
+    const gzip = zlib.createGzip({ level: 6 });
+    const output = fss.createWriteStream(tarPath);
+
+    // Simple tar format: for each file, write a header + content
+    const writeHeader = (name, size) => {
+      // 512-byte tar header (simplified)
+      const header = Buffer.alloc(512);
+      header.write(name, 0, 100);           // file name
+      header.write('100644', 100, 8);       // mode
+      header.write('0000000', 108, 8);      // uid
+      header.write('0000000', 116, 8);      // gid
+      header.write(size.toString(8).padStart(11, '0'), 124, 12); // size (octal)
+      header.write(Math.floor(Date.now() / 1000).toString(8).padStart(11, '0'), 136, 12); // mtime
+      header.write('0', 156, 1);            // typeflag (file)
+      // checksum
+      let checksum = 0;
+      for (let i = 0; i < 512; i++) checksum += header[i];
+      header.write(checksum.toString(8).padStart(6, '0') + '\0 ', 148, 8);
+      return header;
+    };
+
+    const writePadding = (size) => {
+      const remainder = 512 - (size % 512);
+      if (remainder < 512) return Buffer.alloc(remainder);
+      return Buffer.alloc(0);
+    };
+
+    // Pipe through gzip to output
+    gzip.pipe(output);
+
+    for (const file of allFiles) {
+      const content = await fs.readFile(file.fullPath);
+      const header = writeHeader(file.relPath, content.length);
+      gzip.write(header);
+      gzip.write(content);
+      gzip.write(writePadding(content.length));
+    }
+
+    // End-of-archive marker (two 512-byte blocks of zeros)
+    gzip.write(Buffer.alloc(1024));
+    gzip.end();
+
+    await new Promise((resolve, reject) => {
+      output.on('finish', resolve);
+      output.on('error', reject);
+    });
+
+    // Remove original uncompressed directory
+    await fs.rm(dirPath, { recursive: true, force: true });
+
+    console.log(`📦 Compressed backup: ${tarPath}`);
+    return tarPath;
+  }
+
+  // BACKUP CLEANUP - Compress old backups, remove ancient ones
+  async cleanupOldBackups(daysToKeep = 30, daysToCompress = 3) {
     const backupsDir = path.join(this.dataDir, 'backups');
     try {
       const entries = await fs.readdir(backupsDir, { withFileTypes: true });
-      const cutoff = Date.now() - (daysToKeep * 24 * 60 * 60 * 1000);
+      const now = Date.now();
+      const cutoff = now - (daysToKeep * 24 * 60 * 60 * 1000);
+      const compressCutoff = now - (daysToCompress * 24 * 60 * 60 * 1000);
       let removed = 0;
+      let compressed = 0;
 
       for (const entry of entries) {
-        if (!entry.isDirectory()) continue;
         const dirPath = path.join(backupsDir, entry.name);
-        // Directory names are dates: YYYY-MM-DD
-        const dirDate = new Date(entry.name);
-        if (isNaN(dirDate.getTime())) continue;
-        if (dirDate.getTime() < cutoff) {
-          await fs.rm(dirPath, { recursive: true, force: true });
-          removed++;
-          console.log(`🗑️ Removed old backup: ${entry.name}`);
+
+        // Handle directory backups (YYYY-MM-DD format)
+        if (entry.isDirectory()) {
+          const dirDate = new Date(entry.name);
+          if (isNaN(dirDate.getTime())) continue;
+
+          if (dirDate.getTime() < cutoff) {
+            await fs.rm(dirPath, { recursive: true, force: true });
+            removed++;
+            console.log(`🗑️ Removed old backup: ${entry.name}`);
+          } else if (dirDate.getTime() < compressCutoff) {
+            // Only compress if not already compressed
+            const tarPath = `${dirPath}.tar.gz`;
+            try {
+              await fs.access(tarPath);
+              // Already compressed, skip
+            } catch {
+              await this.compressBackup(dirPath);
+              compressed++;
+            }
+          }
+        }
+
+        // Handle .tar.gz files older than cutoff
+        if (entry.isFile() && entry.name.endsWith('.tar.gz')) {
+          const dirDate = new Date(entry.name.replace('.tar.gz', ''));
+          if (isNaN(dirDate.getTime())) continue;
+          if (dirDate.getTime() < cutoff) {
+            await fs.unlink(dirPath);
+            removed++;
+            console.log(`🗑️ Removed old compressed backup: ${entry.name}`);
+          }
         }
       }
-      return removed;
+
+      // Update backup log with cleanup info
+      const logPath = path.join(backupsDir, 'backup_log.json');
+      try {
+        const raw = await fs.readFile(logPath, 'utf8');
+        const log = JSON.parse(raw);
+        log.push({
+          action: 'cleanup',
+          timestamp: new Date().toISOString(),
+          removed,
+          compressed,
+          daysToKeep,
+          daysToCompress
+        });
+        await fs.writeFile(logPath, JSON.stringify(log, null, 2));
+      } catch (e) { /* no log yet */ }
+
+      return { removed, compressed };
     } catch (err) {
-      if (err.code === 'ENOENT') return 0;
+      if (err.code === 'ENOENT') return { removed: 0, compressed: 0 };
       throw err;
     }
   }

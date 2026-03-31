@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T09:16:08.340358",
+  "lastUpdated": "2026-03-31T09:30:27.255409",
   "tasks": [
     {
       "id": 1,
@@ -204,18 +204,18 @@
       "id": 23,
       "title": "Analytics tracking module",
       "description": "Track in /analytics/daily_{date}.json: DAU, new registrations, matches created, proposals created/accepted (conversion rate), messages sent, group activities created, avg time match\u2192first proposal",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T09:16:08.340340",
+      "updated": "2026-03-31T09:29:38.285282",
       "errors": []
     },
     {
       "id": 24,
       "title": "Daily backup automation",
       "description": "Cron job to backup /data to /backups/{date}/, compress old backups, cleanup backups older than 30 days, log backup status",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T09:30:27.255392",
       "errors": []
     },
     {
