@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T11:01:02.053417",
+  "lastUpdated": "2026-03-31T11:56:45.569805",
   "tasks": [
     {
       "id": 1,
@@ -303,63 +303,63 @@
       "id": 34,
       "title": "Mobile: Groups tab & browse",
       "description": "Scrollable group activity cards, filter by type/date/location/distance, show creator info, participant count, join request button.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T11:01:02.053395",
+      "updated": "2026-03-31T11:10:56.169266",
       "errors": []
     },
     {
       "id": 35,
       "title": "Mobile: Group create, detail & group chat",
       "description": "Create group form, group detail view with members, approve/decline join requests (creator), group chat screen with Socket.io.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:21:55.346092",
       "errors": []
     },
     {
       "id": 36,
       "title": "Mobile: Profile & settings screens",
       "description": "View/edit own profile, preferences, safety center, blocked users list, help/safety tips page, community guidelines, logout.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:25:36.469482",
       "errors": []
     },
     {
       "id": 37,
       "title": "Mobile: OpenStreetMap integration",
       "description": "react-native-maps with OSM tiles, Nominatim place search with autocomplete, distance display, map markers for date locations.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:40:06.527350",
       "errors": []
     },
     {
       "id": 38,
       "title": "Redux state management setup",
       "description": "Configure Redux Toolkit slices: auth, profile, matches, chat, proposals, groups, safety. Persist auth state. Optimistic updates for swipes and messages.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:53:24.372054",
       "errors": []
     },
     {
       "id": 39,
       "title": "UI/UX polish: colors, typography, components",
       "description": "Apply design system: primary blue/purple, secondary coral/orange CTAs, success green, light gray background, dark gray text. React Native Paper theming. Activity icons throughout.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:56:41.394239",
       "errors": []
     },
     {
       "id": 40,
       "title": "End-to-end testing all flows",
       "description": "Test: registration\u2192profile\u2192discover\u2192swipe\u2192match\u2192chat\u2192proposal\u2192accept/decline\u2192groups\u2192join\u2192group chat\u2192report\u2192block. Fix all bugs found.",
-      "status": "open",
+      "status": "in-progress",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:56:45.569788",
       "errors": []
     },
     {
