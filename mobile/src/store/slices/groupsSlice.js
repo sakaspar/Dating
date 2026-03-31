@@ -20,6 +20,14 @@ export const joinGroup = createAsyncThunk('groups/join', async (id, { rejectWith
   try { return await api.joinGroup(id); } catch (err) { return rejectWithValue(err.message); }
 });
 
+export const approveMember = createAsyncThunk('groups/approve', async ({ groupId, userId }, { rejectWithValue }) => {
+  try { return await api.approveMember(groupId, userId); } catch (err) { return rejectWithValue(err.message); }
+});
+
+export const fetchGroupMessages = createAsyncThunk('groups/messages', async (groupId, { rejectWithValue }) => {
+  try { return await api.getGroupMessages(groupId); } catch (err) { return rejectWithValue(err.message); }
+});
+
 const groupsSlice = createSlice({
   name: 'groups',
   initialState: {
@@ -47,6 +55,14 @@ const groupsSlice = createSlice({
       })
       .addCase(createGroup.fulfilled, (state, action) => {
         state.list.unshift(action.payload);
+      })
+      .addCase(approveMember.fulfilled, (state, action) => {
+        // Group will be refreshed via fetchGroup
+      })
+      .addCase(fetchGroupMessages.fulfilled, (state, action) => {
+        if (state.current) {
+          state.current.messages = action.payload.messages || action.payload;
+        }
       });
   },
 });

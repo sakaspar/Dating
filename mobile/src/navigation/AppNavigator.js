@@ -27,6 +27,9 @@ import ChatScreen from '../screens/ChatScreen';
 import ProposalCreateScreen from '../screens/ProposalCreateScreen';
 import ProposalViewScreen from '../screens/ProposalViewScreen';
 import GroupsScreen from '../screens/GroupsScreen';
+import GroupCreateScreen from '../screens/GroupCreateScreen';
+import GroupDetailScreen from '../screens/GroupDetailScreen';
+import GroupChatScreen from '../screens/GroupChatScreen';
 // import ProfileScreen from '../screens/ProfileScreen';
 
 const Stack = createStackNavigator();
@@ -86,9 +89,9 @@ function MainStack() {
     <Stack.Navigator>
       <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
       <Stack.Screen name="Chat" component={ChatScreen} />
-      <Stack.Screen name="GroupChat" children={() => <PlaceholderScreen name="GroupChat" />} />
-      <Stack.Screen name="GroupDetail" children={() => <PlaceholderScreen name="GroupDetail" />} />
-      <Stack.Screen name="GroupCreate" children={() => <PlaceholderScreen name="GroupCreate" />} />
+      <Stack.Screen name="GroupChat" component={GroupChatScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="GroupDetail" component={GroupDetailScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="GroupCreate" component={GroupCreateScreen} options={{ headerShown: false }} />
       <Stack.Screen name="ProposalCreate" component={ProposalCreateScreen} />
       <Stack.Screen name="ProposalView" component={ProposalViewScreen} />
       <Stack.Screen name="UserProfile" children={() => <PlaceholderScreen name="UserProfile" />} />
