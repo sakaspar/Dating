@@ -1,0 +1,393 @@
+{
+  "project": "Dating App (Doukhou)",
+  "lastUpdated": "2026-03-31T08:09:00.032606",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Setup project repo & folder structure",
+      "description": "Initialize repo with /backend and /mobile directories, package.json, .gitignore, .env.example, README.md",
+      "status": "in-progress",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:09:00.032577",
+      "errors": []
+    },
+    {
+      "id": 2,
+      "title": "Setup Raspberry Pi infrastructure",
+      "description": "Install Node.js 18, PM2, Nginx, configure reverse proxy, Let's Encrypt SSL, dynamic DNS (DuckDNS), enable 2GB swap, configure PM2 auto-start",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 3,
+      "title": "Build JSON Database Manager module",
+      "description": "Reusable module: CRUD on JSON files, unique IDs, in-memory caching (node-cache), index files for fast lookups, Haversine proximity search, daily automated backups via cron, file-based indexing",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 4,
+      "title": "Create /data folder structure",
+      "description": "Create all JSON data lake directories: /users, /matches, /messages, /proposals, /groups, /swipes, /reports, /indexes, /backups, /analytics, /uploads",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 5,
+      "title": "Express.js server setup with middleware",
+      "description": "Create main server file: Express app, CORS, rate limiting (100 req/15min), Joi input validation, XSS protection, JWT middleware, error handling, health check endpoint, static file serving for uploads",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 6,
+      "title": "Auth routes: register, login, logout, me",
+      "description": "POST /api/auth/register (email+password, bcrypt 10 rounds, JWT 7-day), POST /api/auth/login, POST /api/auth/logout, GET /api/auth/me. Store in /users/{id}.json, index in /indexes/user_by_email.json",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 7,
+      "title": "User profile CRUD routes",
+      "description": "GET/PUT /api/users/profile, POST /api/users/photos (multer+sharp, resize+compress, thumbnails), DELETE /api/users/photos/:id, PUT /api/users/preferences. Store photos in /uploads/users/{id}/",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 8,
+      "title": "Tunisian neighborhoods & constants data",
+      "description": "Create constants file with: Tunis neighborhoods list (12 areas with lat/lon coords), budget ranges (Low<30TND, Medium 30-80, High>80), activity types (6 categories), relationship intentions, gender options",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 9,
+      "title": "Matching algorithm implementation",
+      "description": "Smart matching: 50km radius via Haversine, filter by gender pref/age range/existing swipes/active users, score by shared activities (highest weight)/shared interests/intention compat/distance/profile completeness/recent activity. Return top 20 sorted.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 10,
+      "title": "Swipe routes & match detection",
+      "description": "GET /api/matches/discover (potential matches), POST /api/matches/swipe (record like/pass in /swipes/{user_id}_swipes.json), mutual like detection \u2192 create /matches/{match_id}.json, update /indexes/active_matches.json, trigger OneSignal notification",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 11,
+      "title": "Match list & unmatch routes",
+      "description": "GET /api/matches (user's matches with profile previews), DELETE /api/matches/:id (unmatch, remove from index, clean up conversation)",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 12,
+      "title": "Socket.io real-time chat server",
+      "description": "Socket.io setup with JWT auth, events: message:send, message:receive, message:read, typing:start, typing:stop, user:online, user:offline. Store messages in /messages/conversation_{match_id}.json. Only matched users can chat.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 13,
+      "title": "Chat HTTP fallback routes",
+      "description": "GET /api/chat/conversations (list all), GET /api/chat/:conversationId/messages (history with pagination), POST /api/chat/:conversationId/messages (HTTP fallback send)",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 14,
+      "title": "Date proposal creation & storage",
+      "description": "POST /api/proposals \u2014 form: activity type, date (future only), time, neighborhood, budget range, suggested place, notes. Store in /proposals/{proposal_id}.json with status: pending. Send push notification to recipient.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 15,
+      "title": "Proposal response flow (accept/decline/modify)",
+      "description": "PUT /api/proposals/:id/accept (create confirmed date in /confirmed_dates/), PUT /api/proposals/:id/decline, PUT /api/proposals/:id/modify (counter-proposal with modification history). Push notifications for each action.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 16,
+      "title": "Smart suggestions with OpenStreetMap",
+      "description": "GET /api/proposals/suggestions/:matchId \u2014 show shared activities, for each suggest 2-3 places via Overpass API (cafes, restaurants, parks), calculate distance from both users via Haversine, return name/address/distance. Use Nominatim for geocoding.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 17,
+      "title": "Proposal list route",
+      "description": "GET /api/proposals/:matchId \u2014 list all proposals for a match with status and history",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 18,
+      "title": "Group activities CRUD",
+      "description": "POST /api/groups (create: activity type, title, desc, date, location, group size, looking for X more, visibility, age range, gender pref), GET /api/groups (browse with filters), GET /api/groups/:id. Store in /groups/{group_id}.json.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 19,
+      "title": "Group join/approve flow & group chat",
+      "description": "POST /api/groups/:id/join (request), PUT /api/groups/:id/approve/:userId (creator approves), group Socket.io chat events, GET /api/groups/:id/messages. Store group messages in /group_messages/{group_id}.json.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 20,
+      "title": "Safety: report system",
+      "description": "POST /api/safety/report \u2014 reasons: inappropriate behavior, fake profile, harassment, scam. Optional evidence upload. Store in /reports/{report_id}.json. Admin review queue endpoint.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 21,
+      "title": "Safety: block system",
+      "description": "POST /api/safety/block (block user, unmatch, remove from discovery), GET /api/safety/blocked, DELETE /api/safety/block/:userId. Store blocked IDs in user JSON. Filter blocked users from all queries.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 22,
+      "title": "OneSignal push notification integration",
+      "description": "Setup OneSignal free tier, create backend SDK integration, send notifications for: new matches, new messages, date proposals, group invites, proposal responses. Configure for iOS + Android.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 23,
+      "title": "Analytics tracking module",
+      "description": "Track in /analytics/daily_{date}.json: DAU, new registrations, matches created, proposals created/accepted (conversion rate), messages sent, group activities created, avg time match\u2192first proposal",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 24,
+      "title": "Daily backup automation",
+      "description": "Cron job to backup /data to /backups/{date}/, compress old backups, cleanup backups older than 30 days, log backup status",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 25,
+      "title": "Test data generator (50-100 fake profiles)",
+      "description": "Script to generate fake user profiles with varied locations across Tunis, ages 18-35, activity preferences, placeholder photos. Test matching algorithm, proposals, groups.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 26,
+      "title": "React Native app setup with Expo",
+      "description": "Initialize Expo project, install dependencies: react-native-paper, react-navigation, redux toolkit, react-native-maps, socket.io-client, onesignal-sdk. Configure for iOS + Android.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 27,
+      "title": "Mobile: Auth screens (Login, Register, OTP)",
+      "description": "Build login screen, register screen, email verification flow. JWT token storage, auto-login on app launch, logout functionality.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 28,
+      "title": "Mobile: Profile creation wizard (5 steps)",
+      "description": "Step 1: basic info (name, age, gender, GPS location). Step 2: photo upload (3-6). Step 3: relationship intention. Step 4: activity preferences (2-4). Step 5: bio & interests.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 29,
+      "title": "Mobile: Discover swipe cards",
+      "description": "Tinder-style card stack, swipe right/left animations, show photos/age/distance/shared activities/bio. 60 FPS, pull-to-refresh. Optimistic UI for swipes.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 30,
+      "title": "Mobile: Matches list screen",
+      "description": "List all matches with profile previews, last message preview, online status, unread count. Tap to open chat or proposal.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 31,
+      "title": "Mobile: Real-time chat screen",
+      "description": "Socket.io chat UI: message bubbles, typing indicator, read receipts, online/offline status, message history scroll, push notifications for new messages.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 32,
+      "title": "Mobile: Date proposal creation screen",
+      "description": "Prominent 'Suggest a Plan' button (bigger than chat). Form: activity type, calendar date picker, time picker, neighborhood dropdown, budget range, place search, notes. Smart suggestions from shared activities.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 33,
+      "title": "Mobile: Proposal view & response screen",
+      "description": "View proposal details, accept/decline/modify buttons, modification form, status indicators, confirmation animation on accept.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 34,
+      "title": "Mobile: Groups tab & browse",
+      "description": "Scrollable group activity cards, filter by type/date/location/distance, show creator info, participant count, join request button.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 35,
+      "title": "Mobile: Group create, detail & group chat",
+      "description": "Create group form, group detail view with members, approve/decline join requests (creator), group chat screen with Socket.io.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 36,
+      "title": "Mobile: Profile & settings screens",
+      "description": "View/edit own profile, preferences, safety center, blocked users list, help/safety tips page, community guidelines, logout.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 37,
+      "title": "Mobile: OpenStreetMap integration",
+      "description": "react-native-maps with OSM tiles, Nominatim place search with autocomplete, distance display, map markers for date locations.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 38,
+      "title": "Redux state management setup",
+      "description": "Configure Redux Toolkit slices: auth, profile, matches, chat, proposals, groups, safety. Persist auth state. Optimistic updates for swipes and messages.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 39,
+      "title": "UI/UX polish: colors, typography, components",
+      "description": "Apply design system: primary blue/purple, secondary coral/orange CTAs, success green, light gray background, dark gray text. React Native Paper theming. Activity icons throughout.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 40,
+      "title": "End-to-end testing all flows",
+      "description": "Test: registration\u2192profile\u2192discover\u2192swipe\u2192match\u2192chat\u2192proposal\u2192accept/decline\u2192groups\u2192join\u2192group chat\u2192report\u2192block. Fix all bugs found.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 41,
+      "title": "Performance optimization (RPi focused)",
+      "description": "Optimize JSON file reads with caching, implement log rotation, image lazy loading, Nginx static file caching, PM2 memory limit 1GB, graceful error handling, <500ms API avg response.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 42,
+      "title": "API documentation",
+      "description": "Document all endpoints with request/response examples, auth requirements, error codes. Include Socket.io events documentation.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    },
+    {
+      "id": 43,
+      "title": "Deployment & launch prep",
+      "description": "Final deploy to RPi, verify SSL/DNS, test public URL, app icons & splash screens, privacy policy, terms of service, build iOS TestFlight + Android APK, submission prep.",
+      "status": "open",
+      "created": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T08:00:00+01:00",
+      "errors": []
+    }
+  ]
+}
