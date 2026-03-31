@@ -8,7 +8,7 @@
  * - Automatic retry on 401 (token refresh)
  */
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from '../utils/storage';
 
 // Change this to your Raspberry Pi URL for production
 const API_URL = __DEV__

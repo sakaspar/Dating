@@ -9,7 +9,7 @@
  */
 
 import { io } from 'socket.io-client';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from '../utils/storage';
 
 const SOCKET_URL = __DEV__
   ? 'http://localhost:3000'
