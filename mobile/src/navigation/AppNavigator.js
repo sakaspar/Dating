@@ -16,9 +16,10 @@ import { useSelector } from 'react-redux';
 import { ActivityIndicator, View } from 'react-native';
 import { COLORS, ACTIVITY_EMOJIS } from '../constants/theme';
 
-// Screens (to be built in later tasks)
-// import LoginScreen from '../screens/LoginScreen';
-// import RegisterScreen from '../screens/RegisterScreen';
+// Auth screens
+import LoginScreen from '../screens/LoginScreen';
+import RegisterScreen from '../screens/RegisterScreen';
+// Other screens (to be built in later tasks)
 // import DiscoverScreen from '../screens/DiscoverScreen';
 // import MatchesScreen from '../screens/MatchesScreen';
 // import GroupsScreen from '../screens/GroupsScreen';
@@ -38,8 +39,8 @@ const PlaceholderScreen = ({ name }) => (
 function AuthStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Login" children={() => <PlaceholderScreen name="Login" />} />
-      <Stack.Screen name="Register" children={() => <PlaceholderScreen name="Register" />} />
+      <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Register" component={RegisterScreen} />
     </Stack.Navigator>
   );
 }
