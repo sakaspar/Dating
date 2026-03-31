@@ -1,0 +1,44 @@
+{
+  "email": "anis29@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Anis",
+  "age": 19,
+  "gender": "male",
+  "latitude": 36.821561,
+  "longitude": 10.239667,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Sports fanatic, especially football.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "outdoor",
+    "social",
+    "coffee"
+  ],
+  "interests": [
+    "football",
+    "tech"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "female",
+    "maxDistance": 46,
+    "activities": [
+      "outdoor",
+      "events",
+      "social"
+    ],
+    "interests": [
+      "cooking",
+      "sports"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.060Z",
+  "updatedAt": "2026-03-31T11:48:41.060Z",
+  "id": "4a544b05-8aff-4fba-8c77-d6e4e662b30c"
+}

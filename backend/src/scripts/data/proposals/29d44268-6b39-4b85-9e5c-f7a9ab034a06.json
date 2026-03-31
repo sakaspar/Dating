@@ -1,0 +1,17 @@
+{
+  "matchId": "ce735bab-c95e-494f-9ebd-cd54987de810",
+  "fromUserId": "d50c809a-e644-4561-9c93-106c8842cf72",
+  "toUserId": "1c271667-a757-473b-81ca-9695c11327f7",
+  "activityType": "coffee",
+  "date": "2026-04-06",
+  "time": "12:00",
+  "neighborhood": "Menzah",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Menzah Restaurant",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.051Z",
+  "id": "29d44268-6b39-4b85-9e5c-f7a9ab034a06",
+  "updatedAt": "2026-03-31T11:48:47.051Z"
+}

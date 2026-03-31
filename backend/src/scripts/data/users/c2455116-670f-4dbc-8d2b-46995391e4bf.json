@@ -1,0 +1,43 @@
+{
+  "email": "imen42@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Imen",
+  "age": 27,
+  "gender": "female",
+  "latitude": 36.821036,
+  "longitude": 10.237899,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Let's discover Tunis together!",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "coffee"
+  ],
+  "interests": [
+    "cinema",
+    "sports"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 19,
+    "ageRangeMax": 35,
+    "genderPreference": "male",
+    "maxDistance": 28,
+    "activities": [
+      "activities",
+      "restaurant",
+      "events"
+    ],
+    "interests": [
+      "photography",
+      "football"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.538Z",
+  "updatedAt": "2026-03-31T11:48:42.538Z",
+  "id": "c2455116-670f-4dbc-8d2b-46995391e4bf"
+}

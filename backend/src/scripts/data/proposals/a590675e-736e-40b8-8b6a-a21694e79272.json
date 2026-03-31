@@ -1,0 +1,17 @@
+{
+  "matchId": "17f0dfa6-3ea6-45ce-a34f-8d646313d9af",
+  "fromUserId": "b638a798-d5b3-49f0-b628-8191edac0e62",
+  "toUserId": "510053f4-b1c4-4a93-bf43-0b13806638ba",
+  "activityType": "coffee",
+  "date": "2026-04-01",
+  "time": "19:00",
+  "neighborhood": "Ariana",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Ariana Park",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.001Z",
+  "id": "a590675e-736e-40b8-8b6a-a21694e79272",
+  "updatedAt": "2026-03-31T11:48:47.001Z"
+}

@@ -1,0 +1,27 @@
+{
+  "creatorId": "a9a2b5f9-263a-4b42-bc64-1cb83d63eaba",
+  "activityType": "activities",
+  "title": "Book Club Meetup",
+  "description": "Join us for activities (bowling, arcade, escape rooms) in La Marsa!",
+  "date": "2026-04-07",
+  "time": "18:00",
+  "location": "La Marsa",
+  "latitude": 36.8782,
+  "longitude": 10.3247,
+  "currentSize": 2,
+  "lookingFor": 2,
+  "visibility": "friends",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "a9a2b5f9-263a-4b42-bc64-1cb83d63eaba",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.144Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.144Z",
+  "id": "4378c5dd-405d-4ba8-8ede-a952d981bc0f",
+  "updatedAt": "2026-03-31T11:48:47.144Z"
+}

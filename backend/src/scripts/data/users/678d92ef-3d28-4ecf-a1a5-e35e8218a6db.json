@@ -1,0 +1,42 @@
+{
+  "email": "rania37@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Rania",
+  "age": 22,
+  "gender": "female",
+  "latitude": 36.894033,
+  "longitude": 10.285086,
+  "city": "Tunis",
+  "neighborhood": "Gammarth",
+  "bio": "Life is too short for boring dates.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "outdoor",
+    "events"
+  ],
+  "interests": [
+    "sports",
+    "music"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 30,
+    "genderPreference": "male",
+    "maxDistance": 37,
+    "activities": [
+      "events",
+      "outdoor"
+    ],
+    "interests": [
+      "music",
+      "tech"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.863Z",
+  "updatedAt": "2026-03-31T11:48:41.863Z",
+  "id": "678d92ef-3d28-4ecf-a1a5-e35e8218a6db"
+}

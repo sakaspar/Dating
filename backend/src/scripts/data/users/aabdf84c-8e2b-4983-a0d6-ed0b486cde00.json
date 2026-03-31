@@ -1,0 +1,46 @@
+{
+  "email": "rached21@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Rached",
+  "age": 29,
+  "gender": "male",
+  "latitude": 36.836899,
+  "longitude": 10.16654,
+  "city": "Tunis",
+  "neighborhood": "Manar",
+  "bio": "Let's discover Tunis together!",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "activities",
+    "events",
+    "outdoor"
+  ],
+  "interests": [
+    "yoga",
+    "reading",
+    "fitness"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 21,
+    "ageRangeMax": 37,
+    "genderPreference": "female",
+    "maxDistance": 45,
+    "activities": [
+      "coffee",
+      "outdoor",
+      "social"
+    ],
+    "interests": [
+      "tech",
+      "football",
+      "reading"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.514Z",
+  "updatedAt": "2026-03-31T11:48:39.514Z",
+  "id": "aabdf84c-8e2b-4983-a0d6-ed0b486cde00"
+}

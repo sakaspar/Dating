@@ -1,0 +1,17 @@
+{
+  "matchId": "932ffe8b-4ec9-4a61-a911-1b0fb0fb3da6",
+  "fromUserId": "b1999eec-1fcb-4dec-9479-9ede3010b979",
+  "toUserId": "a58b14a9-6083-467a-ae00-4bf0c511ce03",
+  "activityType": "events",
+  "date": "2026-04-14",
+  "time": "20:30",
+  "neighborhood": "La Marsa",
+  "budgetRange": "Medium",
+  "suggestedPlace": "La Marsa Café",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.981Z",
+  "id": "57e5dc51-e10c-4633-b2d1-5b1b1976e697",
+  "updatedAt": "2026-03-31T11:48:46.981Z"
+}

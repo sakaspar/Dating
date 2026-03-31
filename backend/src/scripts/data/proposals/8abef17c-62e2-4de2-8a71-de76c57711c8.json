@@ -1,0 +1,17 @@
+{
+  "matchId": "426794dd-0532-44e8-aac0-61d18a237485",
+  "fromUserId": "cb530368-c20d-444e-97a5-77e33ea4a197",
+  "toUserId": "e574dbfa-37e5-4b16-8565-1c3d9840b6c5",
+  "activityType": "restaurant",
+  "date": "2026-04-04",
+  "time": "15:30",
+  "neighborhood": "Bardo",
+  "budgetRange": "High",
+  "suggestedPlace": "Bardo Café",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.103Z",
+  "id": "8abef17c-62e2-4de2-8a71-de76c57711c8",
+  "updatedAt": "2026-03-31T11:48:47.103Z"
+}

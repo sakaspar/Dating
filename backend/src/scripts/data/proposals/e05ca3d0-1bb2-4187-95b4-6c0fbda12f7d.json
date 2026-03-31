@@ -1,0 +1,17 @@
+{
+  "matchId": "c76aa019-5ab8-4b8d-b4f5-b339b95f1d31",
+  "fromUserId": "73f0463c-1db6-4d60-b0a5-a7a714f332d2",
+  "toUserId": "1c271667-a757-473b-81ca-9695c11327f7",
+  "activityType": "events",
+  "date": "2026-04-02",
+  "time": "18:00",
+  "neighborhood": "Manouba",
+  "budgetRange": "Low",
+  "suggestedPlace": "Manouba Café",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.082Z",
+  "id": "e05ca3d0-1bb2-4187-95b4-6c0fbda12f7d",
+  "updatedAt": "2026-03-31T11:48:47.082Z"
+}

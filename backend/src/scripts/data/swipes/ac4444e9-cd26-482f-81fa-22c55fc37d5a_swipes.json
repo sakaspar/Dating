@@ -1,0 +1,72 @@
+{
+  "id": "ac4444e9-cd26-482f-81fa-22c55fc37d5a_swipes",
+  "userId": "ac4444e9-cd26-482f-81fa-22c55fc37d5a",
+  "swiped": {
+    "2a26cfaa-5c17-4fd0-9837-b01bf23e686b": {
+      "action": "pass",
+      "timestamp": "2026-03-29T00:51:42.190Z"
+    },
+    "8d15bf2d-fea9-4be0-b0e3-6defb5782bd3": {
+      "action": "pass",
+      "timestamp": "2026-03-22T03:15:47.908Z"
+    },
+    "678d92ef-3d28-4ecf-a1a5-e35e8218a6db": {
+      "action": "like",
+      "timestamp": "2026-03-27T10:48:37.732Z"
+    },
+    "48db7f09-8eda-4044-b5b4-07725f3564cb": {
+      "action": "like",
+      "timestamp": "2026-03-30T20:14:37.386Z"
+    },
+    "4ef13fc5-ec21-40f5-a71a-2eab77bdd60c": {
+      "action": "pass",
+      "timestamp": "2026-03-29T13:24:01.151Z"
+    },
+    "c3676c63-02a9-44eb-add2-84ddeae72875": {
+      "action": "pass",
+      "timestamp": "2026-03-31T03:20:10.620Z"
+    },
+    "4947d9f7-b1af-4a30-9a49-97a7f6d976f3": {
+      "action": "pass",
+      "timestamp": "2026-03-31T07:17:50.365Z"
+    },
+    "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d": {
+      "action": "like",
+      "timestamp": "2026-03-11T16:51:55.362Z"
+    },
+    "0988c4c9-515a-4547-87f9-b31a73187f29": {
+      "action": "like",
+      "timestamp": "2026-03-24T17:01:37.862Z"
+    },
+    "07716ffc-63bf-4959-be9f-bfef6085bb40": {
+      "action": "like",
+      "timestamp": "2026-03-30T01:26:47.376Z"
+    },
+    "fbc9d12b-3221-44ea-823c-eec46883c855": {
+      "action": "pass",
+      "timestamp": "2026-03-16T11:59:23.613Z"
+    },
+    "f961fd68-7f2d-4e1f-a409-8f8f4d5e3ed9": {
+      "action": "pass",
+      "timestamp": "2026-03-28T20:34:27.031Z"
+    },
+    "c9f7749a-77ff-4185-9514-32cb8269a843": {
+      "action": "like",
+      "timestamp": "2026-03-24T09:00:24.608Z"
+    },
+    "bf8d34d8-fd41-4a36-a068-8646bf7882a1": {
+      "action": "like",
+      "timestamp": "2026-03-20T22:02:24.590Z"
+    },
+    "510053f4-b1c4-4a93-bf43-0b13806638ba": {
+      "action": "like",
+      "timestamp": "2026-03-26T06:05:39.356Z"
+    },
+    "47de3540-5304-49d2-8c4e-ef7c7e9c56c2": {
+      "action": "like",
+      "timestamp": "2026-03-24T15:06:20.928Z"
+    }
+  },
+  "createdAt": "2026-03-31T11:48:46.582Z",
+  "updatedAt": "2026-03-31T11:48:46.582Z"
+}

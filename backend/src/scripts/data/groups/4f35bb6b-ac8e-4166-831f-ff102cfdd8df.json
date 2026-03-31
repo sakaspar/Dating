@@ -1,0 +1,27 @@
+{
+  "creatorId": "8ec70604-db20-4fa3-84d6-cb0b6fd2905e",
+  "activityType": "outdoor",
+  "title": "Cooking Class",
+  "description": "Join us for outdoor (parks, walks, beaches) in Manar!",
+  "date": "2026-04-01",
+  "time": "19:00",
+  "location": "Manar",
+  "latitude": 36.835,
+  "longitude": 10.165,
+  "currentSize": 2,
+  "lookingFor": 4,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "8ec70604-db20-4fa3-84d6-cb0b6fd2905e",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.142Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.142Z",
+  "id": "4f35bb6b-ac8e-4166-831f-ff102cfdd8df",
+  "updatedAt": "2026-03-31T11:48:47.142Z"
+}

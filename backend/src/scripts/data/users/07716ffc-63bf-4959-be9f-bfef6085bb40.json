@@ -1,0 +1,45 @@
+{
+  "email": "nesrine41@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nesrine",
+  "age": 23,
+  "gender": "female",
+  "latitude": 36.752522,
+  "longitude": 10.227779,
+  "city": "Tunis",
+  "neighborhood": "Ben Arous",
+  "bio": "Here to find someone who shares my energy.",
+  "photos": [],
+  "activities": [
+    "events",
+    "coffee",
+    "outdoor"
+  ],
+  "interests": [
+    "gaming",
+    "volunteering"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 31,
+    "genderPreference": "male",
+    "maxDistance": 41,
+    "activities": [
+      "coffee",
+      "restaurant",
+      "activities"
+    ],
+    "interests": [
+      "sports",
+      "art",
+      "cinema",
+      "tech"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.402Z",
+  "updatedAt": "2026-03-31T11:48:42.402Z",
+  "id": "07716ffc-63bf-4959-be9f-bfef6085bb40"
+}

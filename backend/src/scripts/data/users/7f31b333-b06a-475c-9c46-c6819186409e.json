@@ -1,0 +1,45 @@
+{
+  "email": "hamza36@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Hamza",
+  "age": 22,
+  "gender": "male",
+  "latitude": 36.878643,
+  "longitude": 10.326904,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "outdoor"
+  ],
+  "interests": [
+    "coding",
+    "gaming",
+    "volunteering"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 30,
+    "genderPreference": "female",
+    "maxDistance": 26,
+    "activities": [
+      "events",
+      "social",
+      "outdoor"
+    ],
+    "interests": [
+      "photography",
+      "music",
+      "tech",
+      "yoga"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.711Z",
+  "updatedAt": "2026-03-31T11:48:41.711Z",
+  "id": "7f31b333-b06a-475c-9c46-c6819186409e"
+}

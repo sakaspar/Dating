@@ -1,0 +1,45 @@
+{
+  "email": "sirine59@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Sirine",
+  "age": 19,
+  "gender": "female",
+  "latitude": 36.808906,
+  "longitude": 10.102518,
+  "city": "Tunis",
+  "neighborhood": "Manouba",
+  "bio": "Here to find someone who shares my energy.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "restaurant",
+    "events",
+    "outdoor"
+  ],
+  "interests": [
+    "gaming",
+    "photography"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "male",
+    "maxDistance": 33,
+    "activities": [
+      "events",
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "football",
+      "photography",
+      "cinema"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.942Z",
+  "updatedAt": "2026-03-31T11:48:43.942Z",
+  "id": "bf8d34d8-fd41-4a36-a068-8646bf7882a1"
+}

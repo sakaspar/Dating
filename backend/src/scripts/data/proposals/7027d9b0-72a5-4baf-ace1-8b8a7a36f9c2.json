@@ -1,0 +1,17 @@
+{
+  "matchId": "001f6774-43d5-4e72-8e00-7124ebaa18e8",
+  "fromUserId": "cfb05ace-a467-44af-9317-0e4f93558670",
+  "toUserId": "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d",
+  "activityType": "social",
+  "date": "2026-04-14",
+  "time": "10:30",
+  "neighborhood": "Sidi Bou Said",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Sidi Bou Said Restaurant",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.042Z",
+  "id": "7027d9b0-72a5-4baf-ace1-8b8a7a36f9c2",
+  "updatedAt": "2026-03-31T11:48:47.042Z"
+}

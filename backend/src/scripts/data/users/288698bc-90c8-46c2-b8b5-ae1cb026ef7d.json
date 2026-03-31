@@ -1,0 +1,47 @@
+{
+  "email": "malek23@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Malek",
+  "age": 20,
+  "gender": "male",
+  "latitude": 36.893067,
+  "longitude": 10.287044,
+  "city": "Tunis",
+  "neighborhood": "Gammarth",
+  "bio": "Simple person who enjoys good company.",
+  "photos": [],
+  "activities": [
+    "social",
+    "coffee",
+    "events",
+    "restaurant"
+  ],
+  "interests": [
+    "hiking",
+    "reading",
+    "photography",
+    "cinema",
+    "dancing"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 28,
+    "genderPreference": "female",
+    "maxDistance": 32,
+    "activities": [
+      "coffee",
+      "restaurant",
+      "activities"
+    ],
+    "interests": [
+      "photography",
+      "music"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:40.128Z",
+  "updatedAt": "2026-03-31T11:48:40.128Z",
+  "id": "288698bc-90c8-46c2-b8b5-ae1cb026ef7d"
+}

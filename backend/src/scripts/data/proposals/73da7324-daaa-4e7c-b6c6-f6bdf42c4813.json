@@ -1,0 +1,17 @@
+{
+  "matchId": "0cf9b07f-1dfd-4973-b454-5b1a2c9521a2",
+  "fromUserId": "bec133c2-656f-4ca7-96a3-6bb9df45da9e",
+  "toUserId": "84846d66-a521-4ac7-9fc8-9ce5adb0f4be",
+  "activityType": "restaurant",
+  "date": "2026-04-06",
+  "time": "19:30",
+  "neighborhood": "Manouba",
+  "budgetRange": "Low",
+  "suggestedPlace": "Manouba Park",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.115Z",
+  "id": "73da7324-daaa-4e7c-b6c6-f6bdf42c4813",
+  "updatedAt": "2026-03-31T11:48:47.115Z"
+}

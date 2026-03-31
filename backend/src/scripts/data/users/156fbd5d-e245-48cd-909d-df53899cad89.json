@@ -1,0 +1,49 @@
+{
+  "email": "dorra73@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Dorra",
+  "age": 22,
+  "gender": "female",
+  "latitude": 36.871296,
+  "longitude": 10.348982,
+  "city": "Tunis",
+  "neighborhood": "Sidi Bou Said",
+  "bio": "Looking for real connections, not just chats.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "social",
+    "restaurant",
+    "activities"
+  ],
+  "interests": [
+    "cinema",
+    "tech",
+    "fashion",
+    "dancing"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 30,
+    "genderPreference": "male",
+    "maxDistance": 38,
+    "activities": [
+      "events",
+      "activities",
+      "restaurant",
+      "social"
+    ],
+    "interests": [
+      "coding",
+      "travel",
+      "football",
+      "yoga"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:46.229Z",
+  "updatedAt": "2026-03-31T11:48:46.229Z",
+  "id": "156fbd5d-e245-48cd-909d-df53899cad89"
+}

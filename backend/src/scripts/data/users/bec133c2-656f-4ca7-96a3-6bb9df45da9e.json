@@ -1,0 +1,44 @@
+{
+  "email": "sofiane15@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Sofiane",
+  "age": 33,
+  "gender": "male",
+  "latitude": 36.894684,
+  "longitude": 10.2894,
+  "city": "Tunis",
+  "neighborhood": "Gammarth",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "restaurant",
+    "coffee"
+  ],
+  "interests": [
+    "fitness",
+    "photography"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 25,
+    "ageRangeMax": 41,
+    "genderPreference": "female",
+    "maxDistance": 15,
+    "activities": [
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "gaming",
+      "yoga",
+      "fashion",
+      "travel"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.159Z",
+  "updatedAt": "2026-03-31T11:48:39.159Z",
+  "id": "bec133c2-656f-4ca7-96a3-6bb9df45da9e"
+}

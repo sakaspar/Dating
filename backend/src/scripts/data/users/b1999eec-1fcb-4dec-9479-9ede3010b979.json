@@ -1,0 +1,48 @@
+{
+  "email": "walid14@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Walid",
+  "age": 28,
+  "gender": "male",
+  "latitude": 36.844108,
+  "longitude": 10.182477,
+  "city": "Tunis",
+  "neighborhood": "Menzah",
+  "bio": "Sports fanatic, especially football.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "coffee",
+    "activities"
+  ],
+  "interests": [
+    "football",
+    "writing",
+    "travel",
+    "music"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 20,
+    "ageRangeMax": 36,
+    "genderPreference": "female",
+    "maxDistance": 45,
+    "activities": [
+      "outdoor",
+      "coffee",
+      "activities",
+      "social"
+    ],
+    "interests": [
+      "football",
+      "gaming",
+      "writing",
+      "dancing"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.040Z",
+  "updatedAt": "2026-03-31T11:48:39.040Z",
+  "id": "b1999eec-1fcb-4dec-9479-9ede3010b979"
+}

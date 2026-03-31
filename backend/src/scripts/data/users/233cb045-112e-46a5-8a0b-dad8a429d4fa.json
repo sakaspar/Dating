@@ -1,0 +1,46 @@
+{
+  "email": "nabil8@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nabil",
+  "age": 29,
+  "gender": "male",
+  "latitude": 36.8777,
+  "longitude": 10.323444,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Looking for my partner in crime.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "activities",
+    "outdoor"
+  ],
+  "interests": [
+    "gaming",
+    "coding",
+    "photography",
+    "cinema"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 21,
+    "ageRangeMax": 37,
+    "genderPreference": "female",
+    "maxDistance": 40,
+    "activities": [
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "photography",
+      "tech",
+      "music"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.211Z",
+  "updatedAt": "2026-03-31T11:48:38.211Z",
+  "id": "233cb045-112e-46a5-8a0b-dad8a429d4fa"
+}

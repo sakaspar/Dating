@@ -1,0 +1,27 @@
+{
+  "creatorId": "a58b14a9-6083-467a-ae00-4bf0c511ce03",
+  "activityType": "events",
+  "title": "Hiking in Boukornine",
+  "description": "Join us for events (cinema, concerts, exhibitions) in Lac!",
+  "date": "2026-04-05",
+  "time": "16:00",
+  "location": "Lac",
+  "latitude": 36.82,
+  "longitude": 10.24,
+  "currentSize": 2,
+  "lookingFor": 4,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "a58b14a9-6083-467a-ae00-4bf0c511ce03",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.142Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.142Z",
+  "id": "e884a760-f5bd-4838-a46c-aebed71ecbf1",
+  "updatedAt": "2026-03-31T11:48:47.142Z"
+}

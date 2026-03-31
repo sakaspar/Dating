@@ -1,0 +1,45 @@
+{
+  "email": "bassem25@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Bassem",
+  "age": 20,
+  "gender": "male",
+  "latitude": 36.820292,
+  "longitude": 10.238887,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Sports fanatic, especially football.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "restaurant"
+  ],
+  "interests": [
+    "football",
+    "dancing",
+    "travel",
+    "cinema",
+    "art"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 28,
+    "genderPreference": "female",
+    "maxDistance": 20,
+    "activities": [
+      "coffee",
+      "events",
+      "restaurant"
+    ],
+    "interests": [
+      "photography",
+      "music"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:40.580Z",
+  "updatedAt": "2026-03-31T11:48:40.580Z",
+  "id": "6a0baafb-3340-445e-b4a0-7875b6162099"
+}

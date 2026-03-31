@@ -1,0 +1,17 @@
+{
+  "matchId": "176ba937-6ae9-46ca-adaa-20da700b76ad",
+  "fromUserId": "d50c809a-e644-4561-9c93-106c8842cf72",
+  "toUserId": "5a8111c2-bdec-4fac-ab91-830b8ed2f190",
+  "activityType": "coffee",
+  "date": "2026-04-10",
+  "time": "18:30",
+  "neighborhood": "Manar",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Manar Restaurant",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.092Z",
+  "id": "500e128a-6c02-41a5-9904-1af26d3a20f3",
+  "updatedAt": "2026-03-31T11:48:47.092Z"
+}

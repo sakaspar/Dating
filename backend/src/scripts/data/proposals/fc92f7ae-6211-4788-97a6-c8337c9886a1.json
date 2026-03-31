@@ -1,0 +1,17 @@
+{
+  "matchId": "c8618fca-2084-41e3-b213-ab1e7c3ace75",
+  "fromUserId": "233cb045-112e-46a5-8a0b-dad8a429d4fa",
+  "toUserId": "5a8111c2-bdec-4fac-ab91-830b8ed2f190",
+  "activityType": "coffee",
+  "date": "2026-04-13",
+  "time": "11:00",
+  "neighborhood": "Ben Arous",
+  "budgetRange": "High",
+  "suggestedPlace": "Ben Arous Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.056Z",
+  "id": "fc92f7ae-6211-4788-97a6-c8337c9886a1",
+  "updatedAt": "2026-03-31T11:48:47.056Z"
+}

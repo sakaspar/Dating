@@ -1,0 +1,17 @@
+{
+  "matchId": "0a818df0-2a8c-4b63-8ab7-eec58b78b502",
+  "fromUserId": "6e435760-593f-424c-831a-5c15f6969893",
+  "toUserId": "0c1760ed-952f-4b33-aac6-62031c8ba718",
+  "activityType": "outdoor",
+  "date": "2026-04-08",
+  "time": "17:30",
+  "neighborhood": "Ariana",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Ariana Café",
+  "notes": "Looking forward to it!",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.111Z",
+  "id": "a3d7c0c8-24ff-4466-ae2f-6f8b6fc7cf79",
+  "updatedAt": "2026-03-31T11:48:47.111Z"
+}

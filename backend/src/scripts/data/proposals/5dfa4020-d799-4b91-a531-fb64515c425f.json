@@ -1,0 +1,17 @@
+{
+  "matchId": "754430d0-b0d8-4cd7-bf42-e7d5b2bf98bd",
+  "fromUserId": "cb530368-c20d-444e-97a5-77e33ea4a197",
+  "toUserId": "4ef13fc5-ec21-40f5-a71a-2eab77bdd60c",
+  "activityType": "coffee",
+  "date": "2026-04-12",
+  "time": "13:30",
+  "neighborhood": "Lac",
+  "budgetRange": "Low",
+  "suggestedPlace": "Lac Restaurant",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.109Z",
+  "id": "5dfa4020-d799-4b91-a531-fb64515c425f",
+  "updatedAt": "2026-03-31T11:48:47.109Z"
+}

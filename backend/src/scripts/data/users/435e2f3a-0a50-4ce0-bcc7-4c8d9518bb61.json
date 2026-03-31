@@ -1,0 +1,48 @@
+{
+  "email": "rami11@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Rami",
+  "age": 30,
+  "gender": "male",
+  "latitude": 36.809045,
+  "longitude": 10.142536,
+  "city": "Tunis",
+  "neighborhood": "Bardo",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "outdoor",
+    "social"
+  ],
+  "interests": [
+    "football",
+    "reading",
+    "travel",
+    "tech",
+    "music"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 22,
+    "ageRangeMax": 38,
+    "genderPreference": "female",
+    "maxDistance": 15,
+    "activities": [
+      "restaurant",
+      "activities",
+      "social"
+    ],
+    "interests": [
+      "dancing",
+      "coding",
+      "sports"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.636Z",
+  "updatedAt": "2026-03-31T11:48:38.636Z",
+  "id": "435e2f3a-0a50-4ce0-bcc7-4c8d9518bb61"
+}

@@ -1,0 +1,48 @@
+{
+  "email": "karim35@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Karim",
+  "age": 31,
+  "gender": "male",
+  "latitude": 36.751232,
+  "longitude": 10.227307,
+  "city": "Tunis",
+  "neighborhood": "Ben Arous",
+  "bio": "Good vibes only.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "events",
+    "outdoor",
+    "restaurant"
+  ],
+  "interests": [
+    "fashion",
+    "music",
+    "travel"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 23,
+    "ageRangeMax": 39,
+    "genderPreference": "female",
+    "maxDistance": 46,
+    "activities": [
+      "outdoor",
+      "events",
+      "coffee",
+      "activities"
+    ],
+    "interests": [
+      "art",
+      "yoga",
+      "tech",
+      "photography"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.618Z",
+  "updatedAt": "2026-03-31T11:48:41.618Z",
+  "id": "752a82d3-f445-4e01-9138-4caaa85d1c34"
+}

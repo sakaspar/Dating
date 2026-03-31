@@ -1,0 +1,45 @@
+{
+  "email": "hela53@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Hela",
+  "age": 35,
+  "gender": "female",
+  "latitude": 36.809855,
+  "longitude": 10.100954,
+  "city": "Tunis",
+  "neighborhood": "Manouba",
+  "bio": "Looking for real connections, not just chats.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities"
+  ],
+  "interests": [
+    "sports",
+    "fitness",
+    "volunteering",
+    "gaming",
+    "photography"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 27,
+    "ageRangeMax": 43,
+    "genderPreference": "male",
+    "maxDistance": 19,
+    "activities": [
+      "events",
+      "outdoor",
+      "activities"
+    ],
+    "interests": [
+      "dancing",
+      "photography"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.439Z",
+  "updatedAt": "2026-03-31T11:48:43.439Z",
+  "id": "a507b3e8-ae85-4b21-8332-4918d6e4158d"
+}

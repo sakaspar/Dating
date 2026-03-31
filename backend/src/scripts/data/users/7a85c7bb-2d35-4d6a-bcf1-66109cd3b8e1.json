@@ -1,0 +1,49 @@
+{
+  "email": "aymen12@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Aymen",
+  "age": 25,
+  "gender": "male",
+  "latitude": 36.808496,
+  "longitude": 10.101069,
+  "city": "Tunis",
+  "neighborhood": "Manouba",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "events",
+    "activities",
+    "outdoor",
+    "restaurant"
+  ],
+  "interests": [
+    "photography",
+    "dancing",
+    "music",
+    "fashion"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 33,
+    "genderPreference": "female",
+    "maxDistance": 12,
+    "activities": [
+      "events",
+      "social",
+      "outdoor",
+      "activities"
+    ],
+    "interests": [
+      "art",
+      "music",
+      "gaming",
+      "coding"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.771Z",
+  "updatedAt": "2026-03-31T11:48:38.771Z",
+  "id": "7a85c7bb-2d35-4d6a-bcf1-66109cd3b8e1"
+}

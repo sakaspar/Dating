@@ -1,0 +1,17 @@
+{
+  "matchId": "46c617f4-5496-40cf-a4a1-a95383f4e183",
+  "fromUserId": "7349e875-8d5f-4463-94c9-8e37c3c4730f",
+  "toUserId": "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d",
+  "activityType": "outdoor",
+  "date": "2026-04-14",
+  "time": "14:30",
+  "neighborhood": "Bardo",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Bardo Park",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.102Z",
+  "id": "cebec7bb-2416-412c-a503-2c4fd8494ae7",
+  "updatedAt": "2026-03-31T11:48:47.102Z"
+}

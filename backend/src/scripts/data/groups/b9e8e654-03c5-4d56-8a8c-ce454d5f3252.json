@@ -1,0 +1,27 @@
+{
+  "creatorId": "678d92ef-3d28-4ecf-a1a5-e35e8218a6db",
+  "activityType": "social",
+  "title": "Movie Marathon",
+  "description": "Join us for social/group events in Carthage!",
+  "date": "2026-04-19",
+  "time": "14:00",
+  "location": "Carthage",
+  "latitude": 36.8528,
+  "longitude": 10.3244,
+  "currentSize": 2,
+  "lookingFor": 2,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "678d92ef-3d28-4ecf-a1a5-e35e8218a6db",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.139Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.139Z",
+  "id": "b9e8e654-03c5-4d56-8a8c-ce454d5f3252",
+  "updatedAt": "2026-03-31T11:48:47.139Z"
+}

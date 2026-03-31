@@ -1,0 +1,46 @@
+{
+  "email": "emna49@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Emna",
+  "age": 19,
+  "gender": "female",
+  "latitude": 36.753084,
+  "longitude": 10.227664,
+  "city": "Tunis",
+  "neighborhood": "Ben Arous",
+  "bio": "Weekend hiker, weekday coder.",
+  "photos": [],
+  "activities": [
+    "events",
+    "coffee",
+    "restaurant"
+  ],
+  "interests": [
+    "fitness",
+    "football",
+    "cooking",
+    "photography"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "male",
+    "maxDistance": 28,
+    "activities": [
+      "activities",
+      "social",
+      "restaurant",
+      "coffee"
+    ],
+    "interests": [
+      "travel",
+      "sports"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.218Z",
+  "updatedAt": "2026-03-31T11:48:43.218Z",
+  "id": "5a8111c2-bdec-4fac-ab91-830b8ed2f190"
+}

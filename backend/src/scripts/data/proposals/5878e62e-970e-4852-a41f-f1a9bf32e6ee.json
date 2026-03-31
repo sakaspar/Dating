@@ -1,0 +1,17 @@
+{
+  "matchId": "f9dc09df-04fd-45d6-acf1-3428db4b8637",
+  "fromUserId": "6596b297-c95b-4900-8f1b-f68072b4ef91",
+  "toUserId": "2a26cfaa-5c17-4fd0-9837-b01bf23e686b",
+  "activityType": "outdoor",
+  "date": "2026-04-02",
+  "time": "14:30",
+  "neighborhood": "Manar",
+  "budgetRange": "Low",
+  "suggestedPlace": "Manar Park",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.036Z",
+  "id": "5878e62e-970e-4852-a41f-f1a9bf32e6ee",
+  "updatedAt": "2026-03-31T11:48:47.036Z"
+}

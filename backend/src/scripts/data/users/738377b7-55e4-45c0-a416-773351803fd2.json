@@ -1,0 +1,46 @@
+{
+  "email": "karim5@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Karim",
+  "age": 27,
+  "gender": "male",
+  "latitude": 36.870167,
+  "longitude": 10.347342,
+  "city": "Tunis",
+  "neighborhood": "Sidi Bou Said",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "social",
+    "outdoor",
+    "activities",
+    "restaurant"
+  ],
+  "interests": [
+    "swimming",
+    "travel",
+    "gaming"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 19,
+    "ageRangeMax": 35,
+    "genderPreference": "female",
+    "maxDistance": 21,
+    "activities": [
+      "social",
+      "events"
+    ],
+    "interests": [
+      "photography",
+      "swimming",
+      "fitness",
+      "art"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:37.932Z",
+  "updatedAt": "2026-03-31T11:48:37.932Z",
+  "id": "738377b7-55e4-45c0-a416-773351803fd2"
+}

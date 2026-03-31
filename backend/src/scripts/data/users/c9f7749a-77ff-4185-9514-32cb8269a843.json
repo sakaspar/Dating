@@ -1,0 +1,47 @@
+{
+  "email": "nesrine71@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nesrine",
+  "age": 35,
+  "gender": "female",
+  "latitude": 36.805951,
+  "longitude": 10.18127,
+  "city": "Tunis",
+  "neighborhood": "Tunis Centre",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "events",
+    "restaurant",
+    "outdoor",
+    "coffee"
+  ],
+  "interests": [
+    "reading",
+    "cinema"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 27,
+    "ageRangeMax": 43,
+    "genderPreference": "male",
+    "maxDistance": 26,
+    "activities": [
+      "activities",
+      "restaurant",
+      "events",
+      "social"
+    ],
+    "interests": [
+      "yoga",
+      "photography",
+      "music",
+      "writing"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:45.961Z",
+  "updatedAt": "2026-03-31T11:48:45.961Z",
+  "id": "c9f7749a-77ff-4185-9514-32cb8269a843"
+}

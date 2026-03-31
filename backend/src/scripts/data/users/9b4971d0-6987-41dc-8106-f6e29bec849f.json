@@ -1,0 +1,45 @@
+{
+  "email": "thouraya55@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Thouraya",
+  "age": 31,
+  "gender": "female",
+  "latitude": 36.876311,
+  "longitude": 10.322471,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Sports fanatic, especially football.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "events"
+  ],
+  "interests": [
+    "football",
+    "art",
+    "travel"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 23,
+    "ageRangeMax": 39,
+    "genderPreference": "male",
+    "maxDistance": 39,
+    "activities": [
+      "social",
+      "events",
+      "outdoor"
+    ],
+    "interests": [
+      "football",
+      "photography",
+      "fashion",
+      "music"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.617Z",
+  "updatedAt": "2026-03-31T11:48:43.617Z",
+  "id": "9b4971d0-6987-41dc-8106-f6e29bec849f"
+}

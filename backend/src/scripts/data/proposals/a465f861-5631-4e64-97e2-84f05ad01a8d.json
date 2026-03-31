@@ -1,0 +1,17 @@
+{
+  "matchId": "a6315399-b0b2-44f0-9069-e521e02a0ff5",
+  "fromUserId": "73f0463c-1db6-4d60-b0a5-a7a714f332d2",
+  "toUserId": "47de3540-5304-49d2-8c4e-ef7c7e9c56c2",
+  "activityType": "restaurant",
+  "date": "2026-04-11",
+  "time": "10:00",
+  "neighborhood": "La Marsa",
+  "budgetRange": "High",
+  "suggestedPlace": "La Marsa Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.999Z",
+  "id": "a465f861-5631-4e64-97e2-84f05ad01a8d",
+  "updatedAt": "2026-03-31T11:48:46.999Z"
+}

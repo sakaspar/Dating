@@ -1,0 +1,46 @@
+{
+  "email": "amine34@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Amine",
+  "age": 34,
+  "gender": "male",
+  "latitude": 36.807761,
+  "longitude": 10.142671,
+  "city": "Tunis",
+  "neighborhood": "Bardo",
+  "bio": "Art lover and occasional painter.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "restaurant"
+  ],
+  "interests": [
+    "fashion",
+    "sports",
+    "reading",
+    "cinema",
+    "football"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 26,
+    "ageRangeMax": 42,
+    "genderPreference": "female",
+    "maxDistance": 23,
+    "activities": [
+      "events",
+      "social",
+      "outdoor",
+      "activities"
+    ],
+    "interests": [
+      "fashion",
+      "sports"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.525Z",
+  "updatedAt": "2026-03-31T11:48:41.525Z",
+  "id": "fe2e1903-33c6-4313-a43c-c378a470ba4a"
+}

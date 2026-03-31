@@ -1,0 +1,42 @@
+{
+  "email": "omar3@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Omar",
+  "age": 30,
+  "gender": "male",
+  "latitude": 36.876311,
+  "longitude": 10.322572,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Life is too short for boring dates.",
+  "photos": [],
+  "activities": [
+    "social",
+    "coffee"
+  ],
+  "interests": [
+    "cinema",
+    "music"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 22,
+    "ageRangeMax": 38,
+    "genderPreference": "female",
+    "maxDistance": 11,
+    "activities": [
+      "coffee",
+      "events",
+      "outdoor"
+    ],
+    "interests": [
+      "cinema",
+      "reading"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:37.746Z",
+  "updatedAt": "2026-03-31T11:48:37.746Z",
+  "id": "73f0463c-1db6-4d60-b0a5-a7a714f332d2"
+}

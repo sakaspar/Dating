@@ -1,0 +1,27 @@
+{
+  "creatorId": "1c271667-a757-473b-81ca-9695c11327f7",
+  "activityType": "restaurant",
+  "title": "Photography Walk",
+  "description": "Join us for restaurant/dining in Manouba!",
+  "date": "2026-04-17",
+  "time": "17:00",
+  "location": "Manouba",
+  "latitude": 36.81,
+  "longitude": 10.1,
+  "currentSize": 3,
+  "lookingFor": 2,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "1c271667-a757-473b-81ca-9695c11327f7",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.143Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.143Z",
+  "id": "dd4e1e9c-f378-46f1-85fe-fc3596a73b8e",
+  "updatedAt": "2026-03-31T11:48:47.143Z"
+}

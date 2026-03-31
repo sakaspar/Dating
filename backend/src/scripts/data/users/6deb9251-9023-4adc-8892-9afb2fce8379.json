@@ -1,0 +1,46 @@
+{
+  "email": "syrine44@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Syrine",
+  "age": 34,
+  "gender": "female",
+  "latitude": 36.818132,
+  "longitude": 10.240529,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Let's discover Tunis together!",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "events"
+  ],
+  "interests": [
+    "tech",
+    "fitness",
+    "music",
+    "fashion",
+    "travel"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 26,
+    "ageRangeMax": 42,
+    "genderPreference": "male",
+    "maxDistance": 13,
+    "activities": [
+      "outdoor",
+      "coffee"
+    ],
+    "interests": [
+      "volunteering",
+      "cooking",
+      "travel"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.749Z",
+  "updatedAt": "2026-03-31T11:48:42.749Z",
+  "id": "6deb9251-9023-4adc-8892-9afb2fce8379"
+}

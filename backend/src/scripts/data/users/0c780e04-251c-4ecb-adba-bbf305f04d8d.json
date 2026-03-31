@@ -1,0 +1,46 @@
+{
+  "email": "mouna57@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Mouna",
+  "age": 20,
+  "gender": "female",
+  "latitude": 36.811171,
+  "longitude": 10.137272,
+  "city": "Tunis",
+  "neighborhood": "Bardo",
+  "bio": "Love outdoor adventures and good conversations.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "outdoor",
+    "social",
+    "activities"
+  ],
+  "interests": [
+    "coding",
+    "tech",
+    "travel",
+    "sports",
+    "football"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 28,
+    "genderPreference": "male",
+    "maxDistance": 16,
+    "activities": [
+      "activities",
+      "restaurant"
+    ],
+    "interests": [
+      "fitness",
+      "photography"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.779Z",
+  "updatedAt": "2026-03-31T11:48:43.779Z",
+  "id": "0c780e04-251c-4ecb-adba-bbf305f04d8d"
+}

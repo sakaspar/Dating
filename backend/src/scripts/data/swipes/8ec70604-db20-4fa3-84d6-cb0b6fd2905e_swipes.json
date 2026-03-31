@@ -1,0 +1,84 @@
+{
+  "id": "8ec70604-db20-4fa3-84d6-cb0b6fd2905e_swipes",
+  "userId": "8ec70604-db20-4fa3-84d6-cb0b6fd2905e",
+  "swiped": {
+    "435e2f3a-0a50-4ce0-bcc7-4c8d9518bb61": {
+      "action": "like",
+      "timestamp": "2026-03-17T13:51:05.247Z"
+    },
+    "492bff10-c2bf-4245-8543-3e96473da2bb": {
+      "action": "pass",
+      "timestamp": "2026-03-22T06:52:43.757Z"
+    },
+    "cfb05ace-a467-44af-9317-0e4f93558670": {
+      "action": "like",
+      "timestamp": "2026-03-31T00:10:26.123Z"
+    },
+    "7f31b333-b06a-475c-9c46-c6819186409e": {
+      "action": "like",
+      "timestamp": "2026-03-20T01:36:19.095Z"
+    },
+    "dccdf224-ef5c-48c0-b983-d24711246dda": {
+      "action": "pass",
+      "timestamp": "2026-03-15T14:07:29.010Z"
+    },
+    "ac4444e9-cd26-482f-81fa-22c55fc37d5a": {
+      "action": "like",
+      "timestamp": "2026-03-29T07:56:54.916Z"
+    },
+    "7bfbff1c-dc95-498d-acb1-64653f0f84f2": {
+      "action": "pass",
+      "timestamp": "2026-03-28T02:02:36.308Z"
+    },
+    "6596b297-c95b-4900-8f1b-f68072b4ef91": {
+      "action": "pass",
+      "timestamp": "2026-03-24T08:36:17.885Z"
+    },
+    "7349e875-8d5f-4463-94c9-8e37c3c4730f": {
+      "action": "pass",
+      "timestamp": "2026-03-20T00:57:14.516Z"
+    },
+    "6a0baafb-3340-445e-b4a0-7875b6162099": {
+      "action": "like",
+      "timestamp": "2026-03-18T09:28:35.640Z"
+    },
+    "e52d076a-4f9a-4d2b-9380-7b376fef8a41": {
+      "action": "like",
+      "timestamp": "2026-03-22T04:06:19.805Z"
+    },
+    "d50c809a-e644-4561-9c93-106c8842cf72": {
+      "action": "like",
+      "timestamp": "2026-03-23T17:38:37.641Z"
+    },
+    "bec133c2-656f-4ca7-96a3-6bb9df45da9e": {
+      "action": "pass",
+      "timestamp": "2026-03-30T14:03:41.764Z"
+    },
+    "967d30ed-0086-459e-a695-093a7e781c72": {
+      "action": "pass",
+      "timestamp": "2026-03-30T12:46:03.433Z"
+    },
+    "aabdf84c-8e2b-4983-a0d6-ed0b486cde00": {
+      "action": "pass",
+      "timestamp": "2026-03-23T21:43:16.070Z"
+    },
+    "b638a798-d5b3-49f0-b628-8191edac0e62": {
+      "action": "like",
+      "timestamp": "2026-03-31T00:34:12.984Z"
+    },
+    "9767fee3-916b-46e6-bd64-630cc2ff3bbb": {
+      "action": "like",
+      "timestamp": "2026-03-22T09:54:30.719Z"
+    },
+    "73f0463c-1db6-4d60-b0a5-a7a714f332d2": {
+      "action": "pass",
+      "timestamp": "2026-03-29T15:00:42.171Z"
+    },
+    "7a85c7bb-2d35-4d6a-bcf1-66109cd3b8e1": {
+      "action": "pass",
+      "timestamp": "2026-03-24T10:54:45.381Z"
+    }
+  },
+  "createdAt": "2026-03-31T11:48:46.628Z",
+  "updatedAt": "2026-03-31T11:48:46.628Z"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "7bfbff1c-dc95-498d-acb1-64653f0f84f2_swipes",
+  "userId": "7bfbff1c-dc95-498d-acb1-64653f0f84f2",
+  "swiped": {
+    "6deb9251-9023-4adc-8892-9afb2fce8379": {
+      "action": "pass",
+      "timestamp": "2026-03-21T18:46:40.713Z"
+    },
+    "1c271667-a757-473b-81ca-9695c11327f7": {
+      "action": "like",
+      "timestamp": "2026-03-21T00:14:32.687Z"
+    },
+    "a507b3e8-ae85-4b21-8332-4918d6e4158d": {
+      "action": "pass",
+      "timestamp": "2026-03-12T14:04:45.379Z"
+    },
+    "e574dbfa-37e5-4b16-8565-1c3d9840b6c5": {
+      "action": "pass",
+      "timestamp": "2026-03-28T03:47:00.774Z"
+    },
+    "07716ffc-63bf-4959-be9f-bfef6085bb40": {
+      "action": "like",
+      "timestamp": "2026-03-25T14:34:31.212Z"
+    },
+    "156fbd5d-e245-48cd-909d-df53899cad89": {
+      "action": "like",
+      "timestamp": "2026-03-13T12:05:56.748Z"
+    },
+    "d584a7cf-0fc0-447a-9a2e-45661ba58e01": {
+      "action": "like",
+      "timestamp": "2026-03-13T17:12:46.234Z"
+    },
+    "510053f4-b1c4-4a93-bf43-0b13806638ba": {
+      "action": "like",
+      "timestamp": "2026-03-13T02:47:58.958Z"
+    },
+    "c9f7749a-77ff-4185-9514-32cb8269a843": {
+      "action": "pass",
+      "timestamp": "2026-03-13T07:04:37.694Z"
+    },
+    "e6d61d53-cee3-4d53-aff1-1c66a5d2a3f1": {
+      "action": "like",
+      "timestamp": "2026-03-24T06:29:28.516Z"
+    },
+    "c3676c63-02a9-44eb-add2-84ddeae72875": {
+      "action": "like",
+      "timestamp": "2026-03-14T14:18:06.970Z"
+    },
+    "c2455116-670f-4dbc-8d2b-46995391e4bf": {
+      "action": "like",
+      "timestamp": "2026-03-29T16:01:17.721Z"
+    },
+    "fc4717ed-74e1-4ba5-99d0-9f9208909383": {
+      "action": "pass",
+      "timestamp": "2026-03-23T02:55:00.512Z"
+    },
+    "4f64e688-5c86-4226-b8ce-51f3510ffb10": {
+      "action": "pass",
+      "timestamp": "2026-03-17T20:27:07.789Z"
+    },
+    "47de3540-5304-49d2-8c4e-ef7c7e9c56c2": {
+      "action": "like",
+      "timestamp": "2026-03-21T14:03:55.398Z"
+    }
+  },
+  "createdAt": "2026-03-31T11:48:46.535Z",
+  "updatedAt": "2026-03-31T11:48:46.535Z"
+}

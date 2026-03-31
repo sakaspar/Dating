@@ -1,0 +1,17 @@
+{
+  "matchId": "6e2509e2-b039-44f0-bb29-3d31f63364de",
+  "fromUserId": "9767fee3-916b-46e6-bd64-630cc2ff3bbb",
+  "toUserId": "2209e504-24f5-4ad8-98c0-e25ccd222b72",
+  "activityType": "events",
+  "date": "2026-04-14",
+  "time": "17:00",
+  "neighborhood": "Lac",
+  "budgetRange": "Low",
+  "suggestedPlace": "Lac Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.115Z",
+  "id": "993e9d6d-5058-43d1-9ef0-404e2d6473b6",
+  "updatedAt": "2026-03-31T11:48:47.115Z"
+}

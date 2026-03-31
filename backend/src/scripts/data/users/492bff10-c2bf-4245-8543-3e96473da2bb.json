@@ -1,0 +1,47 @@
+{
+  "email": "youssef32@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Youssef",
+  "age": 34,
+  "gender": "male",
+  "latitude": 36.877101,
+  "longitude": 10.325037,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Music makes everything better.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "events",
+    "restaurant"
+  ],
+  "interests": [
+    "music",
+    "reading",
+    "fitness",
+    "photography",
+    "writing"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 26,
+    "ageRangeMax": 42,
+    "genderPreference": "female",
+    "maxDistance": 37,
+    "activities": [
+      "outdoor",
+      "activities"
+    ],
+    "interests": [
+      "dancing",
+      "gaming",
+      "volunteering",
+      "yoga"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.340Z",
+  "updatedAt": "2026-03-31T11:48:41.340Z",
+  "id": "492bff10-c2bf-4245-8543-3e96473da2bb"
+}

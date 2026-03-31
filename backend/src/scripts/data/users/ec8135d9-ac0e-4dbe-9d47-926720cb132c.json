@@ -1,0 +1,42 @@
+{
+  "email": "bilel16@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Bilel",
+  "age": 35,
+  "gender": "male",
+  "latitude": 36.808522,
+  "longitude": 10.140524,
+  "city": "Tunis",
+  "neighborhood": "Bardo",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "social"
+  ],
+  "interests": [
+    "fitness",
+    "volunteering"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 27,
+    "ageRangeMax": 43,
+    "genderPreference": "female",
+    "maxDistance": 11,
+    "activities": [
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "football",
+      "photography"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.171Z",
+  "updatedAt": "2026-03-31T11:48:39.171Z",
+  "id": "ec8135d9-ac0e-4dbe-9d47-926720cb132c"
+}

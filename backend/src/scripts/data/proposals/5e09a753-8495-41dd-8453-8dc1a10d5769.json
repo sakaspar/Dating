@@ -1,0 +1,17 @@
+{
+  "matchId": "50d636dc-a775-4a0d-9408-04e386ae86d3",
+  "fromUserId": "967d30ed-0086-459e-a695-093a7e781c72",
+  "toUserId": "c2455116-670f-4dbc-8d2b-46995391e4bf",
+  "activityType": "events",
+  "date": "2026-04-07",
+  "time": "11:00",
+  "neighborhood": "Sidi Bou Said",
+  "budgetRange": "High",
+  "suggestedPlace": "Sidi Bou Said Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.066Z",
+  "id": "5e09a753-8495-41dd-8453-8dc1a10d5769",
+  "updatedAt": "2026-03-31T11:48:47.066Z"
+}

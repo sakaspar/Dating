@@ -1,0 +1,17 @@
+{
+  "matchId": "cff27b53-c344-430d-8913-2682f2d04d84",
+  "fromUserId": "9319e474-42b6-44fa-8c5e-dfbf4a1d0f6d",
+  "toUserId": "5a8111c2-bdec-4fac-ab91-830b8ed2f190",
+  "activityType": "coffee",
+  "date": "2026-04-08",
+  "time": "12:00",
+  "neighborhood": "Gammarth",
+  "budgetRange": "Low",
+  "suggestedPlace": "Gammarth Park",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.981Z",
+  "id": "da924670-bde4-470e-bd90-64d8d4909875",
+  "updatedAt": "2026-03-31T11:48:46.981Z"
+}

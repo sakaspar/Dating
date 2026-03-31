@@ -1,0 +1,46 @@
+{
+  "email": "ghada47@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Ghada",
+  "age": 28,
+  "gender": "female",
+  "latitude": 36.854274,
+  "longitude": 10.323478,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Looking for real connections, not just chats.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "events"
+  ],
+  "interests": [
+    "hiking",
+    "travel",
+    "volunteering"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 20,
+    "ageRangeMax": 36,
+    "genderPreference": "male",
+    "maxDistance": 28,
+    "activities": [
+      "activities",
+      "restaurant",
+      "events",
+      "outdoor"
+    ],
+    "interests": [
+      "fashion",
+      "gaming",
+      "volunteering",
+      "football"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.030Z",
+  "updatedAt": "2026-03-31T11:48:43.030Z",
+  "id": "84846d66-a521-4ac7-9fc8-9ce5adb0f4be"
+}

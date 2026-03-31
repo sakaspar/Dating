@@ -1,0 +1,17 @@
+{
+  "matchId": "3ef083f8-8bc6-40cb-883e-bde84fcdf570",
+  "fromUserId": "492bff10-c2bf-4245-8543-3e96473da2bb",
+  "toUserId": "fc4717ed-74e1-4ba5-99d0-9f9208909383",
+  "activityType": "activities",
+  "date": "2026-04-03",
+  "time": "10:00",
+  "neighborhood": "Sidi Bou Said",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Sidi Bou Said Park",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.056Z",
+  "id": "c1851d01-6745-414e-ac2b-cb9bec487b74",
+  "updatedAt": "2026-03-31T11:48:47.056Z"
+}

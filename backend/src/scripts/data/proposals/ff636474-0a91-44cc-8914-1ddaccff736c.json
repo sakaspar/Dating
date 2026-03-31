@@ -1,0 +1,17 @@
+{
+  "matchId": "08f67a35-f040-4c4a-8ad6-595077ab56b0",
+  "fromUserId": "6e435760-593f-424c-831a-5c15f6969893",
+  "toUserId": "5a8111c2-bdec-4fac-ab91-830b8ed2f190",
+  "activityType": "coffee",
+  "date": "2026-04-03",
+  "time": "16:30",
+  "neighborhood": "Sidi Bou Said",
+  "budgetRange": "Low",
+  "suggestedPlace": "Sidi Bou Said Restaurant",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.052Z",
+  "id": "ff636474-0a91-44cc-8914-1ddaccff736c",
+  "updatedAt": "2026-03-31T11:48:47.052Z"
+}

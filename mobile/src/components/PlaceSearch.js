@@ -16,8 +16,8 @@ import {
   Keyboard,
 } from 'react-native';
 import { TextInput, Text, IconButton, ActivityIndicator } from 'react-native-paper';
-import osmService from '../../services/osm';
-import { COLORS, SPACING, RADIUS, SHADOWS } from '../../constants/theme';
+import osmService from '../services/osm';
+import { COLORS, SPACING, RADIUS, SHADOWS } from '../constants/theme';
 
 export default function PlaceSearch({
   onSelect,

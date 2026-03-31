@@ -1,0 +1,17 @@
+{
+  "matchId": "a844c17e-2a17-486c-8697-fa378b2a4321",
+  "fromUserId": "9319e474-42b6-44fa-8c5e-dfbf4a1d0f6d",
+  "toUserId": "48db7f09-8eda-4044-b5b4-07725f3564cb",
+  "activityType": "restaurant",
+  "date": "2026-04-05",
+  "time": "15:00",
+  "neighborhood": "Manar",
+  "budgetRange": "Low",
+  "suggestedPlace": "Manar Park",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.101Z",
+  "id": "8ced48a7-a7fe-4c78-8b02-7ca5ec761b32",
+  "updatedAt": "2026-03-31T11:48:47.101Z"
+}

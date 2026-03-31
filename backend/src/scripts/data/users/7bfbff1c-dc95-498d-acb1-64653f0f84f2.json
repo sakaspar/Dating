@@ -1,0 +1,47 @@
+{
+  "email": "mehdi13@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Mehdi",
+  "age": 29,
+  "gender": "male",
+  "latitude": 36.845675,
+  "longitude": 10.18485,
+  "city": "Tunis",
+  "neighborhood": "Menzah",
+  "bio": "Beach walks > Everything else.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "coffee",
+    "activities"
+  ],
+  "interests": [
+    "music",
+    "dancing",
+    "gaming",
+    "swimming"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 21,
+    "ageRangeMax": 37,
+    "genderPreference": "female",
+    "maxDistance": 24,
+    "activities": [
+      "activities",
+      "coffee",
+      "restaurant",
+      "events"
+    ],
+    "interests": [
+      "travel",
+      "football",
+      "hiking"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.906Z",
+  "updatedAt": "2026-03-31T11:48:38.906Z",
+  "id": "7bfbff1c-dc95-498d-acb1-64653f0f84f2"
+}

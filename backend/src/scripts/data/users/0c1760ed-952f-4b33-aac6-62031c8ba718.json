@@ -1,0 +1,46 @@
+{
+  "email": "nadia52@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nadia",
+  "age": 29,
+  "gender": "female",
+  "latitude": 36.752677,
+  "longitude": 10.227059,
+  "city": "Tunis",
+  "neighborhood": "Ben Arous",
+  "bio": "Foodie who knows all the best spots in Tunis.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "social",
+    "events"
+  ],
+  "interests": [
+    "cooking",
+    "fitness"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 21,
+    "ageRangeMax": 37,
+    "genderPreference": "male",
+    "maxDistance": 49,
+    "activities": [
+      "social",
+      "activities",
+      "restaurant",
+      "outdoor"
+    ],
+    "interests": [
+      "photography",
+      "fashion",
+      "fitness"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.428Z",
+  "updatedAt": "2026-03-31T11:48:43.428Z",
+  "id": "0c1760ed-952f-4b33-aac6-62031c8ba718"
+}

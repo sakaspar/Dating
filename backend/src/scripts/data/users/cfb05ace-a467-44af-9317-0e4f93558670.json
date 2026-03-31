@@ -1,0 +1,43 @@
+{
+  "email": "mohamed1@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Mohamed",
+  "age": 35,
+  "gender": "male",
+  "latitude": 36.870144,
+  "longitude": 10.344293,
+  "city": "Tunis",
+  "neighborhood": "Sidi Bou Said",
+  "bio": "Love outdoor adventures and good conversations.",
+  "photos": [],
+  "activities": [
+    "restaurant",
+    "social"
+  ],
+  "interests": [
+    "fashion",
+    "cooking",
+    "gaming",
+    "coding"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 27,
+    "ageRangeMax": 43,
+    "genderPreference": "female",
+    "maxDistance": 30,
+    "activities": [
+      "outdoor",
+      "activities"
+    ],
+    "interests": [
+      "travel",
+      "photography"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:37.650Z",
+  "updatedAt": "2026-03-31T11:48:37.650Z",
+  "id": "cfb05ace-a467-44af-9317-0e4f93558670"
+}

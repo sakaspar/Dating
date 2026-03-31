@@ -1,0 +1,17 @@
+{
+  "matchId": "b14f51bf-74de-4db0-be79-51b3f6f7110c",
+  "fromUserId": "288698bc-90c8-46c2-b8b5-ae1cb026ef7d",
+  "toUserId": "678d92ef-3d28-4ecf-a1a5-e35e8218a6db",
+  "activityType": "events",
+  "date": "2026-04-01",
+  "time": "20:30",
+  "neighborhood": "La Marsa",
+  "budgetRange": "High",
+  "suggestedPlace": "La Marsa Restaurant",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.032Z",
+  "id": "559502bd-0f87-4964-af0f-d622b2ee7437",
+  "updatedAt": "2026-03-31T11:48:47.032Z"
+}

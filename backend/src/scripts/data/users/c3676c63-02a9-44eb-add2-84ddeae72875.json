@@ -1,0 +1,46 @@
+{
+  "email": "sarra62@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Sarra",
+  "age": 35,
+  "gender": "female",
+  "latitude": 36.844469,
+  "longitude": 10.187631,
+  "city": "Tunis",
+  "neighborhood": "Menzah",
+  "bio": "Beach walks > Everything else.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant"
+  ],
+  "interests": [
+    "fitness",
+    "gaming",
+    "swimming",
+    "writing",
+    "music"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 27,
+    "ageRangeMax": 43,
+    "genderPreference": "male",
+    "maxDistance": 38,
+    "activities": [
+      "activities",
+      "restaurant"
+    ],
+    "interests": [
+      "reading",
+      "fitness",
+      "coding",
+      "fashion"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:44.375Z",
+  "updatedAt": "2026-03-31T11:48:44.375Z",
+  "id": "c3676c63-02a9-44eb-add2-84ddeae72875"
+}

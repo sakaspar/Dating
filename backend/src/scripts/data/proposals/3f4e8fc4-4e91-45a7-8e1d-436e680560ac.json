@@ -1,0 +1,17 @@
+{
+  "matchId": "f06940af-ae80-4d15-8382-84c58925aa08",
+  "fromUserId": "b638a798-d5b3-49f0-b628-8191edac0e62",
+  "toUserId": "c9f7749a-77ff-4185-9514-32cb8269a843",
+  "activityType": "coffee",
+  "date": "2026-04-11",
+  "time": "13:00",
+  "neighborhood": "Manar",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Manar Park",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.035Z",
+  "id": "3f4e8fc4-4e91-45a7-8e1d-436e680560ac",
+  "updatedAt": "2026-03-31T11:48:47.035Z"
+}

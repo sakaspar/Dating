@@ -1,0 +1,17 @@
+{
+  "matchId": "3cd11f54-5c03-46e8-b6b9-37d40cadc95d",
+  "fromUserId": "435e2f3a-0a50-4ce0-bcc7-4c8d9518bb61",
+  "toUserId": "bf8d34d8-fd41-4a36-a068-8646bf7882a1",
+  "activityType": "events",
+  "date": "2026-04-08",
+  "time": "10:30",
+  "neighborhood": "Carthage",
+  "budgetRange": "High",
+  "suggestedPlace": "Carthage Park",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.090Z",
+  "id": "61497bac-86be-43cf-9bb2-3111616eeb9b",
+  "updatedAt": "2026-03-31T11:48:47.090Z"
+}

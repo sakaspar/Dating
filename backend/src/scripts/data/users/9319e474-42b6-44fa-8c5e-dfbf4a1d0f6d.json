@@ -1,0 +1,45 @@
+{
+  "email": "sami7@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Sami",
+  "age": 31,
+  "gender": "male",
+  "latitude": 36.805672,
+  "longitude": 10.180648,
+  "city": "Tunis",
+  "neighborhood": "Tunis Centre",
+  "bio": "Weekend hiker, weekday coder.",
+  "photos": [],
+  "activities": [
+    "events",
+    "restaurant"
+  ],
+  "interests": [
+    "sports",
+    "hiking",
+    "photography"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 23,
+    "ageRangeMax": 39,
+    "genderPreference": "female",
+    "maxDistance": 25,
+    "activities": [
+      "coffee",
+      "restaurant",
+      "activities"
+    ],
+    "interests": [
+      "cooking",
+      "tech",
+      "dancing",
+      "swimming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.117Z",
+  "updatedAt": "2026-03-31T11:48:38.117Z",
+  "id": "9319e474-42b6-44fa-8c5e-dfbf4a1d0f6d"
+}

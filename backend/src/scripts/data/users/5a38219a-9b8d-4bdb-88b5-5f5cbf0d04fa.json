@@ -1,0 +1,47 @@
+{
+  "email": "youssef2@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Youssef",
+  "age": 33,
+  "gender": "male",
+  "latitude": 36.861063,
+  "longitude": 10.198272,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Weekend hiker, weekday coder.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "restaurant"
+  ],
+  "interests": [
+    "reading",
+    "sports",
+    "fitness",
+    "photography",
+    "fashion"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 25,
+    "ageRangeMax": 41,
+    "genderPreference": "female",
+    "maxDistance": 49,
+    "activities": [
+      "restaurant",
+      "activities",
+      "events"
+    ],
+    "interests": [
+      "travel",
+      "fitness",
+      "art",
+      "music"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:37.651Z",
+  "updatedAt": "2026-03-31T11:48:37.651Z",
+  "id": "5a38219a-9b8d-4bdb-88b5-5f5cbf0d04fa"
+}

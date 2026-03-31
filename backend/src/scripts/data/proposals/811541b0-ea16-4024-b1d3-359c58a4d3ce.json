@@ -1,0 +1,17 @@
+{
+  "matchId": "aace5547-72d7-4c8b-9942-691132201872",
+  "fromUserId": "e52d076a-4f9a-4d2b-9380-7b376fef8a41",
+  "toUserId": "4947d9f7-b1af-4a30-9a49-97a7f6d976f3",
+  "activityType": "social",
+  "date": "2026-04-09",
+  "time": "20:30",
+  "neighborhood": "Manouba",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Manouba Café",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.982Z",
+  "id": "811541b0-ea16-4024-b1d3-359c58a4d3ce",
+  "updatedAt": "2026-03-31T11:48:46.982Z"
+}

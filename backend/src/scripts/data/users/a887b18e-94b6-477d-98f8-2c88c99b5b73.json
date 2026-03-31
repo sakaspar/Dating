@@ -1,0 +1,44 @@
+{
+  "email": "zied24@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Zied",
+  "age": 18,
+  "gender": "male",
+  "latitude": 36.852796,
+  "longitude": 10.322969,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Coffee enthusiast looking for new places to explore.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "social"
+  ],
+  "interests": [
+    "football",
+    "reading",
+    "art"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 26,
+    "genderPreference": "female",
+    "maxDistance": 41,
+    "activities": [
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "swimming",
+      "football",
+      "writing"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:40.431Z",
+  "updatedAt": "2026-03-31T11:48:40.431Z",
+  "id": "a887b18e-94b6-477d-98f8-2c88c99b5b73"
+}

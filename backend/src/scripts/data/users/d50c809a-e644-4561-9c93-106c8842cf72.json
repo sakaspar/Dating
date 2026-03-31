@@ -1,0 +1,46 @@
+{
+  "email": "fares10@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Fares",
+  "age": 18,
+  "gender": "male",
+  "latitude": 36.821288,
+  "longitude": 10.237194,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Coffee enthusiast looking for new places to explore.",
+  "photos": [],
+  "activities": [
+    "restaurant",
+    "coffee"
+  ],
+  "interests": [
+    "sports",
+    "cooking",
+    "tech",
+    "fitness",
+    "hiking"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 26,
+    "genderPreference": "female",
+    "maxDistance": 14,
+    "activities": [
+      "events",
+      "outdoor"
+    ],
+    "interests": [
+      "yoga",
+      "coding",
+      "football",
+      "swimming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.499Z",
+  "updatedAt": "2026-03-31T11:48:38.499Z",
+  "id": "d50c809a-e644-4561-9c93-106c8842cf72"
+}

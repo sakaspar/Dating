@@ -1,0 +1,46 @@
+{
+  "email": "asma48@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Asma",
+  "age": 22,
+  "gender": "female",
+  "latitude": 36.845988,
+  "longitude": 10.185126,
+  "city": "Tunis",
+  "neighborhood": "Menzah",
+  "bio": "Life is too short for boring dates.",
+  "photos": [],
+  "activities": [
+    "restaurant",
+    "coffee",
+    "events",
+    "activities"
+  ],
+  "interests": [
+    "reading",
+    "photography"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 30,
+    "genderPreference": "male",
+    "maxDistance": 39,
+    "activities": [
+      "events",
+      "coffee",
+      "social",
+      "outdoor"
+    ],
+    "interests": [
+      "yoga",
+      "fitness",
+      "writing"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.123Z",
+  "updatedAt": "2026-03-31T11:48:43.123Z",
+  "id": "2209e504-24f5-4ad8-98c0-e25ccd222b72"
+}

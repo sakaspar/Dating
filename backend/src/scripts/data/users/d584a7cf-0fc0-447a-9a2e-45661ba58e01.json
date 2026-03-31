@@ -1,0 +1,48 @@
+{
+  "email": "hajer56@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Hajer",
+  "age": 23,
+  "gender": "female",
+  "latitude": 36.879211,
+  "longitude": 10.326935,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Looking for my partner in crime.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "restaurant",
+    "coffee"
+  ],
+  "interests": [
+    "cooking",
+    "photography",
+    "reading",
+    "music"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 31,
+    "genderPreference": "male",
+    "maxDistance": 27,
+    "activities": [
+      "social",
+      "events",
+      "coffee",
+      "outdoor"
+    ],
+    "interests": [
+      "swimming",
+      "cooking",
+      "travel",
+      "volunteering"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.767Z",
+  "updatedAt": "2026-03-31T11:48:43.767Z",
+  "id": "d584a7cf-0fc0-447a-9a2e-45661ba58e01"
+}

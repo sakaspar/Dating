@@ -1,0 +1,17 @@
+{
+  "matchId": "4937f983-e003-4d90-ba4d-967b947ba061",
+  "fromUserId": "cfb05ace-a467-44af-9317-0e4f93558670",
+  "toUserId": "47de3540-5304-49d2-8c4e-ef7c7e9c56c2",
+  "activityType": "coffee",
+  "date": "2026-04-04",
+  "time": "14:30",
+  "neighborhood": "Carthage",
+  "budgetRange": "High",
+  "suggestedPlace": "Carthage Café",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.034Z",
+  "id": "bf8e4c19-26d1-4a1f-922c-193ded77b6f6",
+  "updatedAt": "2026-03-31T11:48:47.034Z"
+}

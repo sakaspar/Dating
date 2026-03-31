@@ -1,0 +1,46 @@
+{
+  "email": "mayssa45@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Mayssa",
+  "age": 30,
+  "gender": "female",
+  "latitude": 36.860326,
+  "longitude": 10.194966,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Art lover and occasional painter.",
+  "photos": [],
+  "activities": [
+    "events",
+    "social",
+    "outdoor",
+    "activities"
+  ],
+  "interests": [
+    "football",
+    "cooking",
+    "music",
+    "tech"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 22,
+    "ageRangeMax": 38,
+    "genderPreference": "male",
+    "maxDistance": 35,
+    "activities": [
+      "events",
+      "activities",
+      "coffee"
+    ],
+    "interests": [
+      "coding",
+      "dancing"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.842Z",
+  "updatedAt": "2026-03-31T11:48:42.842Z",
+  "id": "47de3540-5304-49d2-8c4e-ef7c7e9c56c2"
+}

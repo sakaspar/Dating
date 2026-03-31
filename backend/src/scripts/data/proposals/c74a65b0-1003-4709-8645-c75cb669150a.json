@@ -1,0 +1,17 @@
+{
+  "matchId": "9430e2cb-be38-4ebe-bc83-c41d0eca0493",
+  "fromUserId": "ac30765c-c60c-4fa5-b317-e4c06b9c7f7a",
+  "toUserId": "0c780e04-251c-4ecb-adba-bbf305f04d8d",
+  "activityType": "outdoor",
+  "date": "2026-04-02",
+  "time": "13:30",
+  "neighborhood": "Tunis Centre",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Tunis Centre Café",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.035Z",
+  "id": "c74a65b0-1003-4709-8645-c75cb669150a",
+  "updatedAt": "2026-03-31T11:48:47.035Z"
+}

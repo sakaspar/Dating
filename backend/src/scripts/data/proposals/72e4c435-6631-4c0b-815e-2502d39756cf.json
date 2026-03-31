@@ -1,0 +1,17 @@
+{
+  "matchId": "a357c811-2ce7-407d-8676-6b4b0ca3a561",
+  "fromUserId": "dccdf224-ef5c-48c0-b983-d24711246dda",
+  "toUserId": "48db7f09-8eda-4044-b5b4-07725f3564cb",
+  "activityType": "coffee",
+  "date": "2026-04-04",
+  "time": "10:00",
+  "neighborhood": "Manar",
+  "budgetRange": "Low",
+  "suggestedPlace": "Manar Café",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.982Z",
+  "id": "72e4c435-6631-4c0b-815e-2502d39756cf",
+  "updatedAt": "2026-03-31T11:48:46.982Z"
+}

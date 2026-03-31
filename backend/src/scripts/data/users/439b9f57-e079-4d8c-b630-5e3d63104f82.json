@@ -1,0 +1,46 @@
+{
+  "email": "salma69@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Salma",
+  "age": 23,
+  "gender": "female",
+  "latitude": 36.879003,
+  "longitude": 10.324668,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Beach walks > Everything else.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "outdoor",
+    "social",
+    "restaurant"
+  ],
+  "interests": [
+    "fitness",
+    "yoga",
+    "writing",
+    "photography"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 31,
+    "genderPreference": "male",
+    "maxDistance": 24,
+    "activities": [
+      "activities",
+      "coffee",
+      "events"
+    ],
+    "interests": [
+      "music",
+      "swimming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:45.685Z",
+  "updatedAt": "2026-03-31T11:48:45.685Z",
+  "id": "439b9f57-e079-4d8c-b630-5e3d63104f82"
+}

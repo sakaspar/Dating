@@ -1,0 +1,48 @@
+{
+  "email": "aziz20@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Aziz",
+  "age": 26,
+  "gender": "male",
+  "latitude": 36.852676,
+  "longitude": 10.325644,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Weekend hiker, weekday coder.",
+  "photos": [],
+  "activities": [
+    "events",
+    "coffee",
+    "outdoor"
+  ],
+  "interests": [
+    "coding",
+    "tech",
+    "writing",
+    "reading",
+    "travel"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 34,
+    "genderPreference": "female",
+    "maxDistance": 35,
+    "activities": [
+      "outdoor",
+      "social",
+      "events",
+      "activities"
+    ],
+    "interests": [
+      "photography",
+      "swimming",
+      "travel"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.408Z",
+  "updatedAt": "2026-03-31T11:48:39.408Z",
+  "id": "00e2afaf-0b6d-42b2-8f71-a92ea88581cd"
+}

@@ -1,0 +1,17 @@
+{
+  "matchId": "7b677842-6a91-4bff-9f1f-994dc7af87b6",
+  "fromUserId": "9319e474-42b6-44fa-8c5e-dfbf4a1d0f6d",
+  "toUserId": "156fbd5d-e245-48cd-909d-df53899cad89",
+  "activityType": "outdoor",
+  "date": "2026-04-06",
+  "time": "12:30",
+  "neighborhood": "Menzah",
+  "budgetRange": "High",
+  "suggestedPlace": "Menzah Restaurant",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.122Z",
+  "id": "52b5473a-9df1-4822-b0a7-7fdc5b50c6b8",
+  "updatedAt": "2026-03-31T11:48:47.122Z"
+}

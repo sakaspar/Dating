@@ -1,0 +1,46 @@
+{
+  "email": "salma39@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Salma",
+  "age": 19,
+  "gender": "female",
+  "latitude": 36.869164,
+  "longitude": 10.345082,
+  "city": "Tunis",
+  "neighborhood": "Sidi Bou Said",
+  "bio": "Foodie who knows all the best spots in Tunis.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "restaurant",
+    "events"
+  ],
+  "interests": [
+    "volunteering",
+    "photography",
+    "music",
+    "cooking"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "male",
+    "maxDistance": 19,
+    "activities": [
+      "coffee",
+      "events",
+      "restaurant",
+      "activities"
+    ],
+    "interests": [
+      "gaming",
+      "football"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.136Z",
+  "updatedAt": "2026-03-31T11:48:42.136Z",
+  "id": "37894a27-388d-48ff-a6d0-aae3b44904a1"
+}

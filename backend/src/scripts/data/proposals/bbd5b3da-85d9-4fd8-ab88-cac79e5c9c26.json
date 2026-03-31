@@ -1,0 +1,17 @@
+{
+  "matchId": "c460d0c1-61d1-4f7d-ba8d-f01ec1a1261a",
+  "fromUserId": "73f0463c-1db6-4d60-b0a5-a7a714f332d2",
+  "toUserId": "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d",
+  "activityType": "outdoor",
+  "date": "2026-04-09",
+  "time": "12:00",
+  "neighborhood": "Menzah",
+  "budgetRange": "Low",
+  "suggestedPlace": "Menzah Café",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.093Z",
+  "id": "bbd5b3da-85d9-4fd8-ab88-cac79e5c9c26",
+  "updatedAt": "2026-03-31T11:48:47.093Z"
+}

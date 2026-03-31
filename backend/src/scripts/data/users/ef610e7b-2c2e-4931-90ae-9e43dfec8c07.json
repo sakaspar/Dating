@@ -1,0 +1,43 @@
+{
+  "email": "seif19@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Seif",
+  "age": 31,
+  "gender": "male",
+  "latitude": 36.833805,
+  "longitude": 10.163759,
+  "city": "Tunis",
+  "neighborhood": "Manar",
+  "bio": "Coffee enthusiast looking for new places to explore.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "activities"
+  ],
+  "interests": [
+    "swimming",
+    "fashion",
+    "coding"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 23,
+    "ageRangeMax": 39,
+    "genderPreference": "female",
+    "maxDistance": 21,
+    "activities": [
+      "coffee",
+      "social",
+      "events"
+    ],
+    "interests": [
+      "art",
+      "photography"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.395Z",
+  "updatedAt": "2026-03-31T11:48:39.395Z",
+  "id": "ef610e7b-2c2e-4931-90ae-9e43dfec8c07"
+}

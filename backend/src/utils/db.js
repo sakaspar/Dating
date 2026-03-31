@@ -63,11 +63,13 @@ class JsonDB {
     const filePath = path.join(this._getCollectionPath(collection), `${id}.json`);
     try {
       const raw = await fs.readFile(filePath, 'utf8');
+      if (!raw || !raw.trim()) return null;
       const data = JSON.parse(raw);
       this.cache.set(cacheKey, data);
       return data;
     } catch (err) {
       if (err.code === 'ENOENT') return null;
+      if (err instanceof SyntaxError) return null;
       throw err;
     }
   }
@@ -131,11 +133,14 @@ class JsonDB {
     const filePath = path.join(this._getCollectionPath('indexes'), `${indexName}.json`);
     try {
       const raw = await fs.readFile(filePath, 'utf8');
+      if (!raw || !raw.trim()) return {};
       const data = JSON.parse(raw);
       this.cache.set(cacheKey, data);
       return data;
     } catch (err) {
       if (err.code === 'ENOENT') return {};
+      // Handle corrupted/empty JSON gracefully
+      if (err instanceof SyntaxError) return {};
       throw err;
     }
   }

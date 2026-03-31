@@ -1,0 +1,46 @@
+{
+  "email": "dorra43@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Dorra",
+  "age": 19,
+  "gender": "female",
+  "latitude": 36.861961,
+  "longitude": 10.192967,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "events",
+    "restaurant"
+  ],
+  "interests": [
+    "travel",
+    "cinema",
+    "coding",
+    "yoga"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "male",
+    "maxDistance": 37,
+    "activities": [
+      "outdoor",
+      "coffee"
+    ],
+    "interests": [
+      "hiking",
+      "fashion",
+      "reading",
+      "gaming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.657Z",
+  "updatedAt": "2026-03-31T11:48:42.657Z",
+  "id": "2a26cfaa-5c17-4fd0-9837-b01bf23e686b"
+}

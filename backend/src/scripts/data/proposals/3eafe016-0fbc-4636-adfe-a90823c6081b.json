@@ -1,0 +1,17 @@
+{
+  "matchId": "77875582-967a-4c2e-a333-92f240f5738a",
+  "fromUserId": "73f0463c-1db6-4d60-b0a5-a7a714f332d2",
+  "toUserId": "a507b3e8-ae85-4b21-8332-4918d6e4158d",
+  "activityType": "coffee",
+  "date": "2026-04-04",
+  "time": "19:30",
+  "neighborhood": "Bardo",
+  "budgetRange": "High",
+  "suggestedPlace": "Bardo Café",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.134Z",
+  "id": "3eafe016-0fbc-4636-adfe-a90823c6081b",
+  "updatedAt": "2026-03-31T11:48:47.134Z"
+}

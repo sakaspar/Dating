@@ -1,0 +1,45 @@
+{
+  "email": "amina65@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Amina",
+  "age": 21,
+  "gender": "female",
+  "latitude": 36.864185,
+  "longitude": 10.197593,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Looking for my partner in crime.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "coffee"
+  ],
+  "interests": [
+    "reading",
+    "cinema",
+    "photography",
+    "volunteering",
+    "fashion"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 29,
+    "genderPreference": "male",
+    "maxDistance": 38,
+    "activities": [
+      "events",
+      "activities",
+      "restaurant"
+    ],
+    "interests": [
+      "volunteering",
+      "tech"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:44.538Z",
+  "updatedAt": "2026-03-31T11:48:44.538Z",
+  "id": "4f64e688-5c86-4226-b8ce-51f3510ffb10"
+}

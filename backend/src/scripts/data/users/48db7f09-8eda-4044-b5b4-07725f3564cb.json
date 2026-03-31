@@ -1,0 +1,47 @@
+{
+  "email": "fatma38@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Fatma",
+  "age": 18,
+  "gender": "female",
+  "latitude": 36.86213,
+  "longitude": 10.195056,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Love outdoor adventures and good conversations.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "restaurant",
+    "social"
+  ],
+  "interests": [
+    "cooking",
+    "writing",
+    "travel",
+    "tech",
+    "cinema"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 26,
+    "genderPreference": "male",
+    "maxDistance": 45,
+    "activities": [
+      "outdoor",
+      "events",
+      "activities"
+    ],
+    "interests": [
+      "writing",
+      "gaming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.998Z",
+  "updatedAt": "2026-03-31T11:48:41.998Z",
+  "id": "48db7f09-8eda-4044-b5b4-07725f3564cb"
+}

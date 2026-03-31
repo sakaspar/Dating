@@ -1,0 +1,17 @@
+{
+  "matchId": "93efcf70-5381-404e-a93d-8f59ecdcaaeb",
+  "fromUserId": "d50c809a-e644-4561-9c93-106c8842cf72",
+  "toUserId": "a507b3e8-ae85-4b21-8332-4918d6e4158d",
+  "activityType": "outdoor",
+  "date": "2026-04-14",
+  "time": "18:00",
+  "neighborhood": "La Marsa",
+  "budgetRange": "High",
+  "suggestedPlace": "La Marsa Park",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.041Z",
+  "id": "f2e09d46-6fb7-4a81-b483-67295110e1be",
+  "updatedAt": "2026-03-31T11:48:47.041Z"
+}

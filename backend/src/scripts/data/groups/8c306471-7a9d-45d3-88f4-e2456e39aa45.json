@@ -1,0 +1,27 @@
+{
+  "creatorId": "738377b7-55e4-45c0-a416-773351803fd2",
+  "activityType": "restaurant",
+  "title": "Beach Volleyball",
+  "description": "Join us for restaurant/dining in Manar!",
+  "date": "2026-04-13",
+  "time": "15:00",
+  "location": "Manar",
+  "latitude": 36.835,
+  "longitude": 10.165,
+  "currentSize": 3,
+  "lookingFor": 4,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "738377b7-55e4-45c0-a416-773351803fd2",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.139Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.139Z",
+  "id": "8c306471-7a9d-45d3-88f4-e2456e39aa45",
+  "updatedAt": "2026-03-31T11:48:47.139Z"
+}

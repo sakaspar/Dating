@@ -1,0 +1,27 @@
+{
+  "creatorId": "5a8111c2-bdec-4fac-ab91-830b8ed2f190",
+  "activityType": "events",
+  "title": "Sunset Picnic",
+  "description": "Join us for events (cinema, concerts, exhibitions) in Sidi Bou Said!",
+  "date": "2026-04-12",
+  "time": "16:00",
+  "location": "Sidi Bou Said",
+  "latitude": 36.871,
+  "longitude": 10.3468,
+  "currentSize": 4,
+  "lookingFor": 1,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "5a8111c2-bdec-4fac-ab91-830b8ed2f190",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.144Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.144Z",
+  "id": "437e3103-97fb-45dc-8406-d34ad6c7713f",
+  "updatedAt": "2026-03-31T11:48:47.144Z"
+}

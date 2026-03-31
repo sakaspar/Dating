@@ -1,0 +1,17 @@
+{
+  "matchId": "e47ed1e2-3bca-463c-ada7-6fc1f7ad1db4",
+  "fromUserId": "233cb045-112e-46a5-8a0b-dad8a429d4fa",
+  "toUserId": "0c780e04-251c-4ecb-adba-bbf305f04d8d",
+  "activityType": "outdoor",
+  "date": "2026-04-09",
+  "time": "13:30",
+  "neighborhood": "Manar",
+  "budgetRange": "High",
+  "suggestedPlace": "Manar Restaurant",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.124Z",
+  "id": "651487fe-b530-4112-81a6-cd348b3d2614",
+  "updatedAt": "2026-03-31T11:48:47.124Z"
+}

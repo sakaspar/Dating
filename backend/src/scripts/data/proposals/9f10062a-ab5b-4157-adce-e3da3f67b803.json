@@ -1,0 +1,17 @@
+{
+  "matchId": "e837d1f1-0284-45f4-b4e8-a1537c844a44",
+  "fromUserId": "dccdf224-ef5c-48c0-b983-d24711246dda",
+  "toUserId": "fbc9d12b-3221-44ea-823c-eec46883c855",
+  "activityType": "outdoor",
+  "date": "2026-04-11",
+  "time": "10:30",
+  "neighborhood": "Carthage",
+  "budgetRange": "High",
+  "suggestedPlace": "Carthage Café",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.050Z",
+  "id": "9f10062a-ab5b-4157-adce-e3da3f67b803",
+  "updatedAt": "2026-03-31T11:48:47.050Z"
+}

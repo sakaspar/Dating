@@ -1,0 +1,17 @@
+{
+  "matchId": "c36c723c-5a60-4c8b-8b7d-d5177031b7a6",
+  "fromUserId": "fe2e1903-33c6-4313-a43c-c378a470ba4a",
+  "toUserId": "439b9f57-e079-4d8c-b630-5e3d63104f82",
+  "activityType": "events",
+  "date": "2026-04-13",
+  "time": "10:00",
+  "neighborhood": "Ariana",
+  "budgetRange": "Low",
+  "suggestedPlace": "Ariana Park",
+  "notes": "Looking forward to it!",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.041Z",
+  "id": "5fc94587-1d90-4c7e-8d3b-5cf1a2b86115",
+  "updatedAt": "2026-03-31T11:48:47.041Z"
+}

@@ -1,0 +1,17 @@
+{
+  "matchId": "168552e7-8bbd-429f-8447-29224faa1589",
+  "fromUserId": "5a38219a-9b8d-4bdb-88b5-5f5cbf0d04fa",
+  "toUserId": "156fbd5d-e245-48cd-909d-df53899cad89",
+  "activityType": "activities",
+  "date": "2026-04-01",
+  "time": "19:30",
+  "neighborhood": "Lac",
+  "budgetRange": "Low",
+  "suggestedPlace": "Lac Restaurant",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.037Z",
+  "id": "81faad47-a334-4fc2-873b-2d1eeceac3b6",
+  "updatedAt": "2026-03-31T11:48:47.037Z"
+}

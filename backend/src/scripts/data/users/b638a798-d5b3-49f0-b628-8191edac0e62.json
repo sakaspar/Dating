@@ -1,0 +1,49 @@
+{
+  "email": "chaker17@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Chaker",
+  "age": 19,
+  "gender": "male",
+  "latitude": 36.822063,
+  "longitude": 10.239285,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "outdoor",
+    "restaurant",
+    "activities"
+  ],
+  "interests": [
+    "fitness",
+    "photography",
+    "yoga",
+    "travel",
+    "cinema"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "female",
+    "maxDistance": 40,
+    "activities": [
+      "outdoor",
+      "social",
+      "restaurant",
+      "coffee"
+    ],
+    "interests": [
+      "reading",
+      "sports",
+      "yoga"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.277Z",
+  "updatedAt": "2026-03-31T11:48:39.277Z",
+  "id": "b638a798-d5b3-49f0-b628-8191edac0e62"
+}

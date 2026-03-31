@@ -1,0 +1,80 @@
+{
+  "id": "d7c990bb-13dd-4ddd-9fc2-de5259fcef13_swipes",
+  "userId": "d7c990bb-13dd-4ddd-9fc2-de5259fcef13",
+  "swiped": {
+    "6deb9251-9023-4adc-8892-9afb2fce8379": {
+      "action": "like",
+      "timestamp": "2026-03-12T13:58:52.030Z"
+    },
+    "678d92ef-3d28-4ecf-a1a5-e35e8218a6db": {
+      "action": "pass",
+      "timestamp": "2026-03-28T20:08:18.920Z"
+    },
+    "0c780e04-251c-4ecb-adba-bbf305f04d8d": {
+      "action": "like",
+      "timestamp": "2026-03-23T01:49:17.897Z"
+    },
+    "0988c4c9-515a-4547-87f9-b31a73187f29": {
+      "action": "pass",
+      "timestamp": "2026-03-25T17:50:52.594Z"
+    },
+    "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d": {
+      "action": "like",
+      "timestamp": "2026-03-17T05:18:23.738Z"
+    },
+    "37894a27-388d-48ff-a6d0-aae3b44904a1": {
+      "action": "like",
+      "timestamp": "2026-03-18T07:30:23.200Z"
+    },
+    "c9f7749a-77ff-4185-9514-32cb8269a843": {
+      "action": "pass",
+      "timestamp": "2026-03-18T22:40:37.320Z"
+    },
+    "4947d9f7-b1af-4a30-9a49-97a7f6d976f3": {
+      "action": "like",
+      "timestamp": "2026-03-14T05:50:32.197Z"
+    },
+    "48db7f09-8eda-4044-b5b4-07725f3564cb": {
+      "action": "like",
+      "timestamp": "2026-03-27T19:45:39.704Z"
+    },
+    "47de3540-5304-49d2-8c4e-ef7c7e9c56c2": {
+      "action": "pass",
+      "timestamp": "2026-03-16T02:28:13.588Z"
+    },
+    "84846d66-a521-4ac7-9fc8-9ce5adb0f4be": {
+      "action": "like",
+      "timestamp": "2026-03-27T12:32:38.220Z"
+    },
+    "5a8111c2-bdec-4fac-ab91-830b8ed2f190": {
+      "action": "like",
+      "timestamp": "2026-03-14T13:31:57.371Z"
+    },
+    "fc4717ed-74e1-4ba5-99d0-9f9208909383": {
+      "action": "pass",
+      "timestamp": "2026-03-23T10:39:25.352Z"
+    },
+    "156fbd5d-e245-48cd-909d-df53899cad89": {
+      "action": "like",
+      "timestamp": "2026-03-17T09:43:41.426Z"
+    },
+    "2a26cfaa-5c17-4fd0-9837-b01bf23e686b": {
+      "action": "pass",
+      "timestamp": "2026-03-24T11:48:54.592Z"
+    },
+    "439b9f57-e079-4d8c-b630-5e3d63104f82": {
+      "action": "pass",
+      "timestamp": "2026-03-12T06:29:46.462Z"
+    },
+    "a507b3e8-ae85-4b21-8332-4918d6e4158d": {
+      "action": "like",
+      "timestamp": "2026-03-19T09:16:41.263Z"
+    },
+    "9b4971d0-6987-41dc-8106-f6e29bec849f": {
+      "action": "like",
+      "timestamp": "2026-03-17T15:32:08.272Z"
+    }
+  },
+  "createdAt": "2026-03-31T11:48:46.572Z",
+  "updatedAt": "2026-03-31T11:48:46.572Z"
+}

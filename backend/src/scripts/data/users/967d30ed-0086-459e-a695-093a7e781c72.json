@@ -1,0 +1,44 @@
+{
+  "email": "mohamed31@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Mohamed",
+  "age": 33,
+  "gender": "male",
+  "latitude": 36.819681,
+  "longitude": 10.238287,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Here to find someone who shares my energy.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "events"
+  ],
+  "interests": [
+    "dancing",
+    "photography",
+    "music"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 25,
+    "ageRangeMax": 41,
+    "genderPreference": "female",
+    "maxDistance": 35,
+    "activities": [
+      "restaurant",
+      "coffee",
+      "activities"
+    ],
+    "interests": [
+      "football",
+      "sports",
+      "fitness"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.248Z",
+  "updatedAt": "2026-03-31T11:48:41.248Z",
+  "id": "967d30ed-0086-459e-a695-093a7e781c72"
+}

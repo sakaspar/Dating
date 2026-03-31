@@ -1,0 +1,17 @@
+{
+  "matchId": "221a63d1-dc14-42ad-86a1-71100ba45751",
+  "fromUserId": "aabdf84c-8e2b-4983-a0d6-ed0b486cde00",
+  "toUserId": "2209e504-24f5-4ad8-98c0-e25ccd222b72",
+  "activityType": "outdoor",
+  "date": "2026-04-07",
+  "time": "10:30",
+  "neighborhood": "Ariana",
+  "budgetRange": "Low",
+  "suggestedPlace": "Ariana Park",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.053Z",
+  "id": "14fd3d17-2390-4f43-90c7-a72cd5cbe730",
+  "updatedAt": "2026-03-31T11:48:47.053Z"
+}

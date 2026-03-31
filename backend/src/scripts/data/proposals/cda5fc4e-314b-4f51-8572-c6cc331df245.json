@@ -1,0 +1,17 @@
+{
+  "matchId": "0e33ef7f-6961-403b-8ff7-b3afbeadc6b8",
+  "fromUserId": "73f0463c-1db6-4d60-b0a5-a7a714f332d2",
+  "toUserId": "9b4971d0-6987-41dc-8106-f6e29bec849f",
+  "activityType": "outdoor",
+  "date": "2026-04-01",
+  "time": "15:30",
+  "neighborhood": "Carthage",
+  "budgetRange": "Low",
+  "suggestedPlace": "Carthage Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.986Z",
+  "id": "cda5fc4e-314b-4f51-8572-c6cc331df245",
+  "updatedAt": "2026-03-31T11:48:46.986Z"
+}

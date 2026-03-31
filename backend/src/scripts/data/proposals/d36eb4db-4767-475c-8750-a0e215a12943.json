@@ -1,0 +1,17 @@
+{
+  "matchId": "d3900ecc-40d5-40dd-bc7c-8fc248547c46",
+  "fromUserId": "d50c809a-e644-4561-9c93-106c8842cf72",
+  "toUserId": "e574dbfa-37e5-4b16-8565-1c3d9840b6c5",
+  "activityType": "social",
+  "date": "2026-04-03",
+  "time": "17:30",
+  "neighborhood": "Ben Arous",
+  "budgetRange": "Low",
+  "suggestedPlace": "Ben Arous Café",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.037Z",
+  "id": "d36eb4db-4767-475c-8750-a0e215a12943",
+  "updatedAt": "2026-03-31T11:48:47.037Z"
+}

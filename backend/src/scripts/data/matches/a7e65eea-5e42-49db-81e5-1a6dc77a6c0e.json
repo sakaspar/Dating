@@ -1,0 +1,12 @@
+{
+  "id": "a7e65eea-5e42-49db-81e5-1a6dc77a6c0e",
+  "users": [
+    "0c780e04-251c-4ecb-adba-bbf305f04d8d",
+    "73f0463c-1db6-4d60-b0a5-a7a714f332d2"
+  ],
+  "user1Id": "73f0463c-1db6-4d60-b0a5-a7a714f332d2",
+  "user2Id": "0c780e04-251c-4ecb-adba-bbf305f04d8d",
+  "matchedAt": "2026-03-31T11:48:46.658Z",
+  "createdAt": "2026-03-31T11:48:46.658Z",
+  "updatedAt": "2026-03-31T11:48:46.658Z"
+}

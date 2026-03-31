@@ -1,0 +1,42 @@
+{
+  "email": "ines63@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Ines",
+  "age": 29,
+  "gender": "female",
+  "latitude": 36.819682,
+  "longitude": 10.24152,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Good vibes only.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "restaurant"
+  ],
+  "interests": [
+    "cinema",
+    "fashion",
+    "hiking"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 21,
+    "ageRangeMax": 37,
+    "genderPreference": "male",
+    "maxDistance": 28,
+    "activities": [
+      "outdoor",
+      "activities"
+    ],
+    "interests": [
+      "sports",
+      "fitness"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:44.394Z",
+  "updatedAt": "2026-03-31T11:48:44.394Z",
+  "id": "c82990aa-2e46-489f-8aa4-58b19f7a081e"
+}

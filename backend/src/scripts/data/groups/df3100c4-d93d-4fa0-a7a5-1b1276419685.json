@@ -1,0 +1,27 @@
+{
+  "creatorId": "a58b14a9-6083-467a-ae00-4bf0c511ce03",
+  "activityType": "coffee",
+  "title": "Weekend Coffee Run",
+  "description": "Join us for coffee/café hangouts in Manar!",
+  "date": "2026-04-19",
+  "time": "19:00",
+  "location": "Manar",
+  "latitude": 36.835,
+  "longitude": 10.165,
+  "currentSize": 3,
+  "lookingFor": 2,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "a58b14a9-6083-467a-ae00-4bf0c511ce03",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.138Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.138Z",
+  "id": "df3100c4-d93d-4fa0-a7a5-1b1276419685",
+  "updatedAt": "2026-03-31T11:48:47.138Z"
+}

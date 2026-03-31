@@ -1,0 +1,50 @@
+{
+  "email": "olfa54@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Olfa",
+  "age": 32,
+  "gender": "female",
+  "latitude": 36.85244,
+  "longitude": 10.322627,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "restaurant",
+    "coffee",
+    "activities",
+    "events"
+  ],
+  "interests": [
+    "reading",
+    "dancing",
+    "volunteering",
+    "fitness",
+    "tech"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 24,
+    "ageRangeMax": 40,
+    "genderPreference": "male",
+    "maxDistance": 41,
+    "activities": [
+      "activities",
+      "coffee",
+      "outdoor",
+      "restaurant"
+    ],
+    "interests": [
+      "cooking",
+      "swimming",
+      "volunteering",
+      "music"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.606Z",
+  "updatedAt": "2026-03-31T11:48:43.606Z",
+  "id": "4ef13fc5-ec21-40f5-a71a-2eab77bdd60c"
+}

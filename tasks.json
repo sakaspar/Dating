@@ -1,6 +1,6 @@
 {
   "project": "Dating App (Doukhou)",
-  "lastUpdated": "2026-03-31T11:56:45.569805",
+  "lastUpdated": "2026-03-31T12:33:13.097609",
   "tasks": [
     {
       "id": 1,
@@ -8,7 +8,7 @@
       "description": "Initialize repo with /backend and /mobile directories, package.json, .gitignore, .env.example, README.md",
       "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:14:43.844882",
+      "updated": "2026-03-31T12:33:13.097589",
       "errors": []
     },
     {
@@ -357,36 +357,36 @@
       "id": 40,
       "title": "End-to-end testing all flows",
       "description": "Test: registration\u2192profile\u2192discover\u2192swipe\u2192match\u2192chat\u2192proposal\u2192accept/decline\u2192groups\u2192join\u2192group chat\u2192report\u2192block. Fix all bugs found.",
-      "status": "in-progress",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T11:56:45.569788",
+      "updated": "2026-03-31T11:58:19.752026",
       "errors": []
     },
     {
       "id": 41,
       "title": "Performance optimization (RPi focused)",
       "description": "Optimize JSON file reads with caching, implement log rotation, image lazy loading, Nginx static file caching, PM2 memory limit 1GB, graceful error handling, <500ms API avg response.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T11:59:53.633546",
       "errors": []
     },
     {
       "id": 42,
       "title": "API documentation",
       "description": "Document all endpoints with request/response examples, auth requirements, error codes. Include Socket.io events documentation.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T12:03:22.499421",
       "errors": []
     },
     {
       "id": 43,
       "title": "Deployment & launch prep",
       "description": "Final deploy to RPi, verify SSL/DNS, test public URL, app icons & splash screens, privacy policy, terms of service, build iOS TestFlight + Android APK, submission prep.",
-      "status": "open",
+      "status": "done",
       "created": "2026-03-31T08:00:00+01:00",
-      "updated": "2026-03-31T08:00:00+01:00",
+      "updated": "2026-03-31T12:08:26.647409",
       "errors": []
     }
   ]

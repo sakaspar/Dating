@@ -1,0 +1,45 @@
+{
+  "email": "ali22@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Ali",
+  "age": 18,
+  "gender": "male",
+  "latitude": 36.808005,
+  "longitude": 10.183429,
+  "city": "Tunis",
+  "neighborhood": "Tunis Centre",
+  "bio": "Good vibes only.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "events"
+  ],
+  "interests": [
+    "yoga",
+    "travel",
+    "volunteering"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 26,
+    "genderPreference": "female",
+    "maxDistance": 18,
+    "activities": [
+      "events",
+      "restaurant"
+    ],
+    "interests": [
+      "photography",
+      "yoga",
+      "music",
+      "writing"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.526Z",
+  "updatedAt": "2026-03-31T11:48:39.526Z",
+  "id": "cb530368-c20d-444e-97a5-77e33ea4a197"
+}

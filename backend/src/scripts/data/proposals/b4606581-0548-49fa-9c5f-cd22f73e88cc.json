@@ -1,0 +1,17 @@
+{
+  "matchId": "c4fc653b-8692-44c0-a8f6-f3d1ca1ce5b1",
+  "fromUserId": "7a85c7bb-2d35-4d6a-bcf1-66109cd3b8e1",
+  "toUserId": "2a26cfaa-5c17-4fd0-9837-b01bf23e686b",
+  "activityType": "outdoor",
+  "date": "2026-04-07",
+  "time": "12:30",
+  "neighborhood": "Gammarth",
+  "budgetRange": "High",
+  "suggestedPlace": "Gammarth Café",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.101Z",
+  "id": "b4606581-0548-49fa-9c5f-cd22f73e88cc",
+  "updatedAt": "2026-03-31T11:48:47.101Z"
+}

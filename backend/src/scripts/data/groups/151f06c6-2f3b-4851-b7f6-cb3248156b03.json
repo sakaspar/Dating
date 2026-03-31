@@ -1,0 +1,27 @@
+{
+  "creatorId": "ef610e7b-2c2e-4931-90ae-9e43dfec8c07",
+  "activityType": "activities",
+  "title": "Escape Room Challenge",
+  "description": "Join us for activities (bowling, arcade, escape rooms) in Menzah!",
+  "date": "2026-04-13",
+  "time": "17:00",
+  "location": "Menzah",
+  "latitude": 36.845,
+  "longitude": 10.185,
+  "currentSize": 3,
+  "lookingFor": 2,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "ef610e7b-2c2e-4931-90ae-9e43dfec8c07",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.143Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.143Z",
+  "id": "151f06c6-2f3b-4851-b7f6-cb3248156b03",
+  "updatedAt": "2026-03-31T11:48:47.143Z"
+}

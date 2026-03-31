@@ -1,0 +1,17 @@
+{
+  "matchId": "426e03f3-6895-47fd-a566-5aa69e018583",
+  "fromUserId": "fe2e1903-33c6-4313-a43c-c378a470ba4a",
+  "toUserId": "c82990aa-2e46-489f-8aa4-58b19f7a081e",
+  "activityType": "activities",
+  "date": "2026-04-14",
+  "time": "12:30",
+  "neighborhood": "Ariana",
+  "budgetRange": "High",
+  "suggestedPlace": "Ariana Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.998Z",
+  "id": "96ab3a85-65bb-45be-82d7-84f7bf39e252",
+  "updatedAt": "2026-03-31T11:48:46.998Z"
+}

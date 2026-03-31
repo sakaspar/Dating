@@ -1,0 +1,17 @@
+{
+  "matchId": "6ee6ff93-df53-430f-8198-d5cd5eeb8919",
+  "fromUserId": "cb530368-c20d-444e-97a5-77e33ea4a197",
+  "toUserId": "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d",
+  "activityType": "activities",
+  "date": "2026-04-11",
+  "time": "14:30",
+  "neighborhood": "Menzah",
+  "budgetRange": "Low",
+  "suggestedPlace": "Menzah Café",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.013Z",
+  "id": "81ceb537-aa51-47c1-b5af-3d25c593f473",
+  "updatedAt": "2026-03-31T11:48:47.013Z"
+}

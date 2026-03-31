@@ -1,0 +1,48 @@
+{
+  "email": "nader28@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nader",
+  "age": 21,
+  "gender": "male",
+  "latitude": 36.833074,
+  "longitude": 10.16289,
+  "city": "Tunis",
+  "neighborhood": "Manar",
+  "bio": "Love outdoor adventures and good conversations.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "events",
+    "activities"
+  ],
+  "interests": [
+    "photography",
+    "fitness",
+    "coding",
+    "music",
+    "football"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 29,
+    "genderPreference": "female",
+    "maxDistance": 42,
+    "activities": [
+      "restaurant",
+      "coffee"
+    ],
+    "interests": [
+      "fitness",
+      "hiking",
+      "volunteering",
+      "coding"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:40.967Z",
+  "updatedAt": "2026-03-31T11:48:40.967Z",
+  "id": "d7c990bb-13dd-4ddd-9fc2-de5259fcef13"
+}

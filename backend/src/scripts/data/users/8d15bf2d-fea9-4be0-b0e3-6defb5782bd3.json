@@ -1,0 +1,47 @@
+{
+  "email": "amira60@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Amira",
+  "age": 28,
+  "gender": "female",
+  "latitude": 36.820827,
+  "longitude": 10.237828,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Art lover and occasional painter.",
+  "photos": [],
+  "activities": [
+    "events",
+    "activities",
+    "restaurant",
+    "coffee"
+  ],
+  "interests": [
+    "gaming",
+    "reading",
+    "dancing",
+    "writing"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 20,
+    "ageRangeMax": 36,
+    "genderPreference": "male",
+    "maxDistance": 24,
+    "activities": [
+      "coffee",
+      "outdoor",
+      "restaurant"
+    ],
+    "interests": [
+      "photography",
+      "music",
+      "cinema"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:44.090Z",
+  "updatedAt": "2026-03-31T11:48:44.090Z",
+  "id": "8d15bf2d-fea9-4be0-b0e3-6defb5782bd3"
+}

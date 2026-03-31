@@ -1,0 +1,45 @@
+{
+  "email": "hana40@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Hana",
+  "age": 35,
+  "gender": "female",
+  "latitude": 36.751726,
+  "longitude": 10.2282,
+  "city": "Tunis",
+  "neighborhood": "Ben Arous",
+  "bio": "Let's grab coffee and see where it goes.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "restaurant"
+  ],
+  "interests": [
+    "cinema",
+    "photography"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 27,
+    "ageRangeMax": 43,
+    "genderPreference": "male",
+    "maxDistance": 49,
+    "activities": [
+      "events",
+      "activities",
+      "coffee",
+      "social"
+    ],
+    "interests": [
+      "dancing",
+      "music",
+      "sports"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.270Z",
+  "updatedAt": "2026-03-31T11:48:42.270Z",
+  "id": "a58b14a9-6083-467a-ae00-4bf0c511ce03"
+}

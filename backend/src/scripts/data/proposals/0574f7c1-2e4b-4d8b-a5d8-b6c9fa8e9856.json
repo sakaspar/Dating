@@ -1,0 +1,17 @@
+{
+  "matchId": "e4dfbaa3-2c69-46e5-ab38-8a0cb0b14f74",
+  "fromUserId": "a887b18e-94b6-477d-98f8-2c88c99b5b73",
+  "toUserId": "4947d9f7-b1af-4a30-9a49-97a7f6d976f3",
+  "activityType": "events",
+  "date": "2026-04-13",
+  "time": "20:00",
+  "neighborhood": "Gammarth",
+  "budgetRange": "High",
+  "suggestedPlace": "Gammarth Café",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.042Z",
+  "id": "0574f7c1-2e4b-4d8b-a5d8-b6c9fa8e9856",
+  "updatedAt": "2026-03-31T11:48:47.042Z"
+}

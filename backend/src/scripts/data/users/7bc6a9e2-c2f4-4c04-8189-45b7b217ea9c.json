@@ -1,0 +1,48 @@
+{
+  "email": "lina46@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Lina",
+  "age": 28,
+  "gender": "female",
+  "latitude": 36.876754,
+  "longitude": 10.324152,
+  "city": "Tunis",
+  "neighborhood": "La Marsa",
+  "bio": "Looking for my partner in crime.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "outdoor"
+  ],
+  "interests": [
+    "sports",
+    "art",
+    "hiking",
+    "volunteering",
+    "travel"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 20,
+    "ageRangeMax": 36,
+    "genderPreference": "male",
+    "maxDistance": 30,
+    "activities": [
+      "events",
+      "social",
+      "coffee"
+    ],
+    "interests": [
+      "cinema",
+      "photography",
+      "volunteering",
+      "cooking"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:42.935Z",
+  "updatedAt": "2026-03-31T11:48:42.935Z",
+  "id": "7bc6a9e2-c2f4-4c04-8189-45b7b217ea9c"
+}

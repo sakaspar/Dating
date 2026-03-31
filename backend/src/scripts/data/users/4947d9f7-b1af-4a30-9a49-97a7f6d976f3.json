@@ -1,0 +1,45 @@
+{
+  "email": "yasmine64@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Yasmine",
+  "age": 27,
+  "gender": "female",
+  "latitude": 36.860643,
+  "longitude": 10.194277,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Art lover and occasional painter.",
+  "photos": [],
+  "activities": [
+    "events",
+    "restaurant",
+    "activities",
+    "coffee"
+  ],
+  "interests": [
+    "swimming",
+    "yoga",
+    "art"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 19,
+    "ageRangeMax": 35,
+    "genderPreference": "male",
+    "maxDistance": 21,
+    "activities": [
+      "social",
+      "outdoor",
+      "restaurant"
+    ],
+    "interests": [
+      "gaming",
+      "travel"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:44.526Z",
+  "updatedAt": "2026-03-31T11:48:44.526Z",
+  "id": "4947d9f7-b1af-4a30-9a49-97a7f6d976f3"
+}

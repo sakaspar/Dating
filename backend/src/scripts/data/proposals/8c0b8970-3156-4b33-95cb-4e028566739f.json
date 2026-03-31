@@ -1,0 +1,17 @@
+{
+  "matchId": "88a5937e-8aa9-4e0b-b5d8-cdac602aa4af",
+  "fromUserId": "7bfbff1c-dc95-498d-acb1-64653f0f84f2",
+  "toUserId": "47de3540-5304-49d2-8c4e-ef7c7e9c56c2",
+  "activityType": "coffee",
+  "date": "2026-04-09",
+  "time": "17:30",
+  "neighborhood": "Bardo",
+  "budgetRange": "High",
+  "suggestedPlace": "Bardo Park",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.125Z",
+  "id": "8c0b8970-3156-4b33-95cb-4e028566739f",
+  "updatedAt": "2026-03-31T11:48:47.125Z"
+}

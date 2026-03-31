@@ -1,0 +1,17 @@
+{
+  "matchId": "62f39359-9197-4a9c-a10a-1ba6d02cb693",
+  "fromUserId": "aabdf84c-8e2b-4983-a0d6-ed0b486cde00",
+  "toUserId": "9b4971d0-6987-41dc-8106-f6e29bec849f",
+  "activityType": "coffee",
+  "date": "2026-04-11",
+  "time": "13:30",
+  "neighborhood": "Gammarth",
+  "budgetRange": "High",
+  "suggestedPlace": "Gammarth Restaurant",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.986Z",
+  "id": "d8701db2-9553-4a34-a49c-6b3590b41f2b",
+  "updatedAt": "2026-03-31T11:48:46.986Z"
+}

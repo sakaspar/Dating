@@ -1,0 +1,45 @@
+{
+  "email": "omar33@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Omar",
+  "age": 25,
+  "gender": "male",
+  "latitude": 36.844755,
+  "longitude": 10.182409,
+  "city": "Tunis",
+  "neighborhood": "Menzah",
+  "bio": "Let's discover Tunis together!",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "restaurant",
+    "social",
+    "activities"
+  ],
+  "interests": [
+    "travel",
+    "photography",
+    "reading"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 33,
+    "genderPreference": "female",
+    "maxDistance": 33,
+    "activities": [
+      "restaurant",
+      "activities"
+    ],
+    "interests": [
+      "writing",
+      "volunteering",
+      "tech"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.432Z",
+  "updatedAt": "2026-03-31T11:48:41.432Z",
+  "id": "e52d076a-4f9a-4d2b-9380-7b376fef8a41"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "233cb045-112e-46a5-8a0b-dad8a429d4fa_swipes",
+  "userId": "233cb045-112e-46a5-8a0b-dad8a429d4fa",
+  "swiped": {
+    "37894a27-388d-48ff-a6d0-aae3b44904a1": {
+      "action": "pass",
+      "timestamp": "2026-03-24T03:28:25.034Z"
+    },
+    "48db7f09-8eda-4044-b5b4-07725f3564cb": {
+      "action": "like",
+      "timestamp": "2026-03-17T03:08:37.985Z"
+    },
+    "fbc9d12b-3221-44ea-823c-eec46883c855": {
+      "action": "like",
+      "timestamp": "2026-03-14T14:33:30.312Z"
+    },
+    "1c271667-a757-473b-81ca-9695c11327f7": {
+      "action": "like",
+      "timestamp": "2026-03-13T18:40:57.206Z"
+    },
+    "5a8111c2-bdec-4fac-ab91-830b8ed2f190": {
+      "action": "like",
+      "timestamp": "2026-03-27T02:03:34.585Z"
+    },
+    "8d15bf2d-fea9-4be0-b0e3-6defb5782bd3": {
+      "action": "pass",
+      "timestamp": "2026-03-12T13:16:53.151Z"
+    },
+    "439b9f57-e079-4d8c-b630-5e3d63104f82": {
+      "action": "pass",
+      "timestamp": "2026-03-18T15:57:52.746Z"
+    },
+    "4ef13fc5-ec21-40f5-a71a-2eab77bdd60c": {
+      "action": "like",
+      "timestamp": "2026-03-17T00:32:38.091Z"
+    },
+    "c82990aa-2e46-489f-8aa4-58b19f7a081e": {
+      "action": "pass",
+      "timestamp": "2026-03-30T13:30:16.449Z"
+    },
+    "8ec70604-db20-4fa3-84d6-cb0b6fd2905e": {
+      "action": "pass",
+      "timestamp": "2026-03-25T18:44:49.438Z"
+    },
+    "a507b3e8-ae85-4b21-8332-4918d6e4158d": {
+      "action": "like",
+      "timestamp": "2026-03-17T06:13:27.761Z"
+    },
+    "47de3540-5304-49d2-8c4e-ef7c7e9c56c2": {
+      "action": "like",
+      "timestamp": "2026-03-15T05:41:42.366Z"
+    },
+    "84846d66-a521-4ac7-9fc8-9ce5adb0f4be": {
+      "action": "pass",
+      "timestamp": "2026-03-13T01:03:30.036Z"
+    },
+    "4947d9f7-b1af-4a30-9a49-97a7f6d976f3": {
+      "action": "pass",
+      "timestamp": "2026-03-22T13:03:56.349Z"
+    },
+    "e574dbfa-37e5-4b16-8565-1c3d9840b6c5": {
+      "action": "like",
+      "timestamp": "2026-03-18T17:17:56.154Z"
+    },
+    "0c1760ed-952f-4b33-aac6-62031c8ba718": {
+      "action": "pass",
+      "timestamp": "2026-03-12T13:44:54.905Z"
+    },
+    "0988c4c9-515a-4547-87f9-b31a73187f29": {
+      "action": "like",
+      "timestamp": "2026-03-12T12:04:35.257Z"
+    },
+    "0c780e04-251c-4ecb-adba-bbf305f04d8d": {
+      "action": "like",
+      "timestamp": "2026-03-27T07:01:06.788Z"
+    },
+    "c9f7749a-77ff-4185-9514-32cb8269a843": {
+      "action": "pass",
+      "timestamp": "2026-03-16T13:49:58.965Z"
+    },
+    "6deb9251-9023-4adc-8892-9afb2fce8379": {
+      "action": "like",
+      "timestamp": "2026-03-25T06:44:11.973Z"
+    },
+    "c2455116-670f-4dbc-8d2b-46995391e4bf": {
+      "action": "like",
+      "timestamp": "2026-03-12T01:04:28.626Z"
+    },
+    "bf8d34d8-fd41-4a36-a068-8646bf7882a1": {
+      "action": "like",
+      "timestamp": "2026-03-12T11:50:30.090Z"
+    },
+    "4f64e688-5c86-4226-b8ce-51f3510ffb10": {
+      "action": "like",
+      "timestamp": "2026-03-26T11:09:47.391Z"
+    },
+    "156fbd5d-e245-48cd-909d-df53899cad89": {
+      "action": "pass",
+      "timestamp": "2026-03-13T06:40:36.854Z"
+    },
+    "510053f4-b1c4-4a93-bf43-0b13806638ba": {
+      "action": "like",
+      "timestamp": "2026-03-19T00:02:00.915Z"
+    },
+    "07716ffc-63bf-4959-be9f-bfef6085bb40": {
+      "action": "like",
+      "timestamp": "2026-03-27T19:42:15.065Z"
+    },
+    "d584a7cf-0fc0-447a-9a2e-45661ba58e01": {
+      "action": "pass",
+      "timestamp": "2026-03-25T01:44:40.748Z"
+    }
+  },
+  "createdAt": "2026-03-31T11:48:46.522Z",
+  "updatedAt": "2026-03-31T11:48:46.522Z"
+}

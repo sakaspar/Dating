@@ -1,0 +1,43 @@
+{
+  "email": "ahmed0@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Ahmed",
+  "age": 23,
+  "gender": "male",
+  "latitude": 36.854187,
+  "longitude": 10.322345,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Coffee enthusiast looking for new places to explore.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "events"
+  ],
+  "interests": [
+    "music",
+    "yoga",
+    "volunteering"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 31,
+    "genderPreference": "female",
+    "maxDistance": 44,
+    "activities": [
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "cooking",
+      "yoga"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:37.644Z",
+  "updatedAt": "2026-03-31T11:48:37.644Z",
+  "id": "6596b297-c95b-4900-8f1b-f68072b4ef91"
+}

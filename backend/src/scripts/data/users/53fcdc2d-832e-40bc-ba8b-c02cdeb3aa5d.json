@@ -1,0 +1,45 @@
+{
+  "email": "nesma50@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nesma",
+  "age": 23,
+  "gender": "female",
+  "latitude": 36.834912,
+  "longitude": 10.163312,
+  "city": "Tunis",
+  "neighborhood": "Manar",
+  "bio": "Looking for my partner in crime.",
+  "photos": [],
+  "activities": [
+    "events",
+    "social",
+    "outdoor"
+  ],
+  "interests": [
+    "sports",
+    "hiking",
+    "coding",
+    "photography"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 31,
+    "genderPreference": "male",
+    "maxDistance": 43,
+    "activities": [
+      "activities",
+      "restaurant"
+    ],
+    "interests": [
+      "cooking",
+      "cinema",
+      "travel"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.312Z",
+  "updatedAt": "2026-03-31T11:48:43.312Z",
+  "id": "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d"
+}

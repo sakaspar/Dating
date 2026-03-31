@@ -1,0 +1,17 @@
+{
+  "matchId": "8efab756-e6b8-482d-a25e-2d8d7002f1a9",
+  "fromUserId": "ec8135d9-ac0e-4dbe-9d47-926720cb132c",
+  "toUserId": "fc4717ed-74e1-4ba5-99d0-9f9208909383",
+  "activityType": "coffee",
+  "date": "2026-04-14",
+  "time": "15:00",
+  "neighborhood": "Manouba",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Manouba Restaurant",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.002Z",
+  "id": "955fcf93-d376-4296-82bd-5ace666dcc80",
+  "updatedAt": "2026-03-31T11:48:47.002Z"
+}

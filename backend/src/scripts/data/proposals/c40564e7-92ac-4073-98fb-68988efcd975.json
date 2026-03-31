@@ -1,0 +1,17 @@
+{
+  "matchId": "c5fe7392-fc18-44da-abf2-45aa2cad94e3",
+  "fromUserId": "4a544b05-8aff-4fba-8c77-d6e4e662b30c",
+  "toUserId": "48db7f09-8eda-4044-b5b4-07725f3564cb",
+  "activityType": "restaurant",
+  "date": "2026-04-04",
+  "time": "19:00",
+  "neighborhood": "Ben Arous",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Ben Arous Park",
+  "notes": "Looking forward to it!",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.980Z",
+  "id": "c40564e7-92ac-4073-98fb-68988efcd975",
+  "updatedAt": "2026-03-31T11:48:46.980Z"
+}

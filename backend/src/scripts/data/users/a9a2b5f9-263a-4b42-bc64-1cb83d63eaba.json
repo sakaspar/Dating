@@ -1,0 +1,42 @@
+{
+  "email": "tarek9@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Tarek",
+  "age": 19,
+  "gender": "male",
+  "latitude": 36.860916,
+  "longitude": 10.195637,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Looking for my partner in crime.",
+  "photos": [],
+  "activities": [
+    "restaurant",
+    "outdoor"
+  ],
+  "interests": [
+    "yoga",
+    "fashion"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 27,
+    "genderPreference": "female",
+    "maxDistance": 10,
+    "activities": [
+      "coffee",
+      "events"
+    ],
+    "interests": [
+      "cinema",
+      "travel",
+      "yoga"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:38.364Z",
+  "updatedAt": "2026-03-31T11:48:38.364Z",
+  "id": "a9a2b5f9-263a-4b42-bc64-1cb83d63eaba"
+}

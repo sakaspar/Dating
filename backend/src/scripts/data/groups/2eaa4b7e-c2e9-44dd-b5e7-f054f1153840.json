@@ -1,0 +1,27 @@
+{
+  "creatorId": "4947d9f7-b1af-4a30-9a49-97a7f6d976f3",
+  "activityType": "activities",
+  "title": "Board Game Night",
+  "description": "Join us for activities (bowling, arcade, escape rooms) in Ben Arous!",
+  "date": "2026-04-20",
+  "time": "18:00",
+  "location": "Ben Arous",
+  "latitude": 36.7533,
+  "longitude": 10.2283,
+  "currentSize": 2,
+  "lookingFor": 1,
+  "visibility": "public",
+  "ageRangeMin": 18,
+  "ageRangeMax": 35,
+  "genderPreference": "both",
+  "members": [
+    {
+      "userId": "4947d9f7-b1af-4a30-9a49-97a7f6d976f3",
+      "status": "approved",
+      "joinedAt": "2026-03-31T11:48:47.138Z"
+    }
+  ],
+  "createdAt": "2026-03-31T11:48:47.138Z",
+  "id": "2eaa4b7e-c2e9-44dd-b5e7-f054f1153840",
+  "updatedAt": "2026-03-31T11:48:47.138Z"
+}

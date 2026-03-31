@@ -1,0 +1,45 @@
+{
+  "email": "nour61@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Nour",
+  "age": 22,
+  "gender": "female",
+  "latitude": 36.809596,
+  "longitude": 10.101503,
+  "city": "Tunis",
+  "neighborhood": "Manouba",
+  "bio": "Simple person who enjoys good company.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "events"
+  ],
+  "interests": [
+    "travel",
+    "writing",
+    "sports",
+    "coding",
+    "gaming"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 30,
+    "genderPreference": "male",
+    "maxDistance": 31,
+    "activities": [
+      "events",
+      "outdoor",
+      "restaurant"
+    ],
+    "interests": [
+      "swimming",
+      "travel"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:44.102Z",
+  "updatedAt": "2026-03-31T11:48:44.102Z",
+  "id": "8ec70604-db20-4fa3-84d6-cb0b6fd2905e"
+}

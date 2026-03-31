@@ -1,0 +1,44 @@
+{
+  "email": "rania67@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Rania",
+  "age": 27,
+  "gender": "female",
+  "latitude": 36.817749,
+  "longitude": 10.241668,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Let's discover Tunis together!",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "outdoor",
+    "events",
+    "restaurant"
+  ],
+  "interests": [
+    "cooking",
+    "hiking",
+    "dancing"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 19,
+    "ageRangeMax": 35,
+    "genderPreference": "male",
+    "maxDistance": 48,
+    "activities": [
+      "activities",
+      "restaurant"
+    ],
+    "interests": [
+      "art",
+      "reading"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:45.412Z",
+  "updatedAt": "2026-03-31T11:48:45.412Z",
+  "id": "f961fd68-7f2d-4e1f-a409-8f8f4d5e3ed9"
+}

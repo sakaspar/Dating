@@ -1,0 +1,45 @@
+{
+  "email": "houssem18@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Houssem",
+  "age": 26,
+  "gender": "male",
+  "latitude": 36.854626,
+  "longitude": 10.324482,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "outdoor",
+    "social"
+  ],
+  "interests": [
+    "photography",
+    "music",
+    "tech"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 34,
+    "genderPreference": "female",
+    "maxDistance": 47,
+    "activities": [
+      "coffee",
+      "restaurant"
+    ],
+    "interests": [
+      "sports",
+      "cooking",
+      "volunteering",
+      "tech"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:39.289Z",
+  "updatedAt": "2026-03-31T11:48:39.289Z",
+  "id": "dccdf224-ef5c-48c0-b983-d24711246dda"
+}

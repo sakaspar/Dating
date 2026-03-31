@@ -10,7 +10,7 @@
 import React, { forwardRef } from 'react';
 import { StyleSheet, Platform } from 'react-native';
 import MapView, { Marker, UrlTile, PROVIDER_GOOGLE } from 'react-native-maps';
-import osmService from '../../services/osm';
+import osmService from '../services/osm';
 
 const OSM_TILE_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 

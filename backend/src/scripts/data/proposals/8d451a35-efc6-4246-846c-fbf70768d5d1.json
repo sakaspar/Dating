@@ -1,0 +1,17 @@
+{
+  "matchId": "c07d1cfd-09b8-41c5-b956-0814e0cbd120",
+  "fromUserId": "e52d076a-4f9a-4d2b-9380-7b376fef8a41",
+  "toUserId": "4ef13fc5-ec21-40f5-a71a-2eab77bdd60c",
+  "activityType": "coffee",
+  "date": "2026-04-06",
+  "time": "10:00",
+  "neighborhood": "Tunis Centre",
+  "budgetRange": "High",
+  "suggestedPlace": "Tunis Centre Park",
+  "notes": "Looking forward to it!",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.002Z",
+  "id": "8d451a35-efc6-4246-846c-fbf70768d5d1",
+  "updatedAt": "2026-03-31T11:48:47.002Z"
+}

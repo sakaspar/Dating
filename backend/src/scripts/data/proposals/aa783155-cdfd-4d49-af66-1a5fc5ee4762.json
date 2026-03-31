@@ -1,0 +1,17 @@
+{
+  "matchId": "9d105d24-7d8c-4228-b48f-25fdb87824a4",
+  "fromUserId": "cb530368-c20d-444e-97a5-77e33ea4a197",
+  "toUserId": "0c1760ed-952f-4b33-aac6-62031c8ba718",
+  "activityType": "restaurant",
+  "date": "2026-04-02",
+  "time": "11:00",
+  "neighborhood": "Tunis Centre",
+  "budgetRange": "Medium",
+  "suggestedPlace": "Tunis Centre Park",
+  "notes": "",
+  "status": "declined",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.093Z",
+  "id": "aa783155-cdfd-4d49-af66-1a5fc5ee4762",
+  "updatedAt": "2026-03-31T11:48:47.093Z"
+}

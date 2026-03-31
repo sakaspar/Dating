@@ -1,0 +1,49 @@
+{
+  "email": "mariem66@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Mariem",
+  "age": 34,
+  "gender": "female",
+  "latitude": 36.845532,
+  "longitude": 10.186683,
+  "city": "Tunis",
+  "neighborhood": "Menzah",
+  "bio": "Good vibes only.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "activities",
+    "social"
+  ],
+  "interests": [
+    "photography",
+    "music",
+    "cooking",
+    "football"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 26,
+    "ageRangeMax": 42,
+    "genderPreference": "male",
+    "maxDistance": 48,
+    "activities": [
+      "coffee",
+      "restaurant",
+      "events",
+      "social"
+    ],
+    "interests": [
+      "travel",
+      "reading",
+      "photography",
+      "cooking"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:45.262Z",
+  "updatedAt": "2026-03-31T11:48:45.262Z",
+  "id": "fbc9d12b-3221-44ea-823c-eec46883c855"
+}

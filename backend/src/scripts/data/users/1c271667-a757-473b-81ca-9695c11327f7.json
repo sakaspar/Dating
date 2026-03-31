@@ -1,0 +1,47 @@
+{
+  "email": "sana51@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Sana",
+  "age": 30,
+  "gender": "female",
+  "latitude": 36.806185,
+  "longitude": 10.182101,
+  "city": "Tunis",
+  "neighborhood": "Tunis Centre",
+  "bio": "Always up for trying something new.",
+  "photos": [],
+  "activities": [
+    "activities",
+    "outdoor",
+    "events",
+    "restaurant"
+  ],
+  "interests": [
+    "music",
+    "art",
+    "cinema"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 22,
+    "ageRangeMax": 38,
+    "genderPreference": "male",
+    "maxDistance": 24,
+    "activities": [
+      "outdoor",
+      "activities",
+      "restaurant",
+      "coffee"
+    ],
+    "interests": [
+      "cooking",
+      "hiking",
+      "music"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.322Z",
+  "updatedAt": "2026-03-31T11:48:43.322Z",
+  "id": "1c271667-a757-473b-81ca-9695c11327f7"
+}

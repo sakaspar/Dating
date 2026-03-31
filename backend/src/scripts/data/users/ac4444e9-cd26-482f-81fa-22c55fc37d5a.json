@@ -1,0 +1,42 @@
+{
+  "email": "ahmed30@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Ahmed",
+  "age": 27,
+  "gender": "male",
+  "latitude": 36.810958,
+  "longitude": 10.101442,
+  "city": "Tunis",
+  "neighborhood": "Manouba",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "social",
+    "outdoor"
+  ],
+  "interests": [
+    "swimming",
+    "writing"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 19,
+    "ageRangeMax": 35,
+    "genderPreference": "female",
+    "maxDistance": 46,
+    "activities": [
+      "social",
+      "restaurant"
+    ],
+    "interests": [
+      "cooking",
+      "football",
+      "swimming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:41.153Z",
+  "updatedAt": "2026-03-31T11:48:41.153Z",
+  "id": "ac4444e9-cd26-482f-81fa-22c55fc37d5a"
+}

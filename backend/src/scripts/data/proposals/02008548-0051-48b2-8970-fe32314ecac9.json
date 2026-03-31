@@ -1,0 +1,17 @@
+{
+  "matchId": "ab34084c-d57c-4922-b8ae-635cd91dee15",
+  "fromUserId": "d50c809a-e644-4561-9c93-106c8842cf72",
+  "toUserId": "53fcdc2d-832e-40bc-ba8b-c02cdeb3aa5d",
+  "activityType": "social",
+  "date": "2026-04-07",
+  "time": "16:00",
+  "neighborhood": "Tunis Centre",
+  "budgetRange": "High",
+  "suggestedPlace": "Tunis Centre Restaurant",
+  "notes": "",
+  "status": "pending",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:47.100Z",
+  "id": "02008548-0051-48b2-8970-fe32314ecac9",
+  "updatedAt": "2026-03-31T11:48:47.100Z"
+}

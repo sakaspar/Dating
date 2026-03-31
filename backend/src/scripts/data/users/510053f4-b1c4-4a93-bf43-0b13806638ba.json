@@ -1,0 +1,46 @@
+{
+  "email": "hana70@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Hana",
+  "age": 29,
+  "gender": "female",
+  "latitude": 36.852446,
+  "longitude": 10.324009,
+  "city": "Tunis",
+  "neighborhood": "Carthage",
+  "bio": "Foodie who knows all the best spots in Tunis.",
+  "photos": [],
+  "activities": [
+    "events",
+    "social",
+    "restaurant",
+    "outdoor"
+  ],
+  "interests": [
+    "football",
+    "tech",
+    "photography"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 21,
+    "ageRangeMax": 37,
+    "genderPreference": "male",
+    "maxDistance": 37,
+    "activities": [
+      "coffee",
+      "restaurant",
+      "events"
+    ],
+    "interests": [
+      "photography",
+      "fitness",
+      "gaming"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:45.944Z",
+  "updatedAt": "2026-03-31T11:48:45.944Z",
+  "id": "510053f4-b1c4-4a93-bf43-0b13806638ba"
+}

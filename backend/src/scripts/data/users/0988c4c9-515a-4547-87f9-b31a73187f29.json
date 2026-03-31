@@ -1,0 +1,47 @@
+{
+  "email": "rim58@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Rim",
+  "age": 18,
+  "gender": "female",
+  "latitude": 36.896235,
+  "longitude": 10.285539,
+  "city": "Tunis",
+  "neighborhood": "Gammarth",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "events",
+    "outdoor",
+    "coffee",
+    "restaurant"
+  ],
+  "interests": [
+    "travel",
+    "music"
+  ],
+  "intention": "serious",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 26,
+    "genderPreference": "male",
+    "maxDistance": 41,
+    "activities": [
+      "restaurant",
+      "activities",
+      "coffee",
+      "outdoor"
+    ],
+    "interests": [
+      "photography",
+      "writing",
+      "music",
+      "fashion"
+    ]
+  },
+  "verified": false,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:43.930Z",
+  "updatedAt": "2026-03-31T11:48:43.930Z",
+  "id": "0988c4c9-515a-4547-87f9-b31a73187f29"
+}

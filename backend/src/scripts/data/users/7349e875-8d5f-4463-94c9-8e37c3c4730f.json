@@ -1,0 +1,49 @@
+{
+  "email": "riadh26@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Riadh",
+  "age": 34,
+  "gender": "male",
+  "latitude": 36.862256,
+  "longitude": 10.195069,
+  "city": "Tunis",
+  "neighborhood": "Ariana",
+  "bio": "Tell me about your favorite restaurant.",
+  "photos": [],
+  "activities": [
+    "outdoor",
+    "activities",
+    "restaurant",
+    "social"
+  ],
+  "interests": [
+    "travel",
+    "hiking",
+    "sports",
+    "music",
+    "cinema"
+  ],
+  "intention": "dating",
+  "preferences": {
+    "ageRangeMin": 26,
+    "ageRangeMax": 42,
+    "genderPreference": "female",
+    "maxDistance": 34,
+    "activities": [
+      "activities",
+      "restaurant",
+      "events"
+    ],
+    "interests": [
+      "music",
+      "travel",
+      "football",
+      "coding"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:40.710Z",
+  "updatedAt": "2026-03-31T11:48:40.710Z",
+  "id": "7349e875-8d5f-4463-94c9-8e37c3c4730f"
+}

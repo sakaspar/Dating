@@ -1,0 +1,17 @@
+{
+  "matchId": "c0273067-eba2-48b4-b853-fcab1bb8d08b",
+  "fromUserId": "ac4444e9-cd26-482f-81fa-22c55fc37d5a",
+  "toUserId": "510053f4-b1c4-4a93-bf43-0b13806638ba",
+  "activityType": "events",
+  "date": "2026-04-07",
+  "time": "17:30",
+  "neighborhood": "Bardo",
+  "budgetRange": "Low",
+  "suggestedPlace": "Bardo Restaurant",
+  "notes": "",
+  "status": "accepted",
+  "history": [],
+  "createdAt": "2026-03-31T11:48:46.988Z",
+  "id": "38b2c964-cd80-49c4-9377-681292ce3c6d",
+  "updatedAt": "2026-03-31T11:48:46.988Z"
+}

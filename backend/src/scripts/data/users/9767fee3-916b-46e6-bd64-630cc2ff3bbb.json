@@ -1,0 +1,46 @@
+{
+  "email": "khalil27@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Khalil",
+  "age": 28,
+  "gender": "male",
+  "latitude": 36.819952,
+  "longitude": 10.240398,
+  "city": "Tunis",
+  "neighborhood": "Lac",
+  "bio": "Big fan of cozy cafés and sunset walks.",
+  "photos": [],
+  "activities": [
+    "coffee",
+    "restaurant",
+    "social",
+    "activities"
+  ],
+  "interests": [
+    "hiking",
+    "sports",
+    "cinema"
+  ],
+  "intention": "friendship",
+  "preferences": {
+    "ageRangeMin": 20,
+    "ageRangeMax": 36,
+    "genderPreference": "female",
+    "maxDistance": 15,
+    "activities": [
+      "activities",
+      "restaurant",
+      "social"
+    ],
+    "interests": [
+      "swimming",
+      "yoga",
+      "cinema"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:40.845Z",
+  "updatedAt": "2026-03-31T11:48:40.845Z",
+  "id": "9767fee3-916b-46e6-bd64-630cc2ff3bbb"
+}

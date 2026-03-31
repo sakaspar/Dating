@@ -1,0 +1,45 @@
+{
+  "email": "fatma68@test.doukhou.tn",
+  "password": "$2b$10$uQkkkE0tiqmqdJcZ7VWxpeelFRh5wUZxp4tAFJ3z6q7XxKrZPsZuK",
+  "name": "Fatma",
+  "age": 20,
+  "gender": "female",
+  "latitude": 36.805946,
+  "longitude": 10.182051,
+  "city": "Tunis",
+  "neighborhood": "Tunis Centre",
+  "bio": "Life is too short for boring dates.",
+  "photos": [],
+  "activities": [
+    "social",
+    "outdoor",
+    "activities",
+    "restaurant"
+  ],
+  "interests": [
+    "art",
+    "dancing",
+    "photography",
+    "fashion"
+  ],
+  "intention": "open",
+  "preferences": {
+    "ageRangeMin": 18,
+    "ageRangeMax": 28,
+    "genderPreference": "male",
+    "maxDistance": 19,
+    "activities": [
+      "outdoor",
+      "social"
+    ],
+    "interests": [
+      "tech",
+      "swimming"
+    ]
+  },
+  "verified": true,
+  "blocked": [],
+  "createdAt": "2026-03-31T11:48:45.551Z",
+  "updatedAt": "2026-03-31T11:48:45.551Z",
+  "id": "fc4717ed-74e1-4ba5-99d0-9f9208909383"
+}
