@@ -173,19 +173,19 @@ export default function ProfileWizardScreen({ navigation }) {
     setIsSubmitting(true);
     try {
       const profileData = {
-        fullName: fullName.trim(),
+        name: fullName.trim(),
         age: parseInt(age),
         gender,
         neighborhood,
-        location,
+        latitude: location?.latitude,
+        longitude: location?.longitude,
         intention,
-        activities: selectedActivities,
         bio: bio.trim(),
-        interests,
-        profileComplete: true,
       };
       await api.updateProfile(profileData);
-      dispatch(updateProfile(profileData));
+      // Save activities and interests via preferences endpoint
+      await api.updatePreferences({ activities: selectedActivities, interests });
+      dispatch(updateProfile({ ...profileData, activities: selectedActivities, interests, profileComplete: true }));
     } catch (err) {
       Alert.alert('Error', err.message || 'Failed to save profile');
     } finally {

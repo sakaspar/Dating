@@ -30,6 +30,7 @@ initGroupChatSocket(io);
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
 app.use(compression()); // gzip compression for all responses
+app.set('trust proxy', 1); // trust first proxy (ngrok/nginx)
 app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(sanitizeInput); // XSS protection on all inputs
